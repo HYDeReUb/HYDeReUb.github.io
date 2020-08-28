@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html><title>Raspberry Pi OS指令使用</title>
+<head><meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color:white;
+  color:gray;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+a:hover, a:active {
+  background-color: #FF5757;
+}
+</style></head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="回頂端">TOP</button>
+<script>
+var mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+<center><a href="../index.html">回首頁</a></center>
+<h1>Raspberry Pi OS指令使用</h1>
+<hr>
+<h2>APT運用</h2>
+<h3>更新</h3>
+<p><i>sudo apt update  (需要時再改成apt-get)</p></i>
+<h3>升級</h3>
+<p><i>sudo apt upgrade (需要時再改成apt-get)</p></i>
+<h3>完整升級</h3>
+<p><i>sudo apt full-upgrade (apt-get為另一條指令，無法套用)</p></i>
+<h3>新增 PPA 個人套件庫</h3>
+<p><i>sudo add-apt-repository ppa:</p></i>
+<h3>移除 PPA 個人套件庫</h3>
+<p><i>sudo add-apt-repository --remove ppa:</p></i>
+<h3>安裝套件</h3>
+<p><i>sudo apt install (套件名稱) (需要時再改成apt-get)</p></i>
+<h3>移除套件</h3>
+<p><i>sudo apt purge (套件名稱) (需要時再改成apt-get)</p></i><p>或  <i>sudo apt remove --purge '(套件名稱)' (需要時再改成apt-get)</p></i>
+
+
+<h3>自動移除套件(相依套件)</h3>
+<p><i>sudo apt autoremove (需要時再改成apt-get)</p></i>
+<h3>清除之前安裝(install)的安裝檔</h3>
+<p><i>sudo apt clean (需要時再改成apt-get)</p></i>
+<h3>清除之前下載的安裝檔，但不刪除已安裝軟體的安裝檔</h3>
+<p><i>sudo apt autoclean (需要時再改成apt-get)</p></i>
+<hr>
+<h2>已知套件</h2>
+<p><u>"apt"有問題的話再改成"apt-get"看看</p></u>
+<h3>支援exFAT(FAT64)</h3>
+<p><i>sudo apt install exfat-utils</p></i>
+<p><i>sudo apt install exfat-fuse</p></i>
+<h5>省略的</h5>
+<p><i>sudo apt install 'exfat-*'</p></i>
+<h5>舊版(無法更新)用法</h5>
+<p><i>sudo apt-add-repository ppa:relan/exfat</p></i>
+<p><i>sudo apt-get update</p></i>
+<p><i>sudo apt-get install 'exfat-utils'</p></i>
+<p><i>sudo apt-get install 'exfat-fuse'</p></i>
+<h3>支援NTFS</h3>
+<p><i>sudo apt install ntfs-3g-dev</p></i>
+<h3>印表機</h3>
+<p><i>sudo apt install libcups2-dev</p></i>
+<p><i>sudo apt install cups</p></i>
+<p><i>sudo apt install system-config-printer</p></i>
+<h3>光碟燒錄</h3>
+<p><u>注意!!請在足夠的電源下再使用光碟機!!!</p></u>
+<h5>K3b(比較推薦)</h5>
+<p><i>sudo apt install k3b</p></i>
+<h5>Xfburn(易於操作)</h5>
+<p><i>sudo apt install xfburn</p></i>
+<h3>GNOME磁碟(可執行快速、完整格式化＆關閉磁碟機動作等)</h3>
+<p><u>建議！完整格式化請在電源充足的情況(不能出現閃電降壓符號)並且搭配主動式散熱器(風扇+散熱片)使用</p></u>
+<p><i>sudo apt install gnome-disk-utility</p></i>
+<h3>GParted(硬碟分割區軟體)</h3>
+<p><i>sudo apt install gparted</p></i>
+<h3>Nautilus檔案瀏覽器(GNOME檔案瀏覽器)</h3>
+<p><i>sudo apt install nautilus</p></i>
+<h3>Audacity(錄音與音訊編輯器，須搭配USB聲卡使用)</h3>
+<p><i>sudo apt install audacity</p></i>
+<h3>Kdenlive(影片編輯器)</h3>
+<p><i>sudo apt install kdenlive</p></i>
+<h3>GIMP(圖像編輯器)</h3>
+<p><i>sudo apt install gimp</p></i>
+<h3>GNOME影像檢視器(可順利跑GIF檔，BCM2835無法)<h3>
+<p><i>sudo apt install eog</p></i>
+<h3>calibre(電子書軟體)</h3>
+<p><i>sudo apt install calibre</p></i>
+<h3>Firefox瀏覽器(Firefox ESR)</h3>
+<p><i>sudo apt install firefox-esr</p></i>
+<h3>Chromium瀏覽器</h3>
+<p><i>sudo apt install chromium-browser</p></i>
+<hr>
+<h2>其他指令</h2>
+<h3>安裝.deb檔</h3>
+<p><i>(先用"cd"調整該檔資料夾的位置)sudo dpkg -i *.deb</p></i>
+<h3>溫度狀態</h3>
+<p><i>vcgencmd measure_temp</p></i>
+<h3>時鐘速度狀態</h3>
+<p><i>watch -n 0 vcgencmd measure_clock arm  ("0"為0.1秒刷新。若改為"1"為1秒刷新、"2"為2秒刷新，以此類推)</p></i>
+<h3>卸載USB</h3>
+<p><i>sudo eject /dev/sdXX(XX是移除該位置的裝置。可以用"fdisk -l"檢視該裝置的位置)</p></i>
+<h3>vchiq影片播放問題</h3>
+<p><i>sudo chmod 447(最大權限777) /dev/vchiq</p></i>
+<h3>給予使用Bash權限</h3>
+<p><i>(先用"cd"調整該檔資料夾的位置)chmod u+x P.sh ("P"是檔案名稱，副檔名為".sh")</p></i>
+<h3>CPU 10次壓力溫度測試(sh腳本)</h3>
+<p><u>(來自ExplainingComputers.com)</p></u>
+<p><i>#! /bin/bash</p></i>
+<p><i>clear</p></i>
+<br>
+<p><i>for x in {1..10}</p></i>
+<p><i>do</p></i>
+<p><i>  vcgencmd measure_temp</p></i>
+<p><i>  sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run >/dev/null 2>&1</p></i>
+<p><i>done</p></i>
+<br> 
+<p><i>vcgencmd measure_temp</p></i>
+<hr>
+<h2>vi簡單用法</h2>
+<h3>操作模式</h3>
+<p><i>a 由游標之後進行寫入模式</p></i>
+<p><i>i 由游標之前進行寫入模式</p></i>
+<p><i>o 新增一行於該行之下進行寫入模式(如同Enter鍵後開始打字)</p></i>
+<p><i>x 刪除游標該字</p></i>
+<p><i>dd 刪除游標該行</p></i>
+<p><i>:w 存檔</p></i>
+<p><i>:q 退出</p></i>
+<p><i>:x 存檔後離開(僅當檔案被修改時才寫入,並更新檔案修改時間,否則不會更新檔案修改時間)</p></i>
+<p><i>:wq 存檔後離開(強制更新檔案的修改時間)</p></i>
+<p><i>!為強制性，在字母後輸入。示範 :q! 就是強制退出 :w! 就是強制存檔</p></i>
+<h3>寫入模式</h3>
+<p><i>[Esc] 退出寫入模式到操作模式</p></i>
+<hr>
+<h1>其他操作(LX終端機)</h1>
+<p><b>>(建立檔案)</p></b>
+<p><b>touch(建立檔案或修改檔案時間)</p></b>
+<p><b>cat(瀏覽或編輯文字檔)</p></b>
+<p><b>cat>文字檔(新增文字檔或覆蓋原有的文字並編輯)</p></b>
+<p><b>cat>>文字檔(編輯加入文字而不覆蓋原有的文字)</p></b>
+<h3>鍵盤動作</h3>
+<p><b>[Ctrl]+[D](存檔在cat編寫的文字)</p></b>
+<p><b>[Ctrl]+[C](中止目前的執行)</p></b>
+<p><b>[Ctrl]+[Shift]+[C] (複製，相當於一般在用的[Ctrl]+[C])</p></b>
+<p><b>[Ctrl]+[Shift]+[V] (貼上，相當於一般在用的[Ctrl]+[V])</p></b>
+<br>
+<center><p><u><i><b>E N D</p></u></i></b></center>
+</body>
+</html>

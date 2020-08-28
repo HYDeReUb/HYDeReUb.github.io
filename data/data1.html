@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html><title>Raspberry Pi相關下載</title>
+<head><meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color:white;
+  color:gray;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+a:hover, a:active {
+  background-color: #FF5757;
+}
+</style></head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="回頂端">TOP</button>
+<script>
+var mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<center><a href="../index.html">回首頁</a></center>
+<h1>Raspberry Pi相關下載</h1>
+<h3>OS下載區:</h3>
+<i><a href="https://www.raspberrypi.org/downloads/" target="_blank">Raspberry Pi OS & NOOBS(內有Raspberry Pi Imager燒錄軟體)</a></i><br>
+<i><a href="https://ubuntu-mate.org/download/" target="_blank">Ubuntu MATE(舊的GNOME 2桌面)</a></i><br>
+<i><a href="https://ubuntu.com/download/raspberry-pi" target="_blank">Ubuntu Server(Ubuntu終端)</a></i><br>
+<i><a href="https://libreelec.tv/downloads_new/" target="_blank">LibreELEC(影音)</a></i><br>
+<i><a href="https://retropie.org.uk/download/" target="_blank">RetroPie(電玩)</a></i><br>
+<i><a href="https://www.riscosopen.org/content/downloads/raspberry-pi" target="_blank">RISC OS(以ARM架構設計的系統)</a></i><br>
+<h3>應用程式下載區:</h3>
+<i><a href="https://forum.openmediavault.org/index.php?thread/28789-installing-omv5-on-raspberry-pi-s-armbian-sbc-s-i386-32-bit-platforms/" target="_blank">OpenMediaVault(NAS)</a></i><br>
+<h3>燒錄器下載區:</h3>
+<i><a href="https://www.balena.io/etcher/" target="_blank">balenaEtcher</a></i><br>
+<i><a href="https://sourceforge.net/projects/win32diskimager/" target="_blank">Win32 Disk Imager</a></i><br>
+<h3>圖片範例:<h3>
+<center>
+<h4>Raspberry Pi OS<h4>
+<a href="../pictures/raspberrypios.png" target="_blank"><img src="../pictures/raspberrypios.png" width=640 height=360></a><br>
+<h4>Ubuntu MATE<h4>
+<a href="../pictures/ubuntumate_raspberrypi.png" target="_blank"><img src="../pictures/ubuntumate_raspberrypi.png" width=640 height=360></a><br>
+<h4>Ubuntu Server<h4>
+<a href="../pictures/ubuntuserver.jpg" target="_blank"><img src="../pictures/ubuntuserver.jpg" width=640 height=360></a><br>
+<h4>LibreELEC<h4>
+<a href="../pictures/LibreELEC-Raspberry-Pi-4K.png" target="_blank"><img src="../pictures/LibreELEC-Raspberry-Pi-4K.png" width=640 height=360></a><br>
+<h4>RetroPie<h4>
+<a href="../pictures/retropie.jpeg" target="_blank"><img src="../pictures/retropie.jpeg" width=640 height=360></a><br>
+<h4>RISC OS<h4>
+<a href="../pictures/riscos.jpg" target="_blank"><img src="../pictures/riscos.jpg" width=640 height=360></a><br>
+<h4>OpenMediaVault<h4>
+<a href="../pictures/openmediavault.png" target="_blank"><img src="../pictures/openmediavault.png" width=640 height=360></a><br>
+<h4>balenaEtcher<h4>
+<a href="../pictures/flash-OS-images-with-balenaetcher-start-flash.jpg" target="_blank"><img src="../pictures/flash-OS-images-with-balenaetcher-start-flash.jpg" width=640 height=360></a><br><br>
+<h4>Win32 Disk Imager<h4>
+<a href="../pictures/Win32DiskImager-1.0.png" target="_blank"><img src="../pictures/Win32DiskImager-1.0.png" width=640 height=360></a><br>
+<br>
+<center><p><u><i><b>E N D</p></u></i></b></center>
+</body>
+</html>
