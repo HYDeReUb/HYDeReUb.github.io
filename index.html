@@ -15,7 +15,7 @@ background-attachment: fixed;
 background-size: 100% 100%;
 }
 
-a:link, a:visited {
+a.Url_Block:link, a.Url_Block:visited {
   background-color: orange;
   color: white;
   padding: 15px 25px;
@@ -24,8 +24,12 @@ a:link, a:visited {
   display: block;
 }
 
-a:hover, a:active {
+a.Url_Block:hover, a.Url_Block:active {
   background-color: red;
+}
+
+a:hover, a:active {
+  background-color: #FF5757;
 }
 
 #a {
@@ -62,22 +66,39 @@ function checkTime(i) {
 </script>
 </head>
 <body>
+
+
+<nav><center>
+論壇:<a href="https://www.mobile01.com/" target="_blank">Mobile01</a> |
+<a href="https://term.ptt.cc/" target="_blank">PTT</a> |
+<a href="https://www.dcard.tw/" target="_blank">Dcard</a> |
+<a href="https://www.gamer.com.tw/" target="_blank">巴哈姆特</a> |
+<a href="https://www.eyny.com/" target="_blank">伊莉討論區</a> |
+<a href="https://www.pcdvd.com.tw/" target="_blank">PCDVD(電腦、影音為多)</a> |
+<a href="https://news.wii.tw/" target="_blank">電筒王(手電筒及相關週邊)</a>
+</center></nav>
+
+
+
 <aside>
 <div id="a"><p><b>LINUX系統相關</p></b></div> <!+--DATA-->
-<p><a href="./data/data1.html"><b>Raspberry Pi相關下載</b></a></p> 
-<p><a href="./data/data2.html"><b>Ubuntu相關下載</b></a></p>
-<p><a href="./data/data3.html"><b>Raspberry Pi 已知說明</b></a></p>
-<p><a href="./data/data4.html"><b>Raspberry Pi OS指令使用</b></a></p>
-<p><a href="./data/data5.html"><b>Raspberry Pi 4 Model B已知問題與已知操作</b></a></p>
+<p><a href="./data/data1.html" class="Url_Block"><b>Raspberry Pi相關下載</b></a></p> 
+<p><a href="./data/data2.html" class="Url_Block"><b>Ubuntu相關下載</b></a></p>
+<p><a href="./data/data3.html" class="Url_Block"><b>Raspberry Pi 已知說明</b></a></p>
+<p><a href="./data/data4.html" class="Url_Block"><b>Raspberry Pi OS指令使用</b></a></p>
+<p><a href="./data/data5.html" class="Url_Block"><b>Raspberry Pi 4 Model B已知問題與已知操作</b></a></p>
 <div id="a"><p><b>原價屋的估價清單範例(有調整)</p></b></div>
-<p><a href="./data/comp1.html"><b>輕量級2020-08-06(純主機，無Win系統)</b></a></p>
-<p><a href="./data/comp2.html"><b>中高級2020-07-31(加進螢幕、喇叭、滑鼠、鍵盤、滑鼠墊)</b></a></p> <!+--DATA END-->
+<p><a href="./data/com1.html" class="Url_Block"><b>輕量級2020-08-06(純主機，無Win系統)</b></a></p>
+<p><a href="./data/com2.html" class="Url_Block"><b>中高級2020-07-31(加進螢幕、喇叭、滑鼠、鍵盤、滑鼠墊)</b></a></p> <!+--DATA END-->
 </div>
 </aside>
+
+
 <center>
-<img src="./pictures/Untitled.png" width=854 height=480><br><br>
+<img src="./pictures/Untitled.png" width=854 height=480><br>
 <p><u><i>警告:本文是個人善意提供，作為範例&學習用途，若遇任何風險還請自行負責。也嚴禁有任何抹黑的情況</p></u></i>
 <div id="A"><p>作者:KSU 4080E055(YuanSET只是突然想到就用的外號而已，跟企業無任何關係)</p>
 </center>
+
 </body>
 </html>
