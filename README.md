@@ -8,6 +8,7 @@
 ## 20200912
 ```
 更新"index.html"以及"data"資料夾中所有(README.md除外)的資料
+更新"Untitled.png"
 ```
 ## 20200911
 ```
