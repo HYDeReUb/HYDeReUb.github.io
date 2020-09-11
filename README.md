@@ -1,5 +1,5 @@
-## ///我的範例網頁，[點擊這裡觀看](https://HYDeReUb.github.io)///
-[https://HYDeReUb.github.io](https://HYDeReUb.github.io)
+## ///我的範例網頁，[點擊這裡觀看](https://hydereub.github.io)///
+[https://hydereub.github.io](https://hydereub.github.io)
 <<作者:YuanSET(就是我自己XD)>><br>
 (Top跟時鐘這類的Javascript是從其他地方找來放的)
 
