@@ -64,16 +64,27 @@ a:hover, a:active {
 </style>
 <head>
 <title>Home Page</title>
-  <center><h2><span style="color:#2997F4">歡迎！這是由YuanSET創作的個人資料區</span></h2><h3><div id="time"></div></h3></center>
+  <center><h2><span style="color:#2997F4">歡迎！這是由YuanSET創作的個人資料區</span></h2><h3><span style="color:#3481B4"><div id="time"></div></span></h3></center>
 <script>
 function startTime() {
   var today = new Date();
+
+  var y = today.getFullYear();
+  var M = today.getMonth();
+  var D = today.getDate();
+  var d = today.getDay();
+
   var h = today.getHours();
   var m = today.getMinutes();
   var s = today.getSeconds();
+
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById("time").innerHTML ="您的電腦時間 "+ h + ":" + m + ":" + s;
+
+ M+=1;
+ if (d<1){dd="星期日"}else if (d<2){dd="星期一"}else if (d<3){dd="星期二"}else if (d<4){dd="星期三"}else if (d<5){dd="星期四"}else if (d<6){dd="星期五"}else if (d<7){dd="星期六"} else {dd="_???"}
+
+  document.getElementById("time").innerHTML = y + "/" + M + "/" + D + dd + " " + h + ":" + m + ":" + s;
   var t = setTimeout(function(){ startTime() }, 500);
 }
 
