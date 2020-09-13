@@ -7,6 +7,11 @@
 # 紀錄:
 ## 20200912
 ```
+更新"index.html"的資料
+加入"dataG1.html"
+```
+## 20200912
+```
 更新"index.html"以及"data"資料夾中所有(README.md除外)的資料
 更新"Untitled.png"
 ```
