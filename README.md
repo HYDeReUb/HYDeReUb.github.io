@@ -7,13 +7,13 @@
 # 紀錄:
 ## 20200920
 ```
-更新"Data3.html"的資料
-更新"Data5.html"的資料
+更新"data3.html"的資料
+更新"data5.html"的資料
 ```
 ## 20200916
 ```
 更新"index.html"的資料(學會運用padding-left)
-更新"DataG1.html"的資料
+更新"dataG1.html"的資料
 ```
 ## 20200913-20200915
 ```
