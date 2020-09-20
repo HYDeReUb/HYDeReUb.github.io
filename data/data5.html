@@ -106,7 +106,7 @@ function topFunction() {
 <br><br>
 <b><a href="https://www.youtube.com/watch?v=2zrwjGcyM5s" target="_blank">2.https://www.youtube.com/watch?v=2zrwjGcyM5s</a></b>
 <h3>說明:</h3>
-<p><u>在這兩個資訊中，我推薦先看第二個網址(影片中的Firmware Update)然後再看第一個網址(USB-MSD firmware setup instructions的部份)，下面會配合影片的部份說明</p></u>
+<p><u><span style="color:#1565A9">在這兩個資訊中，我推薦先看第二個網址(影片中的Firmware Update)然後再看第一個網址(USB-MSD firmware setup instructions的部份)，下面會配合影片的部份說明</p></u>
 
 <p><i>1.在打開"bootloader"資料夾後，要選擇"stable"資料夾而不是影片的"beta"資料夾，因為該影片發布時還沒有穩定版可用</p></i>
 
@@ -117,7 +117,7 @@ function topFunction() {
 
 <p><i>4-1.輸入"sudo rpi-eeprom-update -d -f "後，把stable點開來後找"pieeprom"開頭後面日期比較新的，並把該檔案的路徑打上去，不懂可以看4-2範例修改</p></i>
 <p><i>4-2.ex:"sudo rpi-eeprom-update -d -f /lib/firmware/raspberrypi/bootloader/stable/pieeprom-2020-07-16.bin"</p></i>
-<p><i>4-3.在3-1提到會做不更動的動作是因為做"sudo rpi-eeprom-update -d -f "的"-d -f"強制動作時就會忽略rpi-eeprom-update的範圍設置，若選擇為"stable"未來的可能會接收到"stable"版的更新套件而不是原始的"critical"版套件，相對選"critical"若更新eeprom套件時可能會有刷回去一開始無法使用USB開機風險(不過就情況來看是很小的，通常偵測到更新的固件日期是不會有用舊換掉新的情況)，穩定程度"critical">"stable">"beta"(關鍵>穩定>測試)</p></i>
+<p><i>4-3.在3-1提到會做不更動的動作是因為做"sudo rpi-eeprom-update -d -f "的"-d -f"強制動作時就會忽略rpi-eeprom-update的範圍設置，若選擇為"stable"未來的可能會接收到"stable"版的更新套件而不是原始的"critical"版套件，相對選"critical"若更新eeprom套件時可能會有刷回去一開始無法使用USB開機風險(事實證明不會，就算"critical"日期比"stable"還新也是不會換掉，但也因此要手動處裡eeprom套件)，穩定程度"critical">"stable">"beta"(關鍵>穩定>測試)</p></i>
 
 <p><i>5-1.完成之後照影片方式重新啟動</p></i>
 <p><i>5-2.再次輸入"vcgencmd bootloader_version"查看是否和"pieeprom"後寫的日期一致</p></i>
