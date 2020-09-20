@@ -17,9 +17,9 @@
   padding: 15px;
   border-radius: 4px;
 }
-#A{ color:#FF0000
+.A{ color:#FF0000
 }
-#B{ color:#FF5900
+.B{ color:#FF5900
 }
 a:hover, a:active {
   background-color: #FF5757;
@@ -30,6 +30,7 @@ a.home:link, a.home:visited {
 a.home:active {
   color: red;
 }
+.p_center{padding-left: 35%;}
 </style></head>
 <body>
 <button onclick="topFunction()" id="myBtn" title="回頂端">TOP</button>
@@ -54,28 +55,28 @@ function topFunction() {
 <center><a href="../index.html" class="home">回首頁</a></center>
 <h1>Raspberry Pi 已知說明</h1>
 <br><hr>
-<center><h2>降電壓</h2>
+<h2>降電壓(電壓過低)</h2>
 <img src="../pictures/under_volt.png">
-<p><u><div id=B>原因:這代表著電力提供不足而導致終點端電壓過度下降(低於4.63V (+/-5%))，會調降CPU時鐘性能，需要更換符合指定的線材跟電源，若不需要太麻煩可以直接買他們的電源直接來用即可</p></u></div>
-<p><u><div id=A>影響:會影響USB跟SD卡的運作，長期使用下會有損壞的可能性</p></u></div><hr>
+<p><u><div class="B p_center">原因:這代表著電力提供不足而導致終點端電壓過度下降(低於4.63V (+/-5%))，會調降CPU時鐘性能，需要更換符合指定的線材跟電源，若不需要太麻煩可以直接買他們的電源直接來用即可</p></u></div>
+<p><u><div class="A p_center">影響:會影響USB跟SD卡的運作，長期使用下會有損壞的可能性</p></u></div><hr>
 <h2>過熱(80~85°C)</h2>
 <img src="../pictures/over_temperature_80_85.png">
-<p><u><div id=B>原因:溫度已經到達80~85°C，會調降CPU時鐘性能，需要更換或使用主動式散熱或被動式散熱</p></u></div>
-<p><u><div id=A>影響:可能導致機器跟週邊的運行壽命縮短</p></u></div><hr>
+<p><u><div class="B p_center">原因:溫度已經到達80~85°C，會調降CPU時鐘性能，需要更換或使用主動式散熱或被動式散熱</p></u></div>
+<p><u><div class="A p_center">影響:可能導致機器跟週邊的運行壽命縮短</p></u></div><hr>
 <h2>過熱(85°C 以上)</h2>
 <img src="../pictures/over_temperature_85.png">
-<p><u><div id=B>原因:溫度已經到達85°C以上，會調降CPU跟GPU時鐘性能，建議立即關機散熱，並更換或使用主動式散熱或被動式散熱</p></u></div>
-<p><u><div id=A>影響:可能導致機器跟週邊的運行壽命縮短甚至損壞</p></u></div><hr>
+<p><u><div class="B p_center">原因:溫度已經到達85°C以上，會調降CPU跟GPU時鐘性能，建議立即關機散熱，並更換或使用主動式散熱或被動式散熱</p></u></div>
+<p><u><div class="A p_center">影響:可能導致機器跟週邊的運行壽命縮短甚至損壞</p></u></div><hr>
 <h2>主動式散熱</h2>
 <img src="../pictures/activecool.jpeg" width=640 height=360>
 <p>用風扇把熱氣帶走，需要時可以加散熱片一起使用</p>
-<p><u>好處:可以維持一定溫度不再上升</p></u>
-<p><u>適合:長時間運算操作、超頻玩家、保持低溫運作等</p></u><hr>
+<p><u><div class="p_center">好處:可以維持一定溫度不再上升</p></u></div>
+<p><u><div class="p_center">適合:長時間運算操作、超頻玩家、保持低溫運作等</p></u></div><hr>
 <h2>被動式散熱</h2>
 <img src="../pictures/passivecool.jpeg" width=640 height=360>
 <p>純粹利用散熱片把熱導出來並慢慢消去而無使用風扇</p>
-<p><u>好處:由於不需風扇，降低了耗電並增加了安靜感</p></u>
-<p><u>適合:短時間運算操作、長時間待機、後續清理容易等</p></u><hr>
+<p><u><div class="p_center">好處:由於不需風扇，降低了耗電並增加了安靜感</p></u></div>
+<p><u><div class="p_center">適合:短時間運算操作、長時間待機、後續清理容易等</p></u></div><hr>
 <br><br>
 <center><p><u><i><b>E N D</p></u></i></b></center>
 </body>
