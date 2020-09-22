@@ -27,11 +27,12 @@ a.home:active {
   color: red;
 }
 
-  #A{color:#C60000;}
-  #B{color:#C600C0;}
-  #C{color:#8600C6;}
-  #D{color:#5500C6;}
-  #E{color:#0029C6;}
+  .A{color:#C60000;}
+  .B{color:#C600C0;}
+  .C{color:#8600C6;}
+  .D{color:#5500C6;}
+  .E{color:#0029C6;}
+  .p_center{padding-left: 25%;}
 </style></head>
 <body>
 <button onclick="topFunction()" id="myBtn" title="回頂端">TOP</button>
@@ -59,7 +60,7 @@ function topFunction() {
   
 <hr>
   
-<div id="A"><h2>APT運用</h2>
+<div class="A p_center"><h2>APT運用</h2>
 <h3>更新</h3>
 <p><i>sudo apt update  (需要時再改成apt-get)</p></i>
 <h3>升級</h3>
@@ -83,7 +84,7 @@ function topFunction() {
 
 <hr>
 
-<div id="B"><h2>已知套件</h2>
+<div class="B p_center"><h2>已知套件</h2>
 <p><u>"apt"有問題的話再改成"apt-get"看看</p></u>
 <h3>支援exFAT(FAT64)</h3>
 <p><i>sudo apt install exfat-utils</p></i>
@@ -131,7 +132,7 @@ function topFunction() {
 
 <hr>
 
-<div id="C"><h2>其他指令</h2>
+<div class="C p_center"><h2>其他指令</h2>
 <h3>刪除</h3>
 <p><i>檔案 => (先用"cd"調整該檔資料夾的位置)<u>rm XX.xxx</u>  假如你要刪除/ZZZ/XXX的XX.xxx檔案,用cd定位到/ZZZ/XXX的位置後在用rm刪除該檔案   或是直接指定路徑也可 例如:rm /ZZZ/XXX/XX.xxx</p></i>
 <p><i>資料夾 => (先用"cd"調整該資料夾的位置)<u>rm -r XXX</u>  假如你要刪除/ZZZ/XXX的XXX資料夾，那要用cd定位到/ZZZ的位置在用rm -r把XXX資料夾刪除 或是直接指定路徑也可 例如:rm -r /ZZZ/XXX</p></i>
@@ -162,7 +163,7 @@ function topFunction() {
 
 <hr>
 
-<div id="D"><h2>vi簡單用法</h2>
+<div class="D p_center"><h2>vi簡單用法</h2>
 <h3>操作模式</h3>
 <p><i>a 由游標之後進行寫入模式</p></i>
 <p><i>i 由游標之前進行寫入模式</p></i>
@@ -179,7 +180,7 @@ function topFunction() {
 
 <hr>
 
-<div id="E"><h2>其他操作(LX終端機)</h2>
+<div class="E p_center"><h2>其他操作(LX終端機)</h2>
 <p><b>>(建立檔案)</p></b>
 <p><b>touch(建立檔案或修改檔案時間)</p></b>
 <p><b>cat(瀏覽或編輯文字檔)</p></b>
