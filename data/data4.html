@@ -32,7 +32,7 @@ a.home:active {
   .C{color:#8600C6;}
   .D{color:#5500C6;}
   .E{color:#0029C6;}
-  .p_center{padding-left: 25%;}
+  .p_center{padding-left: 1525%;}
 </style></head>
 <body>
 <button onclick="topFunction()" id="myBtn" title="回頂端">TOP</button>
@@ -60,8 +60,8 @@ function topFunction() {
   
 <hr>
   
-<div class="A p_center"><h2>APT運用</h2>
-<h3>更新</h3>
+<div class="A"><h2>APT運用</h2>
+<div class="p_center"><h3>更新</h3>
 <p><i>sudo apt update  (需要時再改成apt-get)</p></i>
 <h3>升級</h3>
 <p><i>sudo apt upgrade (需要時再改成apt-get)</p></i>
@@ -80,12 +80,12 @@ function topFunction() {
 <h3>清除之前安裝(install)的安裝檔</h3>
 <p><i>sudo apt clean (需要時再改成apt-get)</p></i>
 <h3>清除之前下載的安裝檔，但不刪除已安裝軟體的安裝檔</h3>
-<p><i>sudo apt autoclean (需要時再改成apt-get)</p></i></div>
+<p><i>sudo apt autoclean (需要時再改成apt-get)</p></i></div></div>
 
 <hr>
 
-<div class="B p_center"><h2>已知套件</h2>
-<p><u>"apt"有問題的話再改成"apt-get"看看</p></u>
+<div class="B"><h2>已知套件</h2>
+<div class="p_center"><p><u>"apt"有問題的話再改成"apt-get"看看</p></u>
 <h3>支援exFAT(FAT64)</h3>
 <p><i>sudo apt install exfat-utils</p></i>
 <p><i>sudo apt install exfat-fuse</p></i>
@@ -128,12 +128,12 @@ function topFunction() {
 <h3>Firefox瀏覽器(Firefox ESR)</h3>
 <p><i>sudo apt install firefox-esr</p></i>
 <h3>Chromium瀏覽器</h3>
-<p><i>sudo apt install chromium-browser</p></i></div>
+<p><i>sudo apt install chromium-browser</p></i></div></div>
 
 <hr>
 
-<div class="C p_center"><h2>其他指令</h2>
-<h3>刪除</h3>
+<div class="C"><h2>其他指令</h2>
+<div class="p_center"><h3>刪除</h3>
 <p><i>檔案 => (先用"cd"調整該檔資料夾的位置)<u>rm XX.xxx</u>  假如你要刪除/ZZZ/XXX的XX.xxx檔案,用cd定位到/ZZZ/XXX的位置後在用rm刪除該檔案   或是直接指定路徑也可 例如:rm /ZZZ/XXX/XX.xxx</p></i>
 <p><i>資料夾 => (先用"cd"調整該資料夾的位置)<u>rm -r XXX</u>  假如你要刪除/ZZZ/XXX的XXX資料夾，那要用cd定位到/ZZZ的位置在用rm -r把XXX資料夾刪除 或是直接指定路徑也可 例如:rm -r /ZZZ/XXX</p></i>
 <h3>安裝.deb檔</h3>
@@ -159,12 +159,12 @@ function topFunction() {
 <p><i>  sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run >/dev/null 2>&1</p></i>
 <p><i>done</p></i>
 <br> 
-<p><i>vcgencmd measure_temp</p></i></div>
+<p><i>vcgencmd measure_temp</p></i></div></div>
 
 <hr>
 
-<div class="D p_center"><h2>vi簡單用法</h2>
-<h3>操作模式</h3>
+<div class="D"><h2>vi簡單用法</h2>
+<div class="p_center"><h3>操作模式</h3>
 <p><i>a 由游標之後進行寫入模式</p></i>
 <p><i>i 由游標之前進行寫入模式</p></i>
 <p><i>o 新增一行於該行之下進行寫入模式(如同Enter鍵後開始打字)</p></i>
@@ -176,12 +176,12 @@ function topFunction() {
 <p><i>:wq 存檔後離開(強制更新檔案的修改時間)</p></i>
 <p><i>!為強制性，在字母後輸入。示範 :q! 就是強制退出 :w! 就是強制存檔</p></i>
 <h3>寫入模式</h3>
-<p><i>[Esc] 退出寫入模式到操作模式</p></i></div>
+<p><i>[Esc] 退出寫入模式到操作模式</p></i></div></div>
 
 <hr>
 
-<div class="E p_center"><h2>其他操作(LX終端機)</h2>
-<p><b>>(建立檔案)</p></b>
+<div class="E"><h2>其他操作(LX終端機)</h2>
+<div class="p_center"><p><b>>(建立檔案)</p></b>
 <p><b>touch(建立檔案或修改檔案時間)</p></b>
 <p><b>cat(瀏覽或編輯文字檔)</p></b>
 <p><b>cat>文字檔(新增文字檔或覆蓋原有的文字並編輯)</p></b>
@@ -190,7 +190,7 @@ function topFunction() {
 <p><b>[Ctrl]+[D](存檔在cat編寫的文字)</p></b>
 <p><b>[Ctrl]+[C](中止目前的執行)</p></b>
 <p><b>[Ctrl]+[Shift]+[C] (複製，相當於一般在用的[Ctrl]+[C])</p></b>
-<p><b>[Ctrl]+[Shift]+[V] (貼上，相當於一般在用的[Ctrl]+[V])</p></b></div>
+<p><b>[Ctrl]+[Shift]+[V] (貼上，相當於一般在用的[Ctrl]+[V])</p></b></div></div>
 
 <br>
 
