@@ -140,7 +140,11 @@ function topFunction() {
 <p><i>(先用"cd"調整該檔資料夾的位置)sudo dpkg -i *.deb</p></i>
 <h2>溫度狀態</h2>
 <p><i>vcgencmd measure_temp</p></i>
+<h4>連續顯示</h4>
+<p><i>watch -n 0 vcgencmd measure_temp  ("0"為0.1秒刷新。若改為"1"為1秒刷新、"2"為2秒刷新，以此類推)</p></i>
 <h2>時鐘速度狀態</h2>
+<p><i>vcgencmd measure_clock arm</p></i>
+<h4>連續顯示</h4>
 <p><i>watch -n 0 vcgencmd measure_clock arm  ("0"為0.1秒刷新。若改為"1"為1秒刷新、"2"為2秒刷新，以此類推)</p></i>
 <h2>卸載USB</h2>
 <p><i>sudo eject /dev/sdXX(XX是移除該位置的裝置。可以用"fdisk -l"檢視該裝置的位置)</p></i>
