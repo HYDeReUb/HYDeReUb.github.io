@@ -62,29 +62,29 @@ function topFunction() {
   
 <span style="color:#C60000"><h2>APT運用</h2></span>
 <div class="A p_center"><h2>更新</h2>
-<p><i>sudo apt update  (需要時再改成apt-get)</p></i>
+<p><i><span style="color:#065E50">sudo apt update</span>  (需要時再改成apt-get)</p></i>
 <h2>升級</h2>
-<p><i>sudo apt upgrade (需要時再改成apt-get)</p></i>
+<p><i><span style="color:#065E50">sudo apt upgrade</span> (需要時再改成apt-get)</p></i>
 <h2>完整升級</h2>
-<p><i>sudo apt full-upgrade (apt-get為另一條指令，無法套用)</p></i>
+<p><i><span style="color:#065E50">sudo apt full-upgrade</span> (apt-get為另一條指令，無法套用)</p></i>
 <h2>新增 PPA 個人套件庫</h2>
-<p><i>sudo add-apt-repository ppa:</p></i>
+<p><i><span style="color:#065E50">sudo add-apt-repository ppa:</span></p></i>
 <h2>移除 PPA 個人套件庫</h2>
-<p><i>sudo add-apt-repository --remove ppa:</p></i>
+<p><i><span style="color:#065E50">sudo add-apt-repository --remove ppa:</span></p></i>
 <h2>安裝套件</h2>
-<p><i>sudo apt install (套件名稱) (需要時再改成apt-get)</p></i>
+<p><i><span style="color:#065E50">sudo apt install</span> (套件名稱) (需要時再改成apt-get)</p></i>
 <h2>移除套件</h2>
-<p><i>sudo apt purge (套件名稱) (需要時再改成apt-get)</p></i><p>或  <i>sudo apt remove --purge '(套件名稱)' (需要時再改成apt-get)</p></i>
+<p><i><span style="color:#065E50">sudo apt purge</span> (套件名稱) (需要時再改成apt-get)</p></i><p>或  <i>sudo apt remove --purge '(套件名稱)' (需要時再改成apt-get)</p></i>
 <h2>自動移除套件(相依套件)</h2>
-<p><i>sudo apt autoremove (需要時再改成apt-get)</p></i>
+<p><i><span style="color:#065E50">sudo apt autoremove</span> (需要時再改成apt-get)</p></i>
 <h2>清除之前安裝(install)的安裝檔</h2>
-<p><i>sudo apt clean (需要時再改成apt-get)</p></i>
+<p><i><span style="color:#065E50">sudo apt clean</span> (需要時再改成apt-get)</p></i>
 <h2>清除之前下載的安裝檔，但不刪除已安裝軟體的安裝檔</h2>
-<p><i>sudo apt autoclean (需要時再改成apt-get)</p></i></div>
+<p><i><span style="color:#065E50">sudo apt autoclean</span> (需要時再改成apt-get)</p></i></div>
 
 <hr>
 
-<span style="color:#065E50"><h2>已知套件</h2>
+<span style="color:#C600C0"><h2>已知套件</h2>
 <p><u>"apt"有問題的話再改成"apt-get"看看</p></u></span>
 <div class="B p_center"><h2>支援exFAT(FAT64)</h2>
   <span style="color:#065E50"><p><i>sudo apt install exfat-utils</p></i></span>
@@ -151,10 +151,10 @@ function topFunction() {
 <h2>vchiq影片播放問題</h2>
 <span style="color:#065E50"><p><i>sudo chmod 447(最大權限777) /dev/vchiq</p></i></span>
 <h2>給予使用Bash權限</h2>
-<p><i>(先用"cd"調整該檔資料夾的位置)chmod u+x P.sh ("P"是檔案名稱，副檔名為".sh")</p></i>
+<p><i>(先用"cd"調整該檔資料夾的位置)<span style="color:#065E50">chmod u+x P.sh</span> ("P"是檔案名稱，副檔名為".sh")</p></i>
 <h2>CPU 10次壓力溫度測試(sh腳本)</h2>
 <p><u>(來自ExplainingComputers.com)</p></u>
-<p><i>#! /bin/bash</p></i>
+<span style="color:#065E50"><p><i>#! /bin/bash</p></i>
 <p><i>clear</p></i>
 <br>
 <p><i>for x in {1..10}</p></i>
@@ -163,7 +163,7 @@ function topFunction() {
 <p><i>  sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run >/dev/null 2>&1</p></i>
 <p><i>done</p></i>
 <br> 
-<p><i>vcgencmd measure_temp</p></i></div>
+<p><i>vcgencmd measure_temp</p></i></div></span>
 
 <hr>
 
