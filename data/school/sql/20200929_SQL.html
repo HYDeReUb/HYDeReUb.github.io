@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html><title>20200929_SQL</title>
+<head><meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color:white;
+  color:gray;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+a:hover, a:active {
+  background-color: #FF5757;
+}
+a.home:link, a.home:visited {
+ color:#3838BD;
+}
+a.home:active {
+  color: red;
+}
+</style></head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="回頂端">TOP</button>
+<script>
+var mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<center><a href="../index.html" class="home">回首頁</a></center>
+<h1>20200929_SQL</h1>
+
+<p>-- 20200922</p>
+<p>-- 列出所有學號與姓名</p>
+<p>SELECT sid, name FROM students</p>
+
+<p>-- 列出所有學生的資料</p>
+<p>SELECT sid, name, tel, birthday, gpa</p>
+<p>FROM students</p>
+
+<p>SELECT * FROM students</p>
+
+<p>-- 列出所有課程資料+已加的學分數(AS 別名)</p>
+<p>SELECT *, credits+2 AS 已加學分數 FROM courses</p>
+
+<p>-- 列出所有學生資料(以中文名稱為欄位別名)</p>
+<p>SELECT sid AS 學號 , name AS 姓名, birthday 生日, tel 電話, gpa 成績</p>
+<p>FROM students</p>
+
+<p>-- 2020/09/29</p>
+<p>-- 列出所有學生資料+年齡</p>
+<p>SELECT *, YEAR(CURRENT_DATE())-YEAR(birthday) AS 年齡 FROM students</p>
+
+<p>-- 使用DATEDIFF()做日期差異--不適合計算年齡</p>
+<p>SELECT *, DATEDIFF(CURRENT_DATE(), birthday)/365 AS 年齡 FROM students</p>
+
+<p>-- 列出所有在選課資料(Classes)的學號(sid)--不重複DISTINCT</p>
+<p>SELECT DISTINCT sid FROM classes</p>
+
+<p>-- WHERE 條件 篩選</p>
+<p>-- 找出[陳會安]的學生資料(students)</p>
+<p>SELECT * FROM students WHERE name = '陳會安'</p>
+
+<p>-- 找出 GPA>3 的學生</p>
+<p>SELECT * FROM students WHERE gpa > 3</p>
+
+<p>-- 找出選課(Classes)成績(score)在70-80之間</p>
+<p>SELECT * FROM classes WHERE (score >= 70) AND (score <= 80)</p>
+
+<p>-- 找出選課(Classes)成績(score)在70-80之間(BETWEEN AND)</p>
+<p>SELECT * FROM classes WHERE score BETWEEN 70 AND 80</p>
+
+<p>-- 找出選課(Classes)成績(score)在70-80之外</p>
+<p>SELECT * FROM classes WHERE (score < 70) OR (score > 80)</p>
+
+<p>-- 找出選課(Classes)成績(score)在70-80之外(BETWEEN AND)</p>
+<p>-- 較快</p>
+<p>SELECT * FROM classes WHERE score NOT BETWEEN 70 AND 80</p>
+<p>-- 較慢</p>
+<p>SELECT * FROM classes WHERE NOT score BETWEEN 70 AND 80</p>
+
+<p>-- 找出**不是[陳會安]的學生資料(students)</p>
+<p>SELECT * FROM students WHERE name <> '陳會安'</p>
+
+<p>-- 找出學生年齡在30-40之間</p>
+<p>SELECT *, YEAR(CURRENT_DATE())-YEAR(birthday) AS 年齡 FROM students</p>
+  WHERE YEAR(CURRENT_DATE())-YEAR(birthday) BETWEEN 30 AND 40</p>
+
+<p>-- 找出1980年後出生的學生</p>
+<p>SELECT * FROM students WHERE birthday >= '1980/01/01'</p>
+
+<p>-- 找出1981年出生的學生</p>
+<p>SELECT * FROM students WHERE birthday >= '1981/01/01' AND birthday <= '1981/12/31'</p>
+
+<p>SELECT * FROM students WHERE birthday BETWEEN '1981/01/01' AND '1981/12/31'</p>
+
+<p>-- LIKE 字串</p>
+</body></html>
