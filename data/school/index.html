@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<body onload="startTime()">
+<style> aside {
+  width:50%;
+  padding-left: 25%;
+  margin-left:0%;
+  float:left;
+}
+
+a.Url_Block:link, a.Url_Block:visited {
+  background-color: orange;
+  color: white;
+  padding: 60px 25px;
+  padding-right: 0px;
+  text-decoration: none;
+  display: block;
+}
+
+a.Url_Block0:hover, a.Url_Block0:active {
+  background-color: red;
+}
+a.Url_Block0:active {
+  color: #2AD944;
+}
+
+a.Url_Block2:link, a.Url_Block2:visited {
+  background-color: #353230;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+a.Url_Block2:hover, a.Url_Block2:active {
+  background-color: green;
+}
+a.Url_Block2:active {
+  color: #353230;
+}
+
+
+a.URL:link, a.URL:visited {
+ color:#387A2A;
+}
+a.URL:hover, a.URL:active {
+  background-color: #FF5757;
+}
+a.URL:active{
+ color:red;
+}
+
+
+#a {
+  background-color: purple;
+  color: white;
+  padding: 2px 10px;
+}
+
+
+#top{padding-left: 10px;}
+
+</style>
+<head>
+<title>教師上課資料</title>
+  
+<div id="top"><h1><span style="color:#2997F4">教師上課資料</span></h1><h3><span style="color:#3481B4"><div id="time"></div></div></span></h3>
+<script>
+function startTime() {
+  var today = new Date();
+
+  var y = today.getFullYear();
+  var M = today.getMonth();
+  var D = today.getDate();
+  var d = today.getDay();
+
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+
+  m = checkTime(m);
+  s = checkTime(s);
+
+ M+=1;
+ if (d<1){dd="星期日"}else if (d<2){dd="星期一"}else if (d<3){dd="星期二"}else if (d<4){dd="星期三"}else if (d<5){dd="星期四"}else if (d<6){dd="星期五"}else if (d<7){dd="星期六"} else {dd="_???"}
+
+  document.getElementById("time").innerHTML = y + "/" + M + "/" + D + dd + " " + h + ":" + m + ":" + s;
+  var t = setTimeout(function(){ startTime() }, 500);
+}
+
+function checkTime(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
+</script>
+</head>
+<body>
+
+<aside>
+<div id="a"><p><b>SQL</p></b></div> <!+--DATA-->
+<p><a href="./sql/20200929_SQL.html" class="Url_Block0 Url_Block"><b>20200929_SQL</b></a></p> 
+<p><a href="..../index.html" class="Url_Block2"><b>回首頁</b></a></p> 
+</div>
+</aside>
+
+
+</body>
+</html>
