@@ -144,6 +144,16 @@ function topFunction() {
 <p><i>7.點擊"自動移除"後打勾"時間超過"並設定你要它自動刪除的天數，我幾乎每天都用所以是輸入5並選擇天，也就是5天後的檔案會自動刪除，下面的"剩餘空間少於"跟"If free inodes is less than"打勾並保持默認值就好(或者這兩個可不勾?我是不太清楚)</p></i>
 <p><i>8.確認設定的資料沒問題後點擊"OK"即可完成，只要到了或超過你指定的時間就會開始備份</p></i>
 <p><i>9.若想還原的話，去"開始(樹莓派LOGO)">"系統工具">"Back In Time(root)"輸入root或pi的密碼後，點擊要還原的日期時間，按上方"還原">"還原"，跳出視窗後點擊"Yes"(勾的用途我不太確定，所以沒去勾)即可還原</p></i>
+<hr>
+
+<h2>4=>手動更新時間</h2>
+<p><i>輸入"sudo apt install ntpdate"後輸入"sudo ntpdate -s time.stdtime.gov.tw"即可更新Raspberry Pi時間
+<p><i>若輸入"sudo ntpdate -s time.stdtime.gov.tw"仍然無法更新時間的話，可以嘗試看看以下的時間伺服器網址</p></i>
+<p><i>tock.stdtime.gov.tw</p></i>
+<p><i>watch.stdtime.gov.tw</p></i>
+<p><i>clock.stdtime.gov.tw</p></i>
+<p><i>tick.stdtime.gov.tw</p></i>
+
 <br>
 <center><p><u><i><b>E N D</p></u></i></b></center>
 </body>
