@@ -7,6 +7,7 @@
 # 紀錄:
 ## 20201001
 ```
+在有使用到JavaScript的地方加入"無JavaScript警告"
 更新"data5.html"的資料
 更新"data3.html"的資料
 ```
