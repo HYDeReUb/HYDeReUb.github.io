@@ -27,6 +27,7 @@ a.home:link, a.home:visited {
 a.home:active {
   color: red;
 }
+.text_LR_move{padding-left:20px;padding-right:20px;}
 </style></head>
 <body>
 <button onclick="topFunction()" id="myBtn" title="回頂端">TOP</button>
@@ -54,7 +55,7 @@ function topFunction() {
 
 <span style="color:#9800C5"><h1>已知問題</h1></span>
 <hr>
-<u><p>參考此篇前請先詳閱<a href="./data3.html"><span style="font-weight:bold">Raspberry Pi 已知說明</span></a></u></p>
+<div class="text_LR_move"><u><p>參考此篇前請先詳閱<a href="./data3.html"><span style="font-weight:bold">Raspberry Pi 已知說明</span></a></u></p>
 <h2>USB部份</h2>
 <p><i>1.若要提供SSD、HDD、光碟機這樣的高耗電外接裝置時，在足夠電力的情況下只能選一個來使用，若同時使用兩個會不夠電並發生問題</p></i>
 <p><i>2.若上述要使用2個以上時，只能接HUB並確保線材與電源提供電量充足</p></i>
@@ -68,12 +69,12 @@ function topFunction() {
 <p><i>2.建議在執行格式化或移動檔案這樣的操作時，別執行其他程式來多工操作，避免使用量過高強關或重起導致資料毀損，也確保沒有顯示降電壓符號</p></i>
 <h2>其他部份</h2>
 <p><i>1.GPIO不要做熱插拔的動作，更不能短路3V3接腳，否則易造成損壞(Raspberry Pi 3 Model B+只要GND或5V去接觸3V3接腳，直接掛點!)</p></i>
-<p><i>2.若出現降電壓符號或系統停擺時，確認電源跟線材的負荷量以及USB或GPIO的耗電量，做出適當的調整</p></i>
+<p><i>2.若出現降電壓符號或系統停擺時，確認電源跟線材的負荷量以及USB或GPIO的耗電量，做出適當的調整</p></i></div>
 
 <span style="color:#2D00C5"><h1>已知操作</h1></span>
 <hr>
 
-<h2>1=>初始使用Raspberry Pi</h2>
+<div class="text_LR_move"><h2>1=>初始使用Raspberry Pi</h2>
 <h3>下載區:</h3>
 <b><a href="https://www.raspberrypi.org/downloads/" target="_blank">https://www.raspberrypi.org/downloads/</a></b><br>
 <p>一開始不確定要用哪個系統和不會燒錄SD卡者，可以選NOOBS使用</p>
@@ -153,7 +154,7 @@ function topFunction() {
 <p><i>watch.stdtime.gov.tw</p></i>
 <p><i>clock.stdtime.gov.tw</p></i>
 <p><i>tick.stdtime.gov.tw</p></i>
-<a href="https://p501lab.blogspot.com/2014/09/ntp_29.html" target="_blank"><span style="font-weight:bold">https://p501lab.blogspot.com/2014/09/ntp_29.html</a></span>
+<a href="https://p501lab.blogspot.com/2014/09/ntp_29.html" target="_blank"><span style="font-weight:bold">https://p501lab.blogspot.com/2014/09/ntp_29.html</a></span></div>
 
 <br>
 <center><p><u><i><b>E N D</p></u></i></b></center>
