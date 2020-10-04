@@ -57,7 +57,7 @@ function topFunction() {
 
 
 <center><a href="../index.html" class="home">回首頁</a></center>
-<h1>Raspberry Pi OS指令使用與套件安裝</h1>
+<h1>Ubuntu(Debian) & Raspberry Pi OS指令使用與套件安裝</h1>
   
 <hr>
   
@@ -120,7 +120,7 @@ function topFunction() {
 <span style="color:#065E50"><p><i>sudo apt install gparted</p></i></span>
 <h2>Nautilus檔案瀏覽器(GNOME檔案瀏覽器)</h2>
 <span style="color:#065E50"><p><i>sudo apt install nautilus</p></i></span>
-<h2>Audacity(錄音與音訊編輯器，須搭配USB聲卡使用)</h2>
+<h2>Audacity(錄音與音訊編輯器，Raspberry Pi須搭配USB聲卡使用)</h2>
 <span style="color:#065E50"><p><i>sudo apt install audacity</p></i></span>
 <h2>Kdenlive(影片編輯器)</h2>
 <span style="color:#065E50"><p><i>sudo apt install kdenlive</p></i></span>
@@ -143,11 +143,11 @@ function topFunction() {
 <p><i>資料夾 => (先用"cd"調整該資料夾的位置)<span style="color:#065E50"><u>rm -r XXX</u></span>  假如你要刪除/ZZZ/XXX的XXX資料夾，那要用cd定位到/ZZZ的位置在用rm -r把XXX資料夾刪除 或是直接指定路徑也可 例如:rm -r /ZZZ/XXX</p></i>
 <h2>安裝.deb檔</h2>
 <p><i>(先用"cd"調整該檔資料夾的位置)<span style="color:#065E50">sudo dpkg -i *.deb</p></i></span>
-<h2>溫度狀態</h2>
+<h2>溫度狀態(限Raspberry Pi使用)</h2>
 <span style="color:#065E50"><p><i>vcgencmd measure_temp</p></i></span>
 <h4>連續顯示</h4>
 <span style="color:#065E50"><p><i>watch -n 0 vcgencmd measure_temp  ("0"為0.1秒刷新。若改為"1"為1秒刷新、"2"為2秒刷新，以此類推)</p></i></span>
-<h2>時鐘速度狀態</h2>
+<h2>時鐘速度狀態(限Raspberry Pi使用)</h2>
 <span style="color:#065E50"><p><i>vcgencmd measure_clock arm</p></i></span>
 <h4>連續顯示</h4>
 <span style="color:#065E50"><p><i>watch -n 0 vcgencmd measure_clock arm  ("0"為0.1秒刷新。若改為"1"為1秒刷新、"2"為2秒刷新，以此類推)</p></i></span>
@@ -157,7 +157,7 @@ function topFunction() {
 <span style="color:#065E50"><p><i>sudo chmod 447(最大權限777) /dev/vchiq</p></i></span>
 <h2>給予使用Bash權限</h2>
 <p><i>(先用"cd"調整該檔資料夾的位置)<span style="color:#065E50">chmod u+x P.sh</span> ("P"是檔案名稱，副檔名為".sh")</p></i>
-<h2>CPU 10次壓力溫度測試(sh腳本)</h2>
+<h2>CPU 10次壓力溫度測試(sh腳本，限Raspberry Pi使用)</h2>
 <p><u>(來自ExplainingComputers.com)</p></u>
 <span style="color:#065E50"><p><i>#! /bin/bash</p></i>
 <p><i>clear</p></i>
