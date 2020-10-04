@@ -7,9 +7,10 @@
 # 紀錄:
 ## 20201001
 ```
+更新"data4.html"的資料
+更新"index.html"的資料
 rename:"Raspberry Pi OS指令使用與套件安裝" to "Ubuntu(Debian) & Raspberry Pi OS指令使用與套件安裝"
 更新"data5.html"的資料
-更新"data4.html"的資料
 ```
 ## 20201001
 ```
