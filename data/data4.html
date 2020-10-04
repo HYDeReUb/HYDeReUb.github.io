@@ -141,6 +141,10 @@ function topFunction() {
 <div class="C p_center"><h2>刪除</h2>
 <p><i>檔案 => (先用"cd"調整該檔資料夾的位置)<span style="color:#065E50"><u>rm XX.xxx</u></span>  假如你要刪除/ZZZ/XXX的XX.xxx檔案,用cd定位到/ZZZ/XXX的位置後在用rm刪除該檔案   或是直接指定路徑也可 例如:rm /ZZZ/XXX/XX.xxx</p></i>
 <p><i>資料夾 => (先用"cd"調整該資料夾的位置)<span style="color:#065E50"><u>rm -r XXX</u></span>  假如你要刪除/ZZZ/XXX的XXX資料夾，那要用cd定位到/ZZZ的位置在用rm -r把XXX資料夾刪除 或是直接指定路徑也可 例如:rm -r /ZZZ/XXX</p></i>
+<h2>硬體查詢</h2>
+<span style="color:#065E50">sudo dmidecode</span>
+<h4>查找指定欄位(ex:type 17)</h4>
+<span style="color:#065E50">sudo dmidecode --type 17</span>
 <h2>安裝.deb檔</h2>
 <p><i>(先用"cd"調整該檔資料夾的位置)<span style="color:#065E50">sudo dpkg -i *.deb</p></i></span>
 <h2>溫度狀態(限Raspberry Pi使用)</h2>
