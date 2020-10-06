@@ -65,9 +65,11 @@ function topFunction() {
 <p>SELECT MAX(score) 最高成績, MIN(score) 最低成績, AVG(score) 平均成績 FROM classes WHERE sid = "S001"</p>
 <p>-- 找出S001的修課選課數，最高成績，最低成績，平均成績</p>
 <p>SELECT sid 學號, COUNT(*) 選課數, MAX(score) 最高成績, MIN(score) 最低成績, AVG(score) 平均成績 FROM classes WHERE sid = 'S001'</p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<p>-- 列出所有每位學生的修課選課數，最高成績，最低成績，平均成績</p>
+<p>SELECT sid 學號, COUNT(*) 選課數, MAX(score) 最高成績, MIN(score) 最低成績, AVG(score) 平均成績 FROM classes GROUP BY sid</p>
+<p>-- 列出每位教師(eid)所開的課程的課程數，及學生的平均成績</p>
+<p>SELECT eid 教師, COUNT(*) 開課數, AVG(score) 學生的平均成績 FROM classes GROUP BY eid</p>
+<p>-- 列出所有課程(c_no)的學生數(count)</p>
+<p>SELECT c_no 課程, COUNT(*) 學生數 FROM classes GROUP BY c_no</p>
+
 </body></html>
