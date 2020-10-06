@@ -7,7 +7,7 @@
 # 紀錄:
 ## 20201006
 ```
->remove "*.pdf" from "教師上課資料"
+>remove:"*.pdf" from "教師上課資料"
 更新"20200929_SQL.html"
 >Update:"20201006_SQL" to "教師上課資料"
 ```
