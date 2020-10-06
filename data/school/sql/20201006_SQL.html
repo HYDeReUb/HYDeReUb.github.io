@@ -77,12 +77,16 @@ function topFunction() {
   <p>-- 列出課程的學生數(count)>=2的課程</p>
   <p>-- 錯誤****SELECT c_no 課程, COUNT(*) 學生數 FROM classes WHERE COUNT(sid) > 2 GROUP BY c_no</p>
   <p>SELECT c_no 課程, COUNT(*) 學生數 FROM classes GROUP BY c_no HAVING COUNT(*) >= 2</p><br>
-  <p>--使用 northwind 資料庫</p>
+  <h3>使用 NorthWind 資料庫</h3>
   <p>-- 列出[飛狐工作室]的所有部門的各部門人數，平均薪資(目前薪資)，最高薪資，最低薪資(下面2條命令是一起的)</p>
   <p>SELECT 部門, COUNT(*) 人數, AVG(目前薪資) 平均薪資, MAX(目前薪資) 最高薪資, MIN(目前薪資) 最低薪資 FROM 飛狐工作室 GROUP BY 部門</p>
   <p>HAVING AVG(目前薪資)>30000</p><br>
   <p>-- 列出所有各姓氏的人數</p>
-  <p>SELECT LEFT(姓名, 1) AS 姓氏, COUNT(*) 人數 FROM 飛狐工作室 GROUP BY LEFT(姓名, 1)</p>
+  <p>SELECT LEFT(姓名, 1) AS 姓氏, COUNT(*) 人數 FROM 飛狐工作室 GROUP BY LEFT(姓名, 1)</p><br>
+  <p>-- 列出在公司內同姓名共多少人</p>
+  <p>SELECT 姓名, COUNT(*) 人數 FROM 飛狐工作室 GROUP BY 姓名 HAVING COUNT(*)>1</p><br>
+  <p>-- 列出所有各姓氏的人數(以人數作排序，大->小)</p>
+  <p>SELECT LEFT(姓名, 1) AS 姓氏, COUNT(*) 人數 FROM 飛狐工作室 GROUP BY LEFT(姓名, 1) ORDER BY 人數 DESC</p><br>
   
     <br><br><br>
     <center><p><u><i><b>E N D</p></u></i></b></center>
