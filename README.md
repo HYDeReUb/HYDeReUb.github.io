@@ -1,6 +1,6 @@
 ## ///我的範例網頁，[點擊這裡觀看](https://hydereub.github.io)///
 [https://hydereub.github.io](https://hydereub.github.io)
-<<作者:YuanSET(就是我自己XD)>><br>
+<<作者:YuanSET>><br>
 (Top跟時鐘這類的Javascript是從其他地方找來放的)
 
 -----------------------------------------------------
