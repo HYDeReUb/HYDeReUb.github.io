@@ -52,11 +52,20 @@ function topFunction() {
 <h1>20201006_SQL</h1>
 <br>
 <a href="./sqldown/20201006_SQL.zip" class="home">20201006_SQL範例下載(zip檔)</a>
-
+<p>-- 聚合函數</p>
 <p>--統計所有學生數</p>
 <p>SELECT COUNT(sid) AS 學生數 FROM students</p>
+<p>-- 統計所有GPA>3的學生數(兩種方法)</p>
+<p>SELECT COUNT(sid) AS GPA較高學生數 FROM students WHERE gpa > 3</p>
+<p>SELECT COUNT(*) AS GPA較高學生數 FROM students WHERE gpa > 3</p>
+<p>-- 統計 學生的 GPA 加總(SUM)，平均(AVG)，最高(MAX)，最低(MIN)</p>
+<p>SELECT SUM(gpa) TOTAL_GPA, AVG(gpa) AVERAGE_GPA, MAX(gpa) MAXIMUM_GPA, MIN(gpa) MINIMUM_GPA FROM students</p>
+<p>SELECT SUM(gpa) gpa加總, AVG(gpa) 平均gpa, MAX(gpa) 最高gpa, MIN(gpa) 最低gpa FROM students</p>
 <p></p>
 <p></p>
 <p></p>
-
+<p></p>
+<p></p>
+<p></p>
+<p></p>
 </body></html>
