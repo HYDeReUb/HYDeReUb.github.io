@@ -11,15 +11,15 @@
 ```
 ## 20201006
 ```
->remove:"*.pdf" from "教師上課資料"
+移除:"*.pdf" from "教師上課資料"
 更新"20200929_SQL.html"
->Update:"20201006_SQL" to "教師上課資料"
+新增:"20201006_SQL" to "教師上課資料"
 ```
 ## 20201001
 ```
 更新"data4.html"的資料
 更新"index.html"的資料
->rename:"Raspberry Pi OS指令使用與套件安裝" to "Ubuntu(Debian) & Raspberry Pi OS指令使用與套件安裝"
+重新命名:"Raspberry Pi OS指令使用與套件安裝" to "Ubuntu(Debian) & Raspberry Pi OS指令使用與套件安裝"
 更新"data5.html"的資料
 ```
 ## 20201001
