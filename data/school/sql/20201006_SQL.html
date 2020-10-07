@@ -100,11 +100,11 @@ function topFunction() {
   <p>--  MYSQL是錯誤*** SELECT TOP 10 LEFT(姓名, 1) AS 姓氏, COUNT(*) 人數 FROM 飛狐工作室 GROUP BY LEFT(姓名, 1) ORDER BY 人數 DESC</p>
   <p>SELECT LEFT(姓名, 1) AS 姓氏, COUNT(*) 人數 FROM 飛狐工作室 GROUP BY LEFT(姓名, 1) ORDER BY 人數 DESC LIMIT 10</p>
   <hr>
-  <p><span style="color:red;font-weight:bold">以下提示(老師沒給任何提示，還好有人已經知道了，故貼上分享)</span></p>
+  <p><span style="color:red;font-weight:bold">以下提示(老師沒給任何提示，還好有人已經知道了，就貼上來分享)</span></p>
   <p><span style="padding-left:30px;color:#048285;font-weight:bold">DESC</span>是由大往小排列，<span style="color:#048285;font-weight:bold">ASC</span>是由小往大排列</p>
-  <p><span style="padding-left:30px;color:#048285;font-weight:bold">HAVING</span>用在<span style="color:#048285;font-weight:bold">GROUP BY 名稱</span>的後面，行為跟<span style="color:#048285;font-weight:bold">WHERE</span>類似，但<color:#048285;font-weight:bold">HAVING</span>會直接取結果的地方進行而不像<span style="color:#048285;font-weight:bold">WHERE</span>取一開始的資料。EX:<span style="color:#048285">HAVING AVG(hello_world)=<0</span></p>
-  <a href="https://www.1keydata.com/tw/sql/sqlhaving.html"><span style="padding-left:30px>這是HAVING的參考網址</span></a>
-  <p><span style="padding-left:30px;color:#048285;font-weight:bold"></span>
+  <p><span style="padding-left:30px;color:#048285;font-weight:bold">HAVING</span>用在<span style="color:#048285;font-weight:bold">GROUP BY 名稱</span>的後面，行為跟<span style="color:#048285;font-weight:bold">WHERE</span>類似，但<color:#048285;font-weight:bold">HAVING</span>會直接取結果的地方進行而不像<span style="color:#048285;font-weight:bold">WHERE</span>取一開始的資料。使用範例:<span style="color:#048285">HAVING AVG(hello_world)=<0</span></p>
+  <a href="https://www.1keydata.com/tw/sql/sqlhaving.html"><span style="padding-left:30px">這是HAVING的參考網址</span></a>
+  <p><span style="padding-left:30px;color:#048285;font-weight:bold">!=''</span>是將<span style="color:#048285;font-weight:bold">''</span>也就是空文字過濾掉，用在WHERE或HAVING這種塞選動作的後面。使用範例:<span style="color:#048285">hello_world !=''</span></p>
   
     <br><br><br>
     <center><p><u><i><b>E N D</p></u></i></b></center>
