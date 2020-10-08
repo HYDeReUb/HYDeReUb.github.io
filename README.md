@@ -20,7 +20,7 @@
 更新"20200929_SQL.html"
 新增:"20201006_SQL" to "教師上課資料"
 ```
-## 20201001
+## 20201004
 ```
 更新"data4.html"的資料
 更新"index.html"的資料
@@ -81,9 +81,6 @@
 ```
 更新"index.html"的資料
 加入"dataG1.html"
-```
-## 20200912
-```
 更新"index.html"以及"data"資料夾中所有(README.md除外)的資料
 更新"Untitled.png"
 ```
