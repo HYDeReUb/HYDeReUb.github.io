@@ -73,14 +73,22 @@
 更新"index.html"的資料(學會運用padding-left)
 更新"dataG1.html"的資料
 ```
-## 20200913-20200915
+## 20200915
 ```
-記憶遺失(這裡是哪?我是誰? >_>?)
+更新"index.html"的資料
+```
+## 20200914
+```
+更新"dataG1.html"的資料
+更新"index.html"的資料
+```
+## 20200913
+```
+更新"index.html"的資料
+新增"dataG1.html"
 ```
 ## 20200912
 ```
-更新"index.html"的資料
-加入"dataG1.html"
 更新"index.html"以及"data"資料夾中所有(README.md除外)的資料
 更新"Untitled.png"
 ```
