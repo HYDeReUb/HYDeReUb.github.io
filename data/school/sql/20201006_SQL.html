@@ -54,8 +54,8 @@ function topFunction() {
 <a href="./sqldown/20201006_SQL.zip" class="home">20201006_SQL範例下載(zip檔)</a>
   <h1>20201006</h1>
   <hr>
-  <h2>使用 school 資料庫</h2>
-  <span style="padding-left:30px;padding-right:30px"><hr></span>
+  <span style="padding-left:30px;padding-right:30px"><h2>使用 school 資料庫</h2>
+  <hr>
   <p>-- 聚合函數</p>
   <p>--統計所有學生數</p>
   <p>SELECT COUNT(sid) AS 學生數 FROM students</p><br>
@@ -101,7 +101,7 @@ function topFunction() {
   <p>-- 找出姓氏最多人的前10名(TOP 名次)</p>
   <p>--  MYSQL是錯誤*** SELECT TOP 10 LEFT(姓名, 1) AS 姓氏, COUNT(*) 人數 FROM 飛狐工作室 GROUP BY LEFT(姓名, 1) ORDER BY 人數 DESC</p>
   <p>SELECT LEFT(姓名, 1) AS 姓氏, COUNT(*) 人數 FROM 飛狐工作室 GROUP BY LEFT(姓名, 1) ORDER BY 人數 DESC LIMIT 10</p>
-  <span style="padding-left:30px;padding-right:30px"><hr></span>
+  <hr></span>
   <p><span style="color:red;font-weight:bold">以下提示(自己弄的，參考自同學)</span></p>
   <ol>
   <li><p><span style="padding-left:10px;color:#048285;font-weight:bold">AND</span>用在<span style="color:#048285;font-weight:bold">WHERE</span>後面，可以進行2次以上篩選動作。使用範例:<span style="color:#048285;font-weight:bold">WHERE hello_world1 < 999 AND hello_world2 = 'test'</span>
@@ -120,6 +120,12 @@ function topFunction() {
   <p>GROUP BY std_advisor</p>
   <p>HAVING AVG(std_grade) >= 60</p>
   <br>
+    
+SELECT distinct(STD_advisor), AVG(std_grade) AS 學生分數平均, count(*) AS 人數
+FROM student_detail
+WHERE std_advisor <> ""
+GROUP BY std_advisor
+HAVING AVG(std_grade) >= 60
   <p>WHERE</p>
      <span style="padding-left:35px"><p>相同:條件篩選</p></span>
      <span style="padding-left:35px"><p>差異:針對 非聚集的處理</p></span>
