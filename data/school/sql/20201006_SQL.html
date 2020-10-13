@@ -26,6 +26,7 @@ a.home:link, a.home:visited {
 a.home:active {
   color: red;
 }
+#hr-padd {padding-left:30px;padding-right:30px}
 </style></head>
 <body>
 <button onclick="topFunction()" id="myBtn" title="回頂端">TOP</button>
@@ -49,12 +50,12 @@ function topFunction() {
 
 
 <center><a href="../index.html" class="home">回教師上課資料</a></center>
-<h1>20201006_SQL</h1>
+<h1>20201006-13_SQL</h1>
 <br>
 <a href="./sqldown/20201006_SQL.zip" class="home">20201006_SQL範例下載(zip檔)</a>
   <h1>20201006</h1>
   <hr>
-  <span style="padding-left:30px;padding-right:30px"><h2>使用 school 資料庫</h2>
+  <div id="hr-padd"><h2>使用 school 資料庫</h2>
   <hr>
   <p>-- 聚合函數</p>
   <p>--統計所有學生數</p>
@@ -101,15 +102,17 @@ function topFunction() {
   <p>-- 找出姓氏最多人的前10名(TOP 名次)</p>
   <p>--  MYSQL是錯誤*** SELECT TOP 10 LEFT(姓名, 1) AS 姓氏, COUNT(*) 人數 FROM 飛狐工作室 GROUP BY LEFT(姓名, 1) ORDER BY 人數 DESC</p>
   <p>SELECT LEFT(姓名, 1) AS 姓氏, COUNT(*) 人數 FROM 飛狐工作室 GROUP BY LEFT(姓名, 1) ORDER BY 人數 DESC LIMIT 10</p>
-  <hr></span>
+  <hr>
   <p><span style="color:red;font-weight:bold">以下提示(自己弄的，參考自同學)</span></p>
   <ol>
   <li><p><span style="padding-left:10px;color:#048285;font-weight:bold">AND</span>用在<span style="color:#048285;font-weight:bold">WHERE</span>後面，可以進行2次以上篩選動作。使用範例:<span style="color:#048285;font-weight:bold">WHERE hello_world1 < 999 AND hello_world2 = 'test'</span>
   <li><p><span style="padding-left:10px;color:#048285;font-weight:bold">!=''</span>是將<span style="color:#048285;font-weight:bold">''</span>也就是空文字過濾掉，用在<span style="color:#048285;font-weight:bold">WHERE</span>或<span style="color:#048285;font-weight:bold">HAVING</span>這種篩選動作的後面。使用範例:<span style="color:#048285;font-weight:bold">hello_world !=''</span>或是直接參考之前講的<a href="./20200929_SQL.html#WHERENOT">WHERE NOT</a>(我不確定是不是這個)</p></li>
   <li><p><span style="padding-left:10px;color:#048285;font-weight:bold">DESC</span>是由大往小排列，<span style="color:#048285;font-weight:bold">ASC</span>是由小往大排列</p></li>
   <li><p><span style="padding-left:10px;color:#048285;font-weight:bold">HAVING</span>用在<span style="color:#048285;font-weight:bold">GROUP BY 名稱</span>的後面，行為跟<span style="color:#048285;font-weight:bold">WHERE</span>類似，但<span style="color:#048285;font-weight:bold">HAVING</span>會直接取結果的資料進行，跟取一開始資料的<span style="color:#048285;font-weight:bold">WHERE</span>不同，可以直接參考<span style="color:green;font-weight:bold">使用NorthWind資料庫</span>的第一項。使用範例:<span style="color:#048285;font-weight:bold">HAVING AVG(hello_world)=<0</span><span style="padding-left:15px"><a href="https://www.1keydata.com/tw/sql/sqlhaving.html" target="_blank">HAVING的參考網址</span></a></p></li>
+</div>
   <h1>20201013</h1>
   <hr>
+  <div id="hr-padd">
   <p>COUNT:計算 資料筆數(rows)</p>
   <p>*:全部欄位(columns)</p>
   <p>1:1st欄位</p>
@@ -120,18 +123,18 @@ function topFunction() {
   <p>GROUP BY std_advisor</p>
   <p>HAVING AVG(std_grade) >= 60</p>
   <br>
-    
-SELECT distinct(STD_advisor), AVG(std_grade) AS 學生分數平均, count(*) AS 人數
-FROM student_detail
-WHERE std_advisor <> ""
-GROUP BY std_advisor
-HAVING AVG(std_grade) >= 60
+  <p>SELECT distinct(STD_advisor), AVG(std_grade) AS 學生分數平均, count(*) AS 人數</p>
+  <p>FROM student_detail</p>
+  <p>WHERE std_advisor <> ""</p>
+  <p>GROUP BY std_advisor</p>
+  <p>HAVING AVG(std_grade) >= 60</p>
   <p>WHERE</p>
      <span style="padding-left:35px"><p>相同:條件篩選</p></span>
      <span style="padding-left:35px"><p>差異:針對 非聚集的處理</p></span>
   <p>HAVING</p>
      <span style="padding-left:35px"><p>相同:條件篩選</p></span>
      <span style="padding-left:35px"><p>差異:針對 聚集的處理</p></span>
+  </div>
     <br><br><br>
     <center><p><u><i><b>E N D</p></u></i></b></center>
 </body></html>
