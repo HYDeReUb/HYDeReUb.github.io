@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-  
 ## ///我的範例網頁，[點擊這裡觀看](https://hydereub.github.io)///
 [https://hydereub.github.io](https://hydereub.github.io)
 <<作者:YuanSET>><br>
@@ -120,6 +116,3 @@
 更改"data"資料夾中的"com1.html"&"com2.html"為"comp1.html"&"comp2.html"
 ```
 ## 20200830 紀錄開始
-
-
-</html>
