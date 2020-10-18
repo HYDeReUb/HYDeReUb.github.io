@@ -1,5 +1,5 @@
 <html>
-<meta charset="UTF-8">
+<meta charset="Big5">
   
 ## ///我的範例網頁，[點擊這裡觀看](https://hydereub.github.io)///
 [https://hydereub.github.io](https://hydereub.github.io)
