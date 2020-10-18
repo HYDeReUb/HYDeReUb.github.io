@@ -1,3 +1,6 @@
+<html>
+<meta charset="UTF-8">
+  </html>
 ## ///我的範例網頁，[點擊這裡觀看](https://hydereub.github.io)///
 [https://hydereub.github.io](https://hydereub.github.io)
 <<作者:YuanSET>><br>
