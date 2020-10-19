@@ -9,6 +9,7 @@
 ## 20201019
 ```
 更新"data4.html"的資料
+新增:"down"到"*data"
 新增:"icon"到"*.html"
 修正:"title"位置放錯
 icon已經能正常顯示
