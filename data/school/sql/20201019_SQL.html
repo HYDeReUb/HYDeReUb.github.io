@@ -90,6 +90,8 @@ function topFunction() {
   <p>SELECT std_name, std_grade FROM student_detail WHERE std_grade >= 70 ORDER BY std_grade DESC</p> 
   <p>--2個GROUP BY合併</p>
   <p>SELECT dept_id, std_advisor, AVG(std_grade) FROM student_detail WHERE std_advisor !="" GROUP BY dept_id , std_advisor</p>
+  <p>--2個GROUP BY合併，用ORDER BY對std_advisor排列</p>
+  <p>SELECT dept_id, std_advisor, AVG(std_grade) FROM student_detail WHERE std_advisor !="" GROUP BY dept_id , std_advisor ORDER BY std_advisor</p>
   </div>
 
     <br><br><br>
