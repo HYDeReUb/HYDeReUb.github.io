@@ -59,8 +59,8 @@ function topFunction() {
   <h1>20201019</h1>
   <hr>
   <a href="./sqldown/ksu_database-r6.sql" class="home" download>ksu_database-r6範例下載</a>
-  <div id="hr-padd"><h2>使用store_information資料庫</h2>
-  <hr>
+<div id="hr-padd"><h2>使用store_information資料庫</h2>
+<hr>
   <p>--在store_information中選出所有Sales高於$1000或是Sales在$500及$275之間的資料</p>
   <p>SELECT Store_Name FROM `store_information` WHERE Sales > 1000 OR (Sales < 500 AND Sales > 275)</p>
   <p>--秀出指定名稱的資訊</p>
@@ -73,7 +73,11 @@ function topFunction() {
   <p>SELECT * FROM `store_information` WHERE Txn_Date BETWEEN '2019-10-06' AND '2019-10-08'</p>
   <p>以Sales為準由高往低排列</p>
   <p>SELECT Store_Name, Sales, Txn_Date FROM Store_Information ORDER BY Sales DESC</p>
-
+  </div>
+<div id="hr-padd"><h2>使用student_detail資料庫</h2>
+<hr>
+  <p>以std_grade為準並不小於70分，由高往低排列</p>
+  <p>SELECT std_name, std_grade FROM student_detail WHERE std_grade >= 70 ORDER BY std_grade DESC</p>
   </div>
 
     <br><br><br>
