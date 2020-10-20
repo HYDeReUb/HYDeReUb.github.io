@@ -54,23 +54,24 @@ function topFunction() {
 
 
 <center><a href="../index.html" class="home">回教師上課資料</a></center>
-<h1>20201006-13_SQL</h1>
+<h1>20201019_SQL</h1>
 <br>
-<a href="./sqldown/ksu_database-r6.sql" class="home" download>ksu_database-r6範例下載</a>
   <h1>20201019</h1>
+  <hr>
+  <a href="./sqldown/ksu_database-r6.sql" class="home" download>ksu_database-r6範例下載</a>
   <div id="hr-padd"><h2>使用store_information資料庫</h2>
   <hr>
-<p>--在store_information中選出所有Sales高於$1000或是Sales在$500及$275之間的資料</p>
-<p>SELECT Store_Name FROM `store_information` WHERE Sales > 1000 OR (Sales < 500 AND Sales > 275)</p>
-<p>--秀出指定名稱的資訊</p>
-<p>SELECT * FROM `store_information` WHERE Store_Name IN ('Los Angeles', 'San Diego')</p>
-
-
-<p>--秀出有A或a的名稱</p>
-<p>SELECT * FROM store_information WHERE Store_Name LIKE '%A%'</p>
-<p>--秀出有A或a的名稱筆數</p>
-<p>SELECT COUNT(*) AS 筆數 FROM store_information WHERE Store_Name LIKE '%A%'</p>
-</div>
+  <p>--在store_information中選出所有Sales高於$1000或是Sales在$500及$275之間的資料</p>
+  <p>SELECT Store_Name FROM `store_information` WHERE Sales > 1000 OR (Sales < 500 AND Sales > 275)</p>
+  <p>--秀出指定名稱的資訊</p>
+  <p>SELECT * FROM `store_information` WHERE Store_Name IN ('Los Angeles', 'San Diego')</p>
+  <p>--秀出有A或a的名稱</p>
+  <p>SELECT * FROM store_information WHERE Store_Name LIKE '%A%'</p>
+  <p>--秀出有A或a的名稱筆數</p>
+  <p>SELECT COUNT(*) AS 筆數 FROM store_information WHERE Store_Name LIKE '%A%'</p>
+  <p>尋找2個值中間的資料</p>
+  <p>SELECT * FROM `store_information` WHERE Txn_Date BETWEEN '2019-10-06' AND '2019-10-08'</p> 
+  </div>
 
     <br><br><br>
     <center><p><u><i><b>E N D</p></u></i></b></center>
