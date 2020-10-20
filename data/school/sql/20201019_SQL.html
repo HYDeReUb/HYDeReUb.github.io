@@ -87,7 +87,9 @@ function topFunction() {
 <div id="hr-padd"><h2>使用student_detail資料庫</h2>
 <hr>
   <p>--以std_grade為準並不小於70分，由高往低排列</p>
-  <p>SELECT std_name, std_grade FROM student_detail WHERE std_grade >= 70 ORDER BY std_grade DESC</p>  
+  <p>SELECT std_name, std_grade FROM student_detail WHERE std_grade >= 70 ORDER BY std_grade DESC</p> 
+  <p>--2個GROUP BY合併</p>
+  <p>SELECT dept_id, std_advisor, AVG(std_grade) FROM student_detail WHERE std_advisor !="" GROUP BY dept_id , std_advisor</p>
   </div>
 
     <br><br><br>
