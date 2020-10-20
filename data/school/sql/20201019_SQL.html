@@ -81,6 +81,8 @@ function topFunction() {
   <p>SELECT MAX(Sales) FROM store_information</p>
   <p>--將所有欄位的Sales值全加起來</p>
   <p>SELECT SUM(Sales) FROM store_information</p>
+  <p>將同名字的Sales值加起來</p>
+  <p>SELECT *, SUM(Sales) FROM store_information GROUP BY Store_Name</p>
   </div>
 <div id="hr-padd"><h2>使用student_detail資料庫</h2>
 <hr>
