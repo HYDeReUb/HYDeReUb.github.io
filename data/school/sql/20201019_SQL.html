@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>20201006-13_SQL</title>
+  <link rel="icon" href="/pictures/favicon.ico" type="image/x-icon" sizes="16x16">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color:white;
+  color:gray;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+a:hover, a:active {
+  background-color: #FF5757;
+}
+a.home:link, a.home:visited {
+ color:#3838BD;
+}
+a.home:active {
+  color: red;
+}
+#hr-padd {padding-left:30px;padding-right:30px}
+</style></head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="回頂端">TOP</button>
+  <noscript><h2><span style="color:#FF0000;background-color:white">注意:您的瀏覽器不支援或未開啟JavaScript功能!!</span></h2></noscript>
+<script>
+var mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<center><a href="../index.html" class="home">回教師上課資料</a></center>
+<h1>20201006-13_SQL</h1>
+<br>
+<a href="./sqldown/20201006_SQL.zip" class="home">20201006_SQL範例下載(zip檔)</a>
+  <h1>20201019</h1>
+  <hr>  
+  <h1>20201013</h1>
+  <div id="hr-padd"><h2>使用store_information資料庫</h2>
+  <hr>
+<p>--在store_information中選出所有Sales高於$1000或是Sales在$500及$275之間的資料</p>
+<p>SELECT Store_Name FROM `store_information` WHERE Sales > 1000 OR (Sales < 500 AND Sales > 275)</p>
+<p>--秀出指定名稱的資訊</p>
+<p>SELECT * FROM `store_information` WHERE Store_Name IN ('Los Angeles', 'San Diego')</p>
+
+
+<p>--秀出有A或a的名稱</p>
+<p>SELECT * FROM store_information WHERE Store_Name LIKE '%A%'</p>
+<p>--秀出有A或a的名稱筆數</p>
+<p>SELECT COUNT(*) AS 筆數 FROM store_information WHERE Store_Name LIKE '%A%'</p>
+</div>
+
+    <br><br><br>
+    <center><p><u><i><b>E N D</p></u></i></b></center>
+</body></html>
