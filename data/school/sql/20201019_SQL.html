@@ -70,7 +70,10 @@ function topFunction() {
   <p>--秀出有A或a的名稱筆數</p>
   <p>SELECT COUNT(*) AS 筆數 FROM store_information WHERE Store_Name LIKE '%A%'</p>
   <p>尋找2個值中間的資料</p>
-  <p>SELECT * FROM `store_information` WHERE Txn_Date BETWEEN '2019-10-06' AND '2019-10-08'</p> 
+  <p>SELECT * FROM `store_information` WHERE Txn_Date BETWEEN '2019-10-06' AND '2019-10-08'</p>
+  <p>以Sales為準由高往低排列</p>
+  <p>SELECT Store_Name, Sales, Txn_Date FROM Store_Information ORDER BY Sales DESC</p>
+
   </div>
 
     <br><br><br>
