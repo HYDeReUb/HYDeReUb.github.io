@@ -73,11 +73,14 @@ function topFunction() {
   <p>SELECT * FROM `store_information` WHERE Txn_Date BETWEEN '2019-10-06' AND '2019-10-08'</p>
   <p>--以Sales為準由高往低排列</p>
   <p>SELECT Store_Name, Sales, Txn_Date FROM Store_Information ORDER BY Sales DESC</p>
+  <p>--尋找Sales值超過700的資料(Store_Name不能為空格)</p>
+  <p>SELECT COUNT(*) AS 筆數 FROM store_information WHERE (Store_Name IS NOT NULL) AND Sales > 700</p>
   </div>
 <div id="hr-padd"><h2>使用student_detail資料庫</h2>
 <hr>
   <p>--以std_grade為準並不小於70分，由高往低排列</p>
   <p>SELECT std_name, std_grade FROM student_detail WHERE std_grade >= 70 ORDER BY std_grade DESC</p>
+  
   </div>
 
     <br><br><br>
