@@ -75,7 +75,7 @@ function topFunction() {
   <p>SELECT Store_Name, Sales, Txn_Date FROM Store_Information ORDER BY Sales DESC</p>
   <p>--尋找Sales值超過700的資料(Store_Name不能為空格)</p>
   <p>SELECT COUNT(*) AS 筆數 FROM store_information WHERE (Store_Name IS NOT NULL) AND Sales > 700</p>
-  <p>--或是</p>
+  <p>或是</p>
   <p>SELECT COUNT(*) AS 筆數 FROM store_information WHERE (Store_Name !="") AND Sales > 700</p>
   <p>--尋找Sales最高值</p>
   <p>SELECT MAX(Sales) FROM store_information</p>
