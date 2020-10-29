@@ -177,10 +177,11 @@ function topFunction() {
 <p><i>sudo /./opt/lampp/manager-linux-x64.run</p></i>
 <p><i>exit</p></i></span>
 <h2>CPU 10次壓力溫度測試(sh腳本，限Raspberry Pi使用)</h2>
+<p>(來自ExplainingComputers.com)</p>
 <u>注意:sh腳本需要用"sudo chmod u+x (檔案位置)"才能執行</u>
-<p><u>(來自ExplainingComputers.com)</p></u>
 <a href="./down/CPU10test.sh">CPU壓力腳本下載</a>
-<span style="color:#065E50" download><i>#! /bin/bash</i><br>
+<span style="color:#065E50" download>
+<p><i>#! /bin/bash</i><br>
 <i>clear</i><br>
 <br>
 <i>for x in {1..10}</i><br>
@@ -189,7 +190,7 @@ function topFunction() {
 <i>  sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run >/dev/null 2>&1</i><br>
 <i>done</i><br>
 <br> 
-<i>vcgencmd measure_temp</i></div></span><br>
+<i>vcgencmd measure_temp</i></p></div></span>
 
 <hr>
 
