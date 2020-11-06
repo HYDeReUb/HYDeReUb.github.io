@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Ubuntu相關下載</title>
-  <link rel="icon" href="/pictures/favicon.ico" type="image/x-icon" sizes="16x16">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html><title>Ubuntu相關下載</title>
+<head><meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 #myBtn {
   display: none;
@@ -21,19 +17,57 @@
   padding: 15px;
   border-radius: 4px;
 }
+a.Url_Block:link, a.Url_Block:visited {
+  background-color: orange;
+  color: white;
+  padding: 15px 25px;
+  padding-right: 0px;
+  text-decoration: none;
+  display: block;
+}
+
+a.Url_Block0:hover, a.Url_Block0:active {
+  background-color: red;
+}
+a.Url_Block0:active {
+  color: #2AD944;
+}
+
+a.Url_Block1:hover, a.Url_Block1:active {
+  background-color: #2AD944;
+}
+a.Url_Block1:active {
+  color:#E83333;
+}
 a:hover, a:active {
   background-color: #FF5757;
 }
-a.home:link, a.home:visited {
- color:#3838BD;
+#a {
+  background-color: purple;
+  color: white;
+  padding: 2px 10px;
+  font-weight: bold;
 }
-a.home:active {
-  color: red;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 1050px) {
+
+aside {
+  width:35%;
+  padding-left: 10px;
+  margin-left:0%;
+  float:left;
+}
+.padding-desk{padding-left:50%}
+
+
 }
 </style></head>
 <body>
 <button onclick="topFunction()" id="myBtn" title="回頂端">TOP</button>
-  <noscript><h2><span style="color:#FF0000;background-color:white">注意:您的瀏覽器不支援或未開啟JavaScript功能!!</span></h2></noscript>
 <script>
 var mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
@@ -51,37 +85,42 @@ function topFunction() {
 }
 </script>
 
-<center><a href="../index.html" class="home">回首頁</a></center>
+<center><a href="../index.html">回首頁</a></center>
 <h1>Ubuntu相關下載</h1>
-<h3>OS下載區:</h3>
-<b><i><a href="https://ubuntu.com/download/desktop" target="_blank">Ubuntu</a><br>
-<a href="https://ubuntu-mate.org/download/" target="_blank">Ubuntu MATE</a><br>
-<a href="https://lubuntu.net/downloads/" target="_blank">Lubuntu</a><br>
-<a href="https://kubuntu.org/getkubuntu/" target="_blank">Kubuntu</a><br>
-<a href="https://xubuntu.org/download/" target="_blank">Xubuntu</a><br></b></i>
-<h3>與Ubuntu相關OS下載區:</h3>
-<b><i><a href="https://zorinos.com/download/" target="_blank">Zorin OS</a><br>
-<a href="https://elementary.io/zh_TW/" target="_blank">elementary OS</a><br>
-<a href="https://linuxmint.com/download.php" target="_blank">Linux Mint</a><br></b></i>
-<h3>圖片範例:<h3>
-<center>
-<h4>Ubuntu<h4>
-<a href="../pictures/Desktop_Ubuntu_20.04.png" target="_blank"><img src="../pictures/Desktop_Ubuntu_20.04.png" width=640 height=360></a><br>
-<h4>Ubuntu MATE<h4>
-<a href="../pictures/Desktop_Ubuntu_MATE_20.04.png" target="_blank"><img src="../pictures/Desktop_Ubuntu_MATE_20.04.png" width=640 height=360></a><br>
-<h4>Lubuntu<h4>
-<a href="../pictures/Lubuntu_20.04.png" target="_blank"><img src="../pictures/Lubuntu_20.04.png" width=640 height=360></a><br>
-<h4>Kubuntu<h4>
-<a href="../pictures/Desktop_Kubuntu_20.04.png" target="_blank"><img src="../pictures/Desktop_Kubuntu_20.04.png" width=640 height=360></a><br>
+
+
+<aside>
+<div id="a"><p>發行版下載區</p></div> <!--DATA-->
+<p><a href="https://ubuntu.com/download/desktop" target="_blank" class="Url_Block Url_Block0">Ubuntu</a></p> 
+<p><a href="https://ubuntu-mate.org/download/" target="_blank" class="Url_Block Url_Block0">Ubuntu MATE</a></p>
+<p><a href="https://lubuntu.net/downloads/" target="_blank" class="Url_Block Url_Block0">Lubuntu</a></p>
+<p><a href="https://kubuntu.org/getkubuntu/" target="_blank" class="Url_Block Url_Block0">Kubuntu</a></p>
+<p><a href="https://xubuntu.org/download/" target="_blank" class="Url_Block Url_Block0">Xubuntu</a></p>
+<div id="a"><p>與Ubuntu相關發行版下載區</p></div>
+<p><a href="https://linuxmint.com/download.php" target="_blank" class="Url_Block Url_Block1">Linux Mint</a></a></p>
+<p><a href="https://elementary.io/zh_TW/" target="_blank" class="Url_Block Url_Block1">elementary OS</a></a></p>
+<p><a href="https://zorinos.com/download/" target="_blank" class="Url_Block Url_Block1">Zorin OS</a></a></p>
+</aside>
+
+<div class="padding-desk">
+<h4>Ubuntu</h4>
+<a href="../pictures/Desktop_Ubuntu_20.04.png" target="_blank"><img src="../pictures/Desktop_Ubuntu_20.04.png" width=640 height=360></a>
+<h4>Ubuntu MATE</h4>
+<a href="../pictures/Desktop_Ubuntu_MATE_20.04.png" target="_blank"><img src="../pictures/Desktop_Ubuntu_MATE_20.04.png" width=640 height=360></a>
+<h4>Lubuntu</h4>
+<a href="../pictures/Lubuntu_20.04.png" target="_blank"><img src="../pictures/Lubuntu_20.04.png" width=640 height=360></a>
+<h4>Kubuntu</h4>
+<a href="../pictures/Desktop_Kubuntu_20.04.png" target="_blank"><img src="../pictures/Desktop_Kubuntu_20.04.png" width=640 height=360></a>
 <h4>Xubuntu<h4>
-<a href="../pictures/Xubuntu_18.04_LTS.png" target="_blank"><img src="../pictures/Xubuntu_18.04_LTS.png" width=640 height=360></a><br>
+<a href="../pictures/Xubuntu_18.04_LTS.png" target="_blank"><img src="../pictures/Xubuntu_18.04_LTS.png" width=640 height=360></a>
 <h4>Zorin OS<h4>
-<a href="../pictures/Zorin_OS.jpg" target="_blank"><img src="../pictures/Zorin_OS.jpg" width=640 height=360></a><br>
+<a href="../pictures/Zorin_OS.jpg" target="_blank"><img src="../pictures/Zorin_OS.jpg" width=640 height=360></a>
 <h4>elementary OS<h4>
-<a href="../pictures/Elementary_OS_5.1_Hera.png" target="_blank"><img src="../pictures/Elementary_OS_5.1_Hera.png" width=640 height=360></a><br>
+<a href="../pictures/Elementary_OS_5.1_Hera.png" target="_blank"><img src="../pictures/Elementary_OS_5.1_Hera.png" width=640 height=360></a>
 <h4>Linux Mint<h4>
-<a href="../pictures/Linux_Mint_20__Ulyana__(Cinnamon).png" target="_blank"><img src="../pictures/Linux_Mint_20__Ulyana__(Cinnamon).png" width=640 height=360></a><br><br>
-<br>
+<a href="../pictures/Linux_Mint_20__Ulyana__(Cinnamon).png" target="_blank"><img src="../pictures/Linux_Mint_20__Ulyana__(Cinnamon).png" width=640 height=360></a>
+</div>
+<br><br>
 <center><p><u><i><b>E N D</p></u></i></b></center>
 </body>
 </html>
