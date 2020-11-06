@@ -7,6 +7,7 @@
 # 紀錄:
 ## 20201104
 ```
+更新"index.html"(刪除以往的<b>改為css的"font-weight: bold;"
 更新"data5.html"(增加<a href>)
 更新"downANDview.html"項目
 ```
