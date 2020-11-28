@@ -2,20 +2,27 @@
 <html>
 <style> 
 @media only screen and (min-width: 1050px) {
-aside {
-  width:35%;
-  padding-left: 10px;
-  margin-left:0%;
-  float:left;
+ aside {
+   width:35%;
+   padding-left: 10px;
+   margin-left:0%;
+   float:left;
+  }
+ #photo_p{padding-left: 40%;}
 }
-#photo_p{padding-left: 40%;}
-}
+  
 footer {
   text-align: center;
   padding: 3px;
   background-color: gray;
   color: white;
 }
+::selection {background: #87949C;color: white;}
+.A::selection {color: #FF0000;}
+.B::selection {color: #E2DF1A;}
+::-moz-selection { /* Code for Firefox */background: #87949C;color: white;}
+.A::-moz-selection {color: #FF0000;}
+.B::s-moz-election {color: #E2DF1A;}
 body{
 background-image: url("/pictures/Background.jpg");
 background-repeat: no-repeat;
@@ -94,7 +101,7 @@ img {
 
 <link rel="icon" href="/pictures/favicon.ico" type="image/x-icon" sizes="16x16">
   
-  <center><h2><span style="color:#2997F4">歡迎！這是由<span style="color:#E2DF1A">Yuan</span><span style="color:#FF0000">SET</span>創作的個人資料區</span></h2><h3><span style="color:#3481B4"><div id="time"></div></span></h3></center>
+  <center><h2><span style="color:#2997F4">歡迎！這是由<span style="color:#E2DF1A" class="A">Yuan</span><span style="color:#FF0000" class="B">SET</span>創作的個人資料區</span></h2><h3><span style="color:#3481B4"><div id="time"></div></span></h3></center>
   <noscript><h2><span style="color:#FF0000;background-color:white">注意:您的瀏覽器不支援或未開啟JavaScript功能!!</span></h2></noscript>
 <script>
 function startTime() {
