@@ -7,9 +7,7 @@
 # 紀錄:
 ## 20201207
 ```
-更新"downANDview.html"
 更新"data5.html"
-PS:最近Raspberry Pi都在大幅度更新阿...👍
 ```
 ## 20201205
 ```
