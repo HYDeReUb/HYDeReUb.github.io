@@ -23,7 +23,9 @@
   padding: 15px;
   border-radius: 4px;
 }
-
+#center { /* 置中 這是HTML5用法。 <center>為HTML4用法，HTML5已不支援 */
+  text-align: center;
+}
 a:hover, a:active {
   background-color: #FF5757;
 }
@@ -55,9 +57,7 @@ function topFunction() {
 }
 </script>
 
-
-
-<center><a href="../index.html" class="home">回首頁</a></center>
+<span id="center"><a href="../index.html" class="home">回首頁</a></span>
 <h1>Raspberry Pi 4 Model B 已知問題與已知操作</div></h1>
 
 <span style="color:#9800C5"><a name="A"><h1>已知問題</h1></span></a>
@@ -71,6 +71,7 @@ function topFunction() {
 <p><span style="color:red">(已修復!!Fixed)</span><i><del>1.使用音效卡只能打開一個音訊程式，打開第二個會顯示忙碌或錯誤</del></p></i>
 <p><i>1.若有用Argon one外殼，要注意音訊孔有些可能會插不夠深，導致只有單喇叭播放</p></i>
 <p><i>2.連續對VLC播放器做跳轉動作可能會有短暫降音的情況</p></i>
+<p><i>3.若連接藍芽出現pulseaudio找不到該裝置的情況下，代表它可能還用bluealsa套件造成的，試輸入"sudo apt install pulseaudio-module-bluetooth"安裝看看，若出現newest那可能不是該套件問題</p></i>
 <a name="A3"><h2>硬碟與記憶體部份</h2></a>
 <p><i>1.使用SD卡作主硬碟使用會有卡住的情況，屬正常現象。因為SD卡有多數(尤其是便宜貨)沒辦法負荷太多同時讀取與寫入的窘境，再加上使用虛擬記憶體的問題更考驗讀寫速度與延遲，也因此Chromium瀏覽器的網頁以及內部軟體就會有發生錯誤要重新讀取的狀況。我個人建議直接<a href="#B2">用SSD作主硬碟使用</a>，不只減少chromium發生錯誤的狀況(這是以2G RAM版本作為參考)，也不在會有隨時卡住的情況，前提是不要出現降電壓符號時使用</p></i>
 <p><i>2.建議在執行格式化或移動檔案這樣的操作時，別執行其他程式來多工操作，避免記憶體使用量過高強關或重起導致資料毀損，也確保沒有顯示降電壓符號</p></i>
@@ -176,6 +177,6 @@ function topFunction() {
 </div>
 <hr>
 <br><br><br>
-<center><p><u><i><b>E N D</p></u></i></b></center>
+<span id="center"><p><u><i><b>E N D</p></u></i></b></span>
 </body>
 </html>
