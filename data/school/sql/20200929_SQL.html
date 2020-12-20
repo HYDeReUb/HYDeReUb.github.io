@@ -8,7 +8,7 @@
 <style>
 ::selection {background: #86909A;color: white;}
 ::-moz-selection { /* Code for Firefox */background: #86909A;color: white;}
-#myBtn {
+#myBtn {  /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top */
   display: none;
   position: fixed;
   bottom: 30px;
@@ -22,6 +22,9 @@
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
+}
+#center { /* 置中 這是HTML5用法。 <center>為HTML4用法，HTML5已不支援 */
+  text-align: center;
 }
 a:hover, a:active {
   background-color: #FF5757;
@@ -54,7 +57,7 @@ function topFunction() {
 </script>
 
 
-<center><a href="../index.html" class="home">回上課資料</a></center>
+<span id="center"><a href="../index.html" class="home">回上課資料</a></span>
 <h1>20200922-29_SQL</h1>
 <br>
 <a href="./sqldown/20200929_SQL.zip" class="home">20200929_SQL範例下載(zip檔)</a>
@@ -139,5 +142,5 @@ function topFunction() {
 <p>--在student_detail 資料中 找出 std_cell 以91開頭及三、四個數字是98</p>
 <p>SELECT * FROM student_detail WHERE std_cell LIKE '91_98%'</p>
   <br><br><br>
-  <center><p><u><i><b>E N D</p></u></i></b></center>
+  <span id="center"><p><u><i><b>E N D</p></u></i></b></span>
 </body></html>
