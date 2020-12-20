@@ -23,6 +23,9 @@
   padding: 15px;
   border-radius: 4px;
 }
+#center { /* 置中 這是HTML5用法。 <center>為HTML4用法，HTML5已不支援 */
+  text-align: center;
+}
 a:hover, a:active {
   background-color: #FF5757;
 }
@@ -62,7 +65,7 @@ function topFunction() {
 
 
 
-<center><a href="../index.html" class="home">回首頁</a></center>
+<span id="center"><a href="../index.html" class="home">回首頁</a></span>
 <h1>Ubuntu(Debian) & Raspberry Pi OS指令使用與套件安裝</h1>
   
 <hr>
@@ -147,8 +150,8 @@ function topFunction() {
 
 <span style="color:#8600C6"><a name="C"><h2>其他指令</h2></span></a>
 <div class="C p_center"><h2>刪除</h2>
-<p><i>檔案 => (先用"cd"調整該檔資料夾的位置)<span style="color:#065E50"><u>rm XX.xxx</u></span>  假如你要刪除/ZZZ/XXX的XX.xxx檔案,用cd定位到/ZZZ/XXX的位置後在用rm刪除該檔案   或是直接指定路徑也可 例如:rm /ZZZ/XXX/XX.xxx</p></i>
-<p><i>資料夾 => (先用"cd"調整該資料夾的位置)<span style="color:#065E50"><u>rm -r XXX</u></span>  假如你要刪除/ZZZ/XXX的XXX資料夾，那要用cd定位到/ZZZ的位置在用rm -r把XXX資料夾刪除 或是直接指定路徑也可 例如:rm -r /ZZZ/XXX</p></i>
+<p><i>檔案 => (先用"cd"調整該檔資料夾的位置)<span style="color:#065E50"><u>rm XX.xxx</u></span>  假如你要刪除/ZZZ/XXX的XX.xxx檔案,用cd定位到/ZZZ/XXX的位置後在用rm刪除該檔案   或是直接指定路徑也可 例如:<span style="color:#065E50"><u>rm /ZZZ/XXX/XX.xxx</u></span></p></i>
+<p><i>資料夾 => (先用"cd"調整該資料夾的位置)<span style="color:#065E50"><u>rm -r XXX</u></span>  假如你要刪除/ZZZ/XXX的XXX資料夾，那要用cd定位到/ZZZ的位置在用rm -r把XXX資料夾刪除 或是直接指定路徑也可 例如:<span style="color:#065E50"><u>rm -r /ZZZ/XXX</u></span></p></i>
 <h2>硬體查詢(Raspberry Pi不適用)</h2>
 <p><i><span style="color:#065E50">sudo dmidecode</span></p></i>
 <h4>查找指定欄位(ex:type 17)</h4>
@@ -168,11 +171,11 @@ function topFunction() {
 <h2>卸載USB</h2>
 <p><i><span style="color:#065E50">sudo eject /dev/sdXX</span>(XX是移除該位置的裝置。可以用"fdisk -l"檢視該裝置的位置)</p></i>
 <h2>vchiq影片播放問題</h2>
-<p><i><span style="color:#065E50">sudo chmod 447 </span> (最大權限777) <span style="color:#065E50">/dev/vchiq</p></i></span>
+<p><i><span style="color:#065E50">sudo chmod 447 /dev/vchiq</span> (最大權限777)</p></i>
 <h2>給予使用Bash權限</h2>
-<p><i>(先用"cd"調整該檔資料夾的位置)<span style="color:#065E50">chmod u+x P.sh</span> ("P"是檔案名稱，副檔名為".sh")</p></i>
+<p><i>(先用"cd"調整該檔資料夾的位置)<span style="color:#065E50">chmod u+x P.sh</span> ("P"是檔案名稱，".sh"是副檔名)</p></i>
 <h2>XAMPP啟動腳本(sh腳本，限x86 64位元使用)</h2>
-<p><u>注意:sh腳本需要用"<span style="color:#065E50">sudo chmod u+x </span>(檔案位置名稱)"才能執行</u></p>
+<p><u>注意:sh腳本需要用"<span style="color:#065E50">sudo chmod u+x P.sh</span>("P"是檔案名稱，".sh"是副檔名)"才能執行</u></p>
 <a href="./down/Xampp.sh" download>XAMPP腳本下載</a>
 <span style="color:#065E50"><p><i>#! /bin/bash<br>
 echo 輸入使用者密碼<br>
@@ -236,6 +239,6 @@ vcgencmd measure_temp</i></p></div></span>
 
 <br>
 
-<center><p><u><i><b>E N D</p></u></i></b></center>
+<span id="center"><p><u><i><b>E N D</p></u></i></b></span>
 </body>
 </html>
