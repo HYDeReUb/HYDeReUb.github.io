@@ -10,7 +10,7 @@
   margin-left:0%;
   float:left;
   }
-  #X {padding-left:20%;}
+  .X {padding-left:20%;}
 }
 a.Url_Block:link, a.Url_Block:visited {
   background-color: orange;
@@ -71,7 +71,9 @@ background-size: 100% 100%;
   color: white;
   padding: 2px 10px;
 }
-
+.center { /* 置中 這是HTML5用法。 <center>為HTML4用法，HTML5已不支援 */
+  text-align: center;
+}
 
 #top{padding-left: 10px;}
 
@@ -124,11 +126,11 @@ function checkTime(i) {
 <p><a href="./Android_APP/downANDview.html" class="Url_Block1 Url_Block"><b>App程式設計下載&瀏覽</b></a></p>
 <p><a href="../../index.html" class="Url_Block2"><b>回首頁</b></a></p>
 </div></aside>
-  <div id="X"><center><span style="color:#20D1D5"><h2>如何用html編寫簡單的網頁(作者:explainingcomputers.com)</h2></center></span></div>
+  <div class="X center"><span style="color:#20D1D5"><h2>如何用html編寫簡單的網頁(作者:explainingcomputers.com)</h2></span></div>
 
-<center>
+<div class="center">
   <iframe width="1008" height="567" src="https://www.youtube.com/embed/WwNuvGLblJU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+</div>
 
 </body>
 </html>
