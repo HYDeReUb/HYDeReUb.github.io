@@ -21,7 +21,9 @@
   padding: 15px;
   border-radius: 4px;
 }
- 
+#center { /* 置中 這是HTML5用法。 <center>為HTML4用法，HTML5已不支援 */
+  text-align: center;
+}
 a.Url_Block:link, a.Url_Block:visited {
   font-weight: bold;
   background-color: orange;
@@ -69,7 +71,6 @@ aside {
 }
 .padding-desk{padding-left:50%}
 
-
 }
 </style></head>
 <body>
@@ -92,7 +93,7 @@ function topFunction() {
 </script>
 
 
-<center><a href="../index.html">回首頁</a></center>
+<span id="center"><a href="../index.html">回首頁</a></span>
 <h1>Raspberry Pi相關下載</h1>
 
 <aside>
@@ -140,6 +141,6 @@ function topFunction() {
 <a href="../pictures/Win32DiskImager-1.0.png" target="_blank"><img src="../pictures/Win32DiskImager-1.0.png" width=640 height=360></a>
 </div>
 <br><br><br>
-<center><p><u><i><b>E N D</p></u></i></b></center>
+<span id="center"><p><u><i><b>E N D</p></u></i></b></span>
 </body>
 </html>
