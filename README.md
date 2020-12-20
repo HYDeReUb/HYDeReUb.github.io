@@ -7,7 +7,7 @@
 # 紀錄:
 ## 20201207
 ```
-更新無法置中問題
+修正無法置中問題
 更新"data5.html"
 更新"index.html"註解
 更新原 HTML4 <center> 為 HTML5 CSS格式
