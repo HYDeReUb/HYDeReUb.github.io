@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-<style> 
+<style>  /* 以下是CSS */
 @media only screen and (min-width: 1050px) {
- aside {
+ 
+aside {
    width:35%;
    padding-left: 10px;
    margin-left:0%;
@@ -17,12 +18,18 @@ footer {
   background-color: gray;
   color: white;
 }
+ 
+nav {text-align: center;}
+ 
+/* 反白配置區 */
 ::selection {background: #86909A;color: white;}
 .A::selection {color: #FF0000;}
 .B::selection {color: #E2DF1A;}
 ::-moz-selection { /* Code for Firefox */background: #86909A;color: white;}
 .A::-moz-selection {color: #FF0000;}
 .B::s-moz-election {color: #E2DF1A;}
+
+/* 背景圖片放置 */
 body{
 background-image: url("/pictures/Background.jpg");
 background-repeat: no-repeat;
@@ -30,7 +37,8 @@ background-attachment: fixed;
 background-size: 100% 100%;
 }
 
-a.Url_Block:link, a.Url_Block:visited {
+/* aside變磚、游標碰到變色、游標點擊變色等 */
+a.Url_Block:link, a.Url_Block:visited { /* Block */
   font-weight: bold;
   background-color: orange;
   color: white;
@@ -39,22 +47,19 @@ a.Url_Block:link, a.Url_Block:visited {
   text-decoration: none;
   display: block;
 }
-
-a.Url_Block0:hover, a.Url_Block0:active {
+a.Url_Block0:hover, a.Url_Block0:active { /* Block0 */
   background-color: red;
 }
 a.Url_Block0:active {
   color: #2AD944;
 }
-
-a.Url_Block1:hover, a.Url_Block1:active {
+a.Url_Block1:hover, a.Url_Block1:active { /* Block1 */
   background-color: #2AD944;
 }
 a.Url_Block1:active {
   color:#E83333;
 }
-
-a.Url_Block2:link, a.Url_Block2:visited {
+a.Url_Block2:link, a.Url_Block2:visited { /* Block2 */
   font-weight: bold;
   background-color: #353230;
   color: white;
@@ -69,8 +74,6 @@ a.Url_Block2:hover, a.Url_Block2:active {
 a.Url_Block2:active {
   color: #353230;
 }
-
-
 a.URL:link, a.URL:visited {
  color:#387A2A;
 }
@@ -81,22 +84,25 @@ a.URL:active{
  color:red;
 }
 
-
-#a {
+ 
+#a {  /* aside標題變磚 */
   background-color: purple;
   color: white;
   padding: 2px 10px;
   font-weight: bold;
 }
+#center { /* 置中 這是HTML5用法。 <center>為HTML4用法，HTML5已不支援 */
+
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-</style>
+/* 以上是CSS */ </style>
+ 
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 <title>歡迎！這是YuanSET的個人資料區</title>
 
 <link rel="icon" href="/pictures/favicon.ico" type="image/x-icon" sizes="16x16">
@@ -137,7 +143,7 @@ function checkTime(i) {
 <body onload="startTime()">
 
 
-<nav><center>
+<nav>
 論壇:<a href="https://www.mobile01.com/" target="_blank" class="URL">Mobile01</a> |
 <a href="https://term.ptt.cc/" target="_blank" class="URL">PTT</a> |
 <a href="https://www.dcard.tw/" target="_blank" class="URL">Dcard</a> |
@@ -145,21 +151,19 @@ function checkTime(i) {
 <a href="https://www.eyny.com/" target="_blank" class="URL">伊莉討論區</a> |
 <a href="https://www.pcdvd.com.tw/" target="_blank" class="URL">PCDVD(影音、電腦為主)</a> |
 <a href="https://news.wii.tw/" target="_blank" class="URL">電筒王(手電筒及相關週邊)</a>
-</center></nav><br>
+</nav><br>
   
 <!--Google Custom Search修改自Linux Mint-->
   <form action="https://www.google.com/cse" id="cse-search-box">
-<center>
-  <div>
+
+  <div id="center">
     <input type="hidden" name="cx" value="c601d418212bfbf71" />
     <input type="hidden" name="ie" value="UTF-8" />
     <input type="text" name="q" size="35" />
     <input type="submit" name="sa" value="Search"/>
   </div>
-</center>
 
 <script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
-
 
 <aside>
 <div id="a"><p>LINUX系統相關</p></div> <!--DATA-->
@@ -180,7 +184,7 @@ function checkTime(i) {
 <img src="pictures/Untitled.png" width=631 height=450><br>
 <h2><span style="color:red;font-weight:bold">警告:本文是個人作為範例&學習用途，文章內的操作皆有風險，請謹慎考量後再實行，若出現問題甚至造成財產損失等，本人不負任何責任與賠償!</span></h2>
 </div>
-  <center><h2><span style="color:red;font-weight:bold">AT YOUR OWN RISK!</span></h2></center>
+  <h2><span style="color:red;font-weight:bold" id="center">AT YOUR OWN RISK!</span></h2>
 <br><br><br><br><br><br><br><br><br>
   <footer>
    <p>Pages by HYDeReUb(YuanSET)</p>
