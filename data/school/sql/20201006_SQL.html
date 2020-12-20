@@ -23,6 +23,9 @@
   padding: 15px;
   border-radius: 4px;
 }
+#center { /* 置中 這是HTML5用法。 <center>為HTML4用法，HTML5已不支援 */
+  text-align: center;
+}
 a:hover, a:active {
   background-color: #FF5757;
 }
@@ -55,7 +58,7 @@ function topFunction() {
 </script>
 
 
-<center><a href="../index.html" class="home">回上課資料</a></center>
+<span id="center"><a href="../index.html" class="home">回上課資料</a></span>
 <h1>20201006-13_SQL</h1>
 <br>
   <h1>20201006</h1>
@@ -145,5 +148,5 @@ function topFunction() {
      <p>差異:針對 聚集的處理</p>
   </div>
     <br><br><br>
-    <center><p><u><i><b>E N D</p></u></i></b></center>
+    <span id="center"><p><u><i><b>E N D</p></u></i></b></span>
 </body></html>
