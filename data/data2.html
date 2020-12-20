@@ -6,6 +6,9 @@
 <style>
 ::selection {background: #86909A;color: white;}
 ::-moz-selection { /* Code for Firefox */background: #86909A;color: white;}
+#center { /* 置中 這是HTML5用法。 <center>為HTML4用法，HTML5已不支援 */
+  text-align: center;
+}
 #myBtn {
   display: none;
   position: fixed;
@@ -90,7 +93,7 @@ function topFunction() {
 }
 </script>
 
-<center><a href="../index.html">回首頁</a></center>
+<span id="center"><a href="../index.html">回首頁</a></span>
 <h1>Ubuntu相關下載</h1>
 
 
@@ -126,6 +129,6 @@ function topFunction() {
 <a href="../pictures/Linux_Mint_20__Ulyana__(Cinnamon).png" target="_blank"><img src="../pictures/Linux_Mint_20__Ulyana__(Cinnamon).png" width=640 height=360></a>
 </div>
 <br><br><br>
-<center><p><u><i><b>E N D</p></u></i></b></center>
+<span id="center"><p><u><i><b>E N D</p></u></i></b></span>
 </body>
 </html>
