@@ -41,6 +41,7 @@ a.home:active {
   .C{color:#8600C6;}
   .D{color:#5500C6;}
   .E{color:#0029C6;}
+  .F{color:gray;}
   .p_center{padding-left: 15%;}
 </style></head>
 <body>
@@ -237,6 +238,36 @@ vcgencmd measure_temp</i></p></div></span>
 <span style="color:#20368A"><p><b>[Ctrl]+[C](中止目前的執行)</p></b></span>
 <span style="color:#20368A"><p><b>[Ctrl]+[Shift]+[C] (複製，相當於一般在用的[Ctrl]+[C])</p></b></span>
   <span style="color:#20368A"><p><b>[Ctrl]+[Shift]+[V] (貼上，相當於一般在用的[Ctrl]+[V])</p></b></span></div>
+
+<hr>
+
+<span style="color:gray"><a name="D"><h2>Git命令</h2></a></span>
+<div class="F p_center">
+<h2>設定電子郵件</h2>
+<p><i><span style="color:#065E50"><u>git clone "https://github.com/Name/Repository.git"</u></span></p></i>
+<h2>設定電子郵件</h2>
+<p><i><span style="color:#065E50"><u>git config --global user.email "name@example.com"</u></span></p></i>
+<h2>設定名稱</h2>
+<p><i><span style="color:#065E50"><u>git config --global user.name "Name"</u></span></p></i>
+<h2>創建.git(最初步驟，要讓Git知道你的資料夾跟更動的檔案)</h2>
+<p><i>(先用"cd"調整該檔資料夾的位置)<span style="color:#065E50"><u>git init</u></span></p></i>
+<h2>查詢Git檔案狀態</h2>
+<p><i><span style="color:#065E50"><u>git status</u></span></p></i>
+<h2>加入已更動檔案到Git緩衝區(中間步驟，可以配合git查詢目前檔案與狀態)</h2>
+<p><i><span style="color:#065E50"><u>git add .</u></span></p></i>
+<p><i>git status:紅色為未寫進到緩衝區，綠色為寫進緩衝區</i></p>
+<h2>加入已更動檔案到Git緩衝區</h2>
+<p><i><span style="color:#065E50"><u>git add .</u></span></p></i>
+<h2>對加入到緩衝區的檔案進行描述(最終步驟，完成後即可準備上傳)</h2>
+<p><i><span style="color:#065E50"><u>git commit -m "描述文字"</u></span></p></i>
+<h2>加入GitHub資料庫(倉儲)位置</h2>
+<p><i><span style="color:#065E50"><u> git remote add Example "https://github.com/Name/Repository.git"</u></span></p></i>
+<h2>上傳(更新)到"Example"指定位置的分支(預設通常為master)</h2>
+<p><i><span style="color:#065E50"><u> git push Example master</u></span></p></i>
+<h2>下載(更新)到此資料夾(以 Example master為例)</h2>
+<p><i>push若遇到上傳端修改時間不符時，要使用pull對本端該資料夾更新</i></p>
+<p><i><span style="color:#065E50"><u> git pull Example master</u></span></p></i>
+</div>
 
 <br>
 
