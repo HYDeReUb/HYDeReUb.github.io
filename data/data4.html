@@ -72,119 +72,123 @@ function topFunction() {
 <hr>
   
 <span style="color:#C60000"><a name="A"><h2>APT運用</h2></span></a>
-<div class="A p_center"><h2>更新</h2>
-<p><i><span style="color:#065E50">sudo apt update</span>  (需要時再改成apt-get)</p></i>
+<div class="A p_center">
+<h2>更新</h2>
+<p><i><span style="color:#065E50">sudo apt update</span>  (需要時再改成apt-get)</i></p>
 <h2>升級</h2>
-<p><i><span style="color:#065E50">sudo apt upgrade</span> (需要時再改成apt-get)</p></i>
+<p><i><span style="color:#065E50">sudo apt upgrade</span> (需要時再改成apt-get)</i></p>
 <h2>完整升級</h2>
-<p><i><span style="color:#065E50">sudo apt full-upgrade</span> (apt-get為另一條指令，無法套用)</p></i>
+<p><i><span style="color:#065E50">sudo apt full-upgrade</span> (apt-get為另一條指令，無法套用)</i></p>
 <h2>新增 PPA 個人套件庫</h2>
-<p><i><span style="color:#065E50">sudo add-apt-repository ppa:</span></p></i>
+<p><i><span style="color:#065E50">sudo add-apt-repository ppa:</span></i></p>
 <h2>移除 PPA 個人套件庫</h2>
-<p><i><span style="color:#065E50">sudo add-apt-repository --remove ppa:</span></p></i>
+<p><i><span style="color:#065E50">sudo add-apt-repository --remove ppa:</span></i></p>
 <h2>安裝套件</h2>
-<p><i><span style="color:#065E50">sudo apt install (套件名稱)</span> (需要時再改成apt-get)</p></i>
+<p><i><span style="color:#065E50">sudo apt install (套件名稱)</span> (需要時再改成apt-get)</i></p>
 <h2>移除套件</h2>
-<p><i><span style="color:#065E50">sudo apt purge (套件名稱)</span> (需要時再改成apt-get)</p></i><p>或  <i><span style="color:#065E50">sudo apt remove --purge '(套件名稱)'</span> (需要時再改成apt-get)</p></i>
+<p><i><span style="color:#065E50">sudo apt purge (套件名稱)</span> (需要時再改成apt-get)</i></p><p>或  <i><span style="color:#065E50">sudo apt remove --purge '(套件名稱)'</span> (需要時再改成apt-get)</i></p>
 <h2>自動移除套件(相依套件)</h2>
-<p><i><span style="color:#065E50">sudo apt autoremove</span> (需要時再改成apt-get)</p></i>
+<p><i><span style="color:#065E50">sudo apt autoremove</span> (需要時再改成apt-get)</i></p>
 <h2>清除之前安裝(install)的安裝檔</h2>
-<p><i><span style="color:#065E50">sudo apt clean</span> (需要時再改成apt-get)</p></i>
+<p><i><span style="color:#065E50">sudo apt clean</span> (需要時再改成apt-get)</i></p>
 <h2>清除之前下載的安裝檔，但不刪除已安裝軟體的安裝檔</h2>
-<p><i><span style="color:#065E50">sudo apt autoclean</span> (需要時再改成apt-get)</p></i>
+<p><i><span style="color:#065E50">sudo apt autoclean</span> (需要時再改成apt-get)</i></p>
 </div>
 
 <hr>
 
 <span style="color:#C600C0"><a name="B"><h2>已知套件</h2></a>
-<p><u>"apt"有問題的話再改成"apt-get"看看</p></u></span>
-<div class="B p_center"><h2>注音輸入法</h2><p>安裝完需重新啟動才能使用</p>
-<span style="color:#065E50"><p><i>sudo apt install fcitx-chewing</p></i></span>
+<p><u>"apt"有問題的話再改成"apt-get"看看</u></p></span>
+<div class="B p_center">
+<h2>注音輸入法</h2><p>安裝完需重新啟動才能使用</p>
+<span style="color:#065E50"><p><i>sudo apt install fcitx-chewing</i></p></span>
 <h2>NTP手動校準時間</h2><p>使用方式請查看<a href="./data5.html#B4"><span style="color:red">已知操作中的第4項</span></a></p>
-<span style="color:#065E50"><p><i>sudo apt install ntpdate</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install ntpdate</i></p></span>
 <h2>支援exFAT(FAT64)</h2>
-<span style="color:#065E50"><p><i>sudo apt install exfat-utils</p></i></span>
-<span style="color:#065E50"><p><i>sudo apt install exfat-fuse</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install exfat-utils</i></p></span>
+<span style="color:#065E50"><p><i>sudo apt install exfat-fuse</i></p></span>
 <h4>省略的</h4>
-<span style="color:#065E50"><p><i>sudo apt install 'exfat-*'</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install 'exfat-*'</i></p></span>
 <h4>舊版(無法更新)用法</h4>
-<span style="color:#065E50"><p><i>sudo apt-add-repository ppa:relan/exfat</p></i></span>
-<span style="color:#065E50"><p><i>sudo apt-get update</p></i></span>
-<span style="color:#065E50"><p><i>sudo apt-get install 'exfat-utils'</p></i></span>
-<span style="color:#065E50"><p><i>sudo apt-get install 'exfat-fuse'</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt-add-repository ppa:relan/exfat</i></p></span>
+<span style="color:#065E50"><p><i>sudo apt-get update</i></p></span>
+<span style="color:#065E50"><p><i>sudo apt-get install 'exfat-utils'</i></p></span>
+<span style="color:#065E50"><p><i>sudo apt-get install 'exfat-fuse'</i></p></span>
 <h2>支援NTFS</h2>
-<span style="color:#065E50"><p><i>sudo apt install ntfs-3g-dev</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install ntfs-3g-dev</i></p></span>
 <h2>印表機</h2>
-<span style="color:#065E50"><p><i>sudo apt install libcups2-dev</p></i></span>
-<span style="color:#065E50"><p><i>sudo apt install cups</p></i></span>
-<span style="color:#065E50"><p><i>sudo apt install system-config-printer</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install libcups2-dev</i></p></span>
+<span style="color:#065E50"><p><i>sudo apt install cups</i></p></span>
+<span style="color:#065E50"><p><i>sudo apt install system-config-printer</i></p></span>
 <h2>光碟燒錄</h2>
 <u>注意!!請在足夠的電源下再使用光碟機!!!</u>
 <h4>K3b(比較推薦)</h4>
-<span style="color:#065E50"><p><i>sudo apt install k3b</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install k3b</i></p></span>
 <h4>Xfburn(易於操作)</h4>
-<span style="color:#065E50"><p><i>sudo apt install xfburn</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install xfburn</i></p></span>
 <h2>GNOME磁碟(可執行快速、完整格式化＆關閉磁碟機動作等)</h2>
 <u>建議！完整格式化請在電源充足的情況(不能出現閃電降壓符號)並且搭配主動式散熱器(風扇+散熱片)使用</u>
-<span style="color:#065E50"><p><i>sudo apt install gnome-disk-utility</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install gnome-disk-utility</i></p></span>
 <h2>GParted(硬碟分割區軟體)</h2>
 <span style="color:#065E50"><p><i>sudo apt install gparted</p></i></span>
 <h2>Nautilus檔案瀏覽器(GNOME檔案瀏覽器)</h2>
-<span style="color:#065E50"><p><i>sudo apt install nautilus</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install nautilus</i></p></span>
 <h2>Audacity(錄音與音訊編輯器，Raspberry Pi須搭配USB聲卡使用)</h2>
-<span style="color:#065E50"><p><i>sudo apt install audacity</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install audacity</i></p></span>
 <h2>Kdenlive(影片編輯器)</h2>
-<span style="color:#065E50"><p><i>sudo apt install kdenlive</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install kdenlive</i></p></span>
 <h2>GIMP(圖像編輯器)</h2>
-<span style="color:#065E50"><p><i>sudo apt install gimp</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install gimp</i></p></span>
 <h2>GNOME影像檢視器(可順利跑GIF檔，BCM2835無法)</h2>
-<span style="color:#065E50"><p><i>sudo apt install eog</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install eog</i></p></span>
 <h2>calibre(電子書軟體)</h2>
-<span style="color:#065E50"><p><i>sudo apt install calibre</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install calibre</i></p></span>
 <h2>Psensor(硬體溫度監測)</h2>
-<span style="color:#065E50"><p><i>sudo apt install psensor</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install psensor</i></p></span>
 <h2>Firefox瀏覽器(Firefox ESR)</h2>
-<span style="color:#065E50"><p><i>sudo apt install firefox-esr</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install firefox-esr</i></p></span>
 <h2>Chromium瀏覽器</h2>
-<span style="color:#065E50"><p><i>sudo apt install chromium-browser</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install chromium-browser</i></p></span>
 <h2>Veracrypt預備套件</h2>
-<span style="color:#065E50"><p><i>sudo apt install libwxgtk3.0-gtk3-0v5</p></i></span>
+<span style="color:#065E50"><p><i>sudo apt install libwxgtk3.0-gtk3-0v5</i></p></span>
 </div>
+
 <hr>
 
-<span style="color:#8600C6"><a name="C"><h2>其他指令</h2></span></a>
-<div class="C p_center"><h2>刪除</h2>
-<p><i>檔案 => (先用"cd"調整該檔資料夾的位置)<span style="color:#065E50"><u>rm XX.xxx</u></span>  假如你要刪除/ZZZ/XXX的XX.xxx檔案,用cd定位到/ZZZ/XXX的位置後在用rm刪除該檔案   或是直接指定路徑也可 例如:<span style="color:#065E50"><u>rm /ZZZ/XXX/XX.xxx</u></span></p></i>
-<p><i>資料夾 => (先用"cd"調整該資料夾的位置)<span style="color:#065E50"><u>rm -r XXX</u></span>  假如你要刪除/ZZZ/XXX的XXX資料夾，那要用cd定位到/ZZZ的位置在用rm -r把XXX資料夾刪除 或是直接指定路徑也可 例如:<span style="color:#065E50"><u>rm -r /ZZZ/XXX</u></span></p></i>
+<span style="color:#8600C6"><a name="C"><h2>其他指令</h2></a></span>
+<div class="C p_center">
+<h2>刪除</h2>
+<p><i>檔案 => (先用"cd"調整該檔資料夾的位置)<span style="color:#065E50"><u>rm XX.xxx</u></span>  假如你要刪除/ZZZ/XXX的XX.xxx檔案,用cd定位到/ZZZ/XXX的位置後在用rm刪除該檔案   或是直接指定路徑也可 例如:<span style="color:#065E50"><u>rm /ZZZ/XXX/XX.xxx</u></span></i></p>
+<p><i>資料夾 => (先用"cd"調整該資料夾的位置)<span style="color:#065E50"><u>rm -r XXX</u></span>  假如你要刪除/ZZZ/XXX的XXX資料夾，那要用cd定位到/ZZZ的位置在用rm -r把XXX資料夾刪除 或是直接指定路徑也可 例如:<span style="color:#065E50"><u>rm -r /ZZZ/XXX</u></span></i></p>
 <h2>硬體查詢(Raspberry Pi不適用)</h2>
-<p><i><span style="color:#065E50">sudo dmidecode</span></p></i>
+<p><i><span style="color:#065E50">sudo dmidecode</span></i></p>
 <h4>查找指定欄位(ex:type 17)</h4>
-<p><i><span style="color:#065E50">sudo dmidecode --type 17</span></p></i>
+<p><i><span style="color:#065E50">sudo dmidecode --type 17</span></i></p>
 <h2>AMD顯卡預覽(非AMD顯卡或AMD內顯請勿安裝使用)</h2>
-<p><i><span style="color:#065E50">sudo radeontop</span> (若找不到該指令輸入<span style="color:#065E50">sudo apt install radeontop</span>安裝)</p></i>
+<p><i><span style="color:#065E50">sudo radeontop</span> (若找不到該指令輸入<span style="color:#065E50">sudo apt install radeontop</span>安裝)</i></p>
 <h2>安裝.deb檔</h2>
-<p><i>(先用"cd"調整該檔資料夾的位置)<span style="color:#065E50">sudo dpkg -i *.deb</span></p></i>
+<p><i>(先用"cd"調整該檔資料夾的位置)<span style="color:#065E50">sudo dpkg -i *.deb</span></i></p>
 <h2>溫度狀態(限Raspberry Pi使用)</h2>
-<p><i><span style="color:#065E50">vcgencmd measure_temp</p></i></span>
+<p><i><span style="color:#065E50">vcgencmd measure_temp</span></i></p>
 <h4>連續顯示</h4>
-<p><i><span style="color:#065E50">watch -n 0 vcgencmd measure_temp</span>("0"為0.1秒刷新。若改為"1"為1秒刷新、"2"為2秒刷新，以此類推)</p></i>
+<p><i><span style="color:#065E50">watch -n 0 vcgencmd measure_temp</span>("0"為0.1秒刷新。若改為"1"為1秒刷新、"2"為2秒刷新，以此類推)</i></p>
 <h2>時鐘速度狀態(限Raspberry Pi使用)</h2>
-<p><i><span style="color:#065E50">vcgencmd measure_clock arm</p></i></span>
+<p><i><span style="color:#065E50">vcgencmd measure_clock arm</span></i></p>
 <h4>連續顯示</h4>
-<p><i><span style="color:#065E50">watch -n 0 vcgencmd measure_clock arm</span>("0"為0.1秒刷新。若改為"1"為1秒刷新、"2"為2秒刷新，以此類推)</p></i>
+<p><i><span style="color:#065E50">watch -n 0 vcgencmd measure_clock arm</span>("0"為0.1秒刷新。若改為"1"為1秒刷新、"2"為2秒刷新，以此類推)</i></p>
 <h2>卸載USB</h2>
-<p><i><span style="color:#065E50">sudo eject /dev/sdXX</span>(XX是移除該位置的裝置。可以用"fdisk -l"檢視該裝置的位置)</p></i>
+<p><i><span style="color:#065E50">sudo eject /dev/sdXX</span>(XX是移除該位置的裝置。可以用"fdisk -l"檢視該裝置的位置)</i></p>
 <h2>vchiq影片播放問題</h2>
-<p><i><span style="color:#065E50">sudo chmod 447 /dev/vchiq</span> (最大權限777)</p></i>
+<p><i><span style="color:#065E50">sudo chmod 447 /dev/vchiq</span> (最大權限777)</i></p>
 <h2>給予使用Bash權限</h2>
-<p><i>(先用"cd"調整該檔資料夾的位置)<span style="color:#065E50">chmod u+x P.sh</span> ("P"是檔案名稱，".sh"是副檔名)</p></i>
+<p><i>(先用"cd"調整該檔資料夾的位置)<span style="color:#065E50">chmod u+x P.sh</span> ("P"是檔案名稱，".sh"是副檔名)</i></p>
 <h2>XAMPP啟動腳本(sh腳本，限x86 64位元使用)</h2>
 <p><u>注意:sh腳本需要用"<span style="color:#065E50">sudo chmod u+x P.sh</span>("P"是檔案名稱，".sh"是副檔名)"才能執行</u></p>
 <a href="./down/Xampp.sh" download>XAMPP腳本下載</a>
 <span style="color:#065E50"><p><i>#! /bin/bash<br>
 echo 輸入使用者密碼<br>
 sudo /./opt/lampp/manager-linux-x64.run<br>
-exit</p></i></span>
+exit</i></p></span>
 <h2>CPU 10次壓力溫度測試(sh腳本，限Raspberry Pi使用)</h2>
 <p>(來自ExplainingComputers.com)<br>
 <u>注意:sh腳本需要用"<span style="color:#065E50">sudo chmod u+x </span>(檔案位置名稱)"才能執行</u></p>
@@ -204,34 +208,36 @@ vcgencmd measure_temp</i></p></span></div>
 <hr>
 
 <span style="color:#5500C6"><a name="D"><h2>vi簡單用法</h2></a></span>
-<div class="D p_center"><h2>操作模式</h2>
-<p><i>a 由游標之後進行寫入模式</p></i>
-<p><i>i 由游標之前進行寫入模式</p></i>
-<p><i>o 新增一行於該行之下進行寫入模式(如同Enter鍵後開始打字)</p></i>
-<p><i>x 刪除游標該字</p></i>
+<div class="D p_center">
+<h2>操作模式</h2>
+<p><i>a 由游標之後進行寫入模式</i></p>
+<p><i>i 由游標之前進行寫入模式</i></p>
+<p><i>o 新增一行於該行之下進行寫入模式(如同Enter鍵後開始打字)</i></p>
+<p><i>x 刪除游標該字</i></p>
 <br>
-<p><i>dd 刪除(剪下)游標該行</p></i>
-<p><i>yy 複製游標該行文字</p></i>
-<p><i>p 在游標新增下一行並貼上複製的文字</p></i>
+<p><i>dd 刪除(剪下)游標該行</i></p>
+<p><i>yy 複製游標該行文字</i></p>
+<p><i>p 在游標新增下一行並貼上複製的文字</i></p>
 <br>
-<p><i>:w 存檔</p></i>
-<p><i>:q 退出</p></i>
-<p><i>:x 存檔後離開(僅當檔案被修改時才寫入,並更新檔案修改時間,否則不會更新檔案修改時間)</p></i>
-<p><i>:wq 存檔後離開(強制更新檔案的修改時間)</p></i>
-<p><i>!為強制性，在字母後輸入。示範 :q! 就是強制退出 :w! 就是強制存檔</p></i>
+<p><i>:w 存檔</i></p>
+<p><i>:q 退出</i></p>
+<p><i>:x 存檔後離開(僅當檔案被修改時才寫入,並更新檔案修改時間,否則不會更新檔案修改時間)</i></p>
+<p><i>:wq 存檔後離開(強制更新檔案的修改時間)</i></p>
+<p><i>!為強制性，在字母後輸入。示範 :q! 就是強制退出 :w! 就是強制存檔</i></p>
 <br>
-<p><i>:new 開啟視窗(水平)</p></i>
-<p><i>:vnew 開啟視窗(垂直)</p></i>
-<p><i>[Ctrl]+[w]+[w] 切換視窗</p></i>
-<p><i>:?a &nbsp a代表所有視窗的意思 &nbsp;&nbsp 範例>> &nbsp :qa為所有視窗關閉 &nbsp :qa!為所有視窗強制關閉 &nbsp :wa為所有視窗寫入 &nbsp :wqa!為所有視窗強制寫入關閉 &nbsp ...依此類推</p></i>
+<p><i>:new 開啟視窗(水平)</i></p>
+<p><i>:vnew 開啟視窗(垂直)</i></p>
+<p><i>[Ctrl]+[w]+[w] 切換視窗</i></p>
+<p><i>:?a &nbsp a代表所有視窗的意思 &nbsp;&nbsp 範例>> &nbsp :qa為所有視窗關閉 &nbsp :qa!為所有視窗強制關閉 &nbsp :wa為所有視窗寫入 &nbsp :wqa!為所有視窗強制寫入關閉 &nbsp ...依此類推</i></p>
 <h2>寫入模式</h2>
-<p><i>[Esc] 退出寫入模式到操作模式</p></i>
+<p><i>[Esc] 退出寫入模式到操作模式</i></p>
 </div>
 
 <hr>
 
 <span style="color:#0029C6"><a name="E"><h2>其他操作(LX終端機)</h2></a></span>
-<div class="E p_center"><span style="color:#20368A"><p><b>>(建立檔案)</p></b></span>
+<div class="E p_center">
+<span style="color:#20368A"><p><b>>(建立檔案)</p></b></span>
 <span style="color:#20368A"><p><b>touch(建立檔案或修改檔案時間)</p></b></span>
 <span style="color:#20368A"><p><b>cat(瀏覽或編輯文字檔)</p></b></span>
 <span style="color:#20368A"><p><b>cat>文字檔(新增文字檔或覆蓋原有的文字並編輯)</p></b></span>
@@ -248,33 +254,33 @@ vcgencmd measure_temp</i></p></span></div>
 <span style="color:gray"><a name="D"><h2>Git命令</h2></a></span>
 <div class="F p_center">
 <h2>設定電子郵件</h2>
-<p><i><span style="color:#065E50"><u>git clone "https://github.com/Name/Repository.git"</u></span></p></i>
+<p><i><span style="color:#065E50">git clone "https://github.com/Name/Repository.git"</span></p></i>
 <h2>設定電子郵件</h2>
-<p><i><span style="color:#065E50"><u>git config --global user.email "name@example.com"</u></span></p></i>
+<p><i><span style="color:#065E50">git config --global user.email "name@example.com"</span></p></i>
 <h2>設定名稱</h2>
-<p><i><span style="color:#065E50"><u>git config --global user.name "Name"</u></span></p></i>
+<p><i><span style="color:#065E50">git config --global user.name "Name"</span></p></i>
 <h2>創建.git(最初步驟，要讓Git知道你的資料夾跟更動的檔案)</h2>
-<p><i>(先用"cd"調整該檔資料夾的位置)<span style="color:#065E50"><u>git init</u></span></p></i>
+<p><i>(先用"cd"調整該檔資料夾的位置)<span style="color:#065E50">git init</span></p></i>
 <h2>查詢Git檔案狀態</h2>
-<p><i><span style="color:#065E50"><u>git status</u></span></p></i>
+<p><i><span style="color:#065E50">git status</span></p></i>
 <h2>加入已更動檔案到Git暫存區(中間步驟，可以配合git查詢目前檔案與狀態)</h2>
-<p><i><span style="color:#065E50"><u>git add .</u></span></p></i>
+<p><i><span style="color:#065E50">git add .</span></p></i>
 <p><i>git status:紅色為未寫進到暫存區，綠色為寫進暫存區</i></p>
 <h2>取消加進Git add暫存區中的檔案</h2>
-<p><i><span style="color:#065E50"><u>git reset</u></span></p></i>
+<p><i><span style="color:#065E50">git reset</span></p></i>
 <p><i>檔案有問題或是更動時用。純粹更改檔案內容使用<span style="color:#065E50">git add .</span>即可</i></p>
 <h2>對加入到暫存區的檔案進行描述(最終步驟，完成後即可準備上傳)</h2>
-<p><i><span style="color:#065E50"><u>git commit -m "描述文字"</u></span></p></i>
+<p><i><span style="color:#065E50">git commit -m "描述文字"</span></p></i>
 <h2>加入GitHub資料庫(倉儲)位置</h2>
-<p><i><span style="color:#065E50"><u> git remote add Example "https://github.com/Name/Repository.git"</u></span></p></i>
+<p><i><span style="color:#065E50"> git remote add Example "https://github.com/Name/Repository.git"</span></p></i>
 <h2>上傳(更新)到"Example"指定位置的分支(預設通常為master)</h2>
-<p><i><span style="color:#065E50"><u> git push Example master</u></span></p></i>
+<p><i><span style="color:#065E50">git push Example master</span></p></i>
 <h2>下載(更新)到此資料夾(以 Example master為例)</h2>
 <p><i>push若遇到上傳端修改時間不符時，要使用pull對本端該資料夾更新</i></p>
-<p><i><span style="color:#065E50"><u> git pull Example master</u></span></p></i>
+<p><i><span style="color:#065E50">git pull Example master</span></p></i>
 </div>
 
-<br>
+<hr><br>
 
 <span id="center"><p><u><i><b>E N D</p></u></i></b></span>
 </body>
