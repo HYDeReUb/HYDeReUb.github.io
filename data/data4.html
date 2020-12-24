@@ -91,7 +91,8 @@ function topFunction() {
 <h2>清除之前安裝(install)的安裝檔</h2>
 <p><i><span style="color:#065E50">sudo apt clean</span> (需要時再改成apt-get)</p></i>
 <h2>清除之前下載的安裝檔，但不刪除已安裝軟體的安裝檔</h2>
-<p><i><span style="color:#065E50">sudo apt autoclean</span> (需要時再改成apt-get)</p></i></div>
+<p><i><span style="color:#065E50">sudo apt autoclean</span> (需要時再改成apt-get)</p></i>
+</div>
 
 <hr>
 
@@ -145,9 +146,10 @@ function topFunction() {
 <h2>Firefox瀏覽器(Firefox ESR)</h2>
 <span style="color:#065E50"><p><i>sudo apt install firefox-esr</p></i></span>
 <h2>Chromium瀏覽器</h2>
-<span style="color:#065E50"><p><i>sudo apt install chromium-browser</p></i></span></div>
+<span style="color:#065E50"><p><i>sudo apt install chromium-browser</p></i></span>
 <h2>Veracrypt預備套件</h2>
-<span style="color:#065E50"><p><i>sudo apt install libwxgtk3.0-gtk3-0v5</p></i></span></div>
+<span style="color:#065E50"><p><i>sudo apt install libwxgtk3.0-gtk3-0v5</p></i></span>
+</div>
 <hr>
 
 <span style="color:#8600C6"><a name="C"><h2>其他指令</h2></span></a>
@@ -186,18 +188,18 @@ exit</p></i></span>
 <h2>CPU 10次壓力溫度測試(sh腳本，限Raspberry Pi使用)</h2>
 <p>(來自ExplainingComputers.com)<br>
 <u>注意:sh腳本需要用"<span style="color:#065E50">sudo chmod u+x </span>(檔案位置名稱)"才能執行</u></p>
-<a href="./down/CPU10test.sh">CPU壓力腳本下載</a>
-<span style="color:#065E50" download>
+<a href="./down/CPU10test.sh" download>CPU壓力腳本下載</a>
+<span style="color:#065E50">
 <p><i>#! /bin/bash<br>
 clear<br>
 <br>
 for x in {1..10}<br>
 do<br>
 vcgencmd measure_temp<br>
-sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run >/dev/null 2>&1<br>
+sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run >/dev/null 2>&1 <br>
 done<br>
 <br> 
-vcgencmd measure_temp</i></p></div></span>
+vcgencmd measure_temp</i></p></span></div>
 
 <hr>
 
@@ -218,12 +220,13 @@ vcgencmd measure_temp</i></p></div></span>
 <p><i>:wq 存檔後離開(強制更新檔案的修改時間)</p></i>
 <p><i>!為強制性，在字母後輸入。示範 :q! 就是強制退出 :w! 就是強制存檔</p></i>
 <br>
-<p><i>:new 開啟視窗(水平)</p>
-<p><i>:vnew 開啟視窗(垂直)</p>
+<p><i>:new 開啟視窗(水平)</p></i>
+<p><i>:vnew 開啟視窗(垂直)</p></i>
 <p><i>[Ctrl]+[w]+[w] 切換視窗</p></i>
 <p><i>:?a &nbsp a代表所有視窗的意思 &nbsp;&nbsp 範例>> &nbsp :qa為所有視窗關閉 &nbsp :qa!為所有視窗強制關閉 &nbsp :wa為所有視窗寫入 &nbsp :wqa!為所有視窗強制寫入關閉 &nbsp ...依此類推</p></i>
 <h2>寫入模式</h2>
-<p><i>[Esc] 退出寫入模式到操作模式</p></i></div></div>
+<p><i>[Esc] 退出寫入模式到操作模式</p></i>
+</div>
 
 <hr>
 
@@ -237,7 +240,8 @@ vcgencmd measure_temp</i></p></div></span>
 <span style="color:#20368A"><p><b>[Ctrl]+[D](存檔在cat編寫的文字)</p></b></span>
 <span style="color:#20368A"><p><b>[Ctrl]+[C](中止目前的執行)</p></b></span>
 <span style="color:#20368A"><p><b>[Ctrl]+[Shift]+[C] (複製，相當於一般在用的[Ctrl]+[C])</p></b></span>
-  <span style="color:#20368A"><p><b>[Ctrl]+[Shift]+[V] (貼上，相當於一般在用的[Ctrl]+[V])</p></b></span></div>
+<span style="color:#20368A"><p><b>[Ctrl]+[Shift]+[V] (貼上，相當於一般在用的[Ctrl]+[V])</p></b></span>
+</div>
 
 <hr>
 
@@ -253,12 +257,13 @@ vcgencmd measure_temp</i></p></div></span>
 <p><i>(先用"cd"調整該檔資料夾的位置)<span style="color:#065E50"><u>git init</u></span></p></i>
 <h2>查詢Git檔案狀態</h2>
 <p><i><span style="color:#065E50"><u>git status</u></span></p></i>
-<h2>加入已更動檔案到Git緩衝區(中間步驟，可以配合git查詢目前檔案與狀態)</h2>
+<h2>加入已更動檔案到Git暫存區(中間步驟，可以配合git查詢目前檔案與狀態)</h2>
 <p><i><span style="color:#065E50"><u>git add .</u></span></p></i>
-<p><i>git status:紅色為未寫進到緩衝區，綠色為寫進緩衝區</i></p>
-<h2>加入已更動檔案到Git緩衝區</h2>
-<p><i><span style="color:#065E50"><u>git add .</u></span></p></i>
-<h2>對加入到緩衝區的檔案進行描述(最終步驟，完成後即可準備上傳)</h2>
+<p><i>git status:紅色為未寫進到暫存區，綠色為寫進暫存區</i></p>
+<h2>取消加進Git add暫存區中的檔案</h2>
+<p><i><span style="color:#065E50"><u>git reset</u></span></p></i>
+<p><i>檔案有問題或是更動時用。純粹更改檔案內容使用<span style="color:#065E50">git add .</span>即可</i></p>
+<h2>對加入到暫存區的檔案進行描述(最終步驟，完成後即可準備上傳)</h2>
 <p><i><span style="color:#065E50"><u>git commit -m "描述文字"</u></span></p></i>
 <h2>加入GitHub資料庫(倉儲)位置</h2>
 <p><i><span style="color:#065E50"><u> git remote add Example "https://github.com/Name/Repository.git"</u></span></p></i>
