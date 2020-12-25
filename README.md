@@ -5,19 +5,25 @@
 
 -----------------------------------------------------
 # 紀錄:
+## 20201225
+```
+修正"downANDview.html"無法下載問題
+修正"index.html"(school)離線圖片載入問題
+修正"index.html"離線圖片載入問題
+```
 ## 20201224
 ```
-更新"data4.html"(git)
+更新"data4.html"
 ```
 ## 20201223
 ```
-更新"data4.html"(git)
-更新"index.html"(git)
-更新"downANDview.html"項目(git)
+更新"data4.html"
+更新"index.html"
+更新"downANDview.html"項目
 ```
 ## 20201222
 ```
-更新"data4.html"(git)
+更新"data4.html"
 修正無法置中問題
 ```
 ## 20201220
