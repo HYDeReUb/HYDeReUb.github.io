@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html><title>Ubuntu相關下載</title>
-<head><meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+<title>Ubuntu相關下載</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 <link rel="icon" href="/pictures/favicon.ico" type="image/x-icon" sizes="16x16">
-<meta charset="UTF-8">
+<meta >
 <style>
 ::selection {background: #86909A;color: white;}
 ::-moz-selection { /* Code for Firefox */background: #86909A;color: white;}
@@ -70,8 +72,14 @@ aside {
   float:left;
 }
 .padding-desk{padding-left:50%}
-
-
+}
+body {
+  background-color: white;
+  color: black;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
 }
 </style></head>
 <body>
@@ -93,7 +101,13 @@ function topFunction() {
 }
 </script>
 
-<div id="center"><a href="../index.html">回首頁</a></div>
+<div id="center"><a href="../index.html">回首頁</a> | <a href="#Dark" onclick="myFunction()">夜間模式</a></div>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 <h1>Ubuntu相關下載</h1>
 
 

@@ -3,8 +3,7 @@
 <head>
   <title>Raspberry Pi 4 Model B 已知問題與已知操作</title>
   <link rel="icon" href="/pictures/favicon.ico" type="image/x-icon" sizes="16x16">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 <style>
 ::selection {background: #86909A;color: white;}
 ::-moz-selection { /* Code for Firefox */background: #86909A;color: white;}
@@ -36,6 +35,15 @@ a.home:active {
   color: red;
 }
 .text_LR_move{padding-left:50px;padding-right:50px;}
+
+body {
+  background-color: white;
+  color: black;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 </style></head>
 <body>
 <button onclick="topFunction()" id="myBtn" title="回頂端">TOP</button>
@@ -57,7 +65,13 @@ function topFunction() {
 }
 </script>
 
-<div id="center"><a href="../index.html" class="home">回首頁</a></div>
+<div id="center"><a href="../index.html">回首頁</a> | <a href="#Dark" onclick="myFunction()">夜間模式</a></div>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 <h1>Raspberry Pi 4 Model B 已知問題與已知操作</div></h1>
 
 <span style="color:#2D00C5"><a name="B"><h1>已知操作</h1></span></a>

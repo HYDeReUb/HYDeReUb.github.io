@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html><title>Raspberry Pi相關下載</title>
+<html>
+<head>
+<title>Raspberry Pi相關下載</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 <link rel="icon" href="/pictures/favicon.ico" type="image/x-icon" sizes="16x16">
-<meta charset="UTF-8">
-<head><meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 ::selection {background: #86909A;color: white;}
 ::-moz-selection { /* Code for Firefox */background: #86909A;color: white;}
@@ -72,7 +73,17 @@ aside {
 .padding-desk{padding-left:50%}
 
 }
-</style></head>
+body {
+  background-color: white;
+  color: black;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+
 <body>
 <button onclick="topFunction()" id="myBtn" title="回頂端">TOP</button>
 <script>
@@ -92,10 +103,15 @@ function topFunction() {
 }
 </script>
 
+<div id="center"><a href="../index.html">回首頁</a> | <a href="#Dark" onclick="myFunction()">夜間模式</a></div>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 
-<div id="center"><a href="../index.html">回首頁</a></div>
 <h1>Raspberry Pi相關下載</h1>
-
 <aside>
 <div id="a"><p>燒錄器下載區</p>
   <p>PS:要使用Raspberry Pi OS者可直接下載Raspberry Pi Imager來使用，不需額外下載OS</p></div>
@@ -103,7 +119,7 @@ function topFunction() {
 <p><a href="https://www.balena.io/etcher/" target="_blank" class="Url_Block Url_Block0">balenaEtcher</a></p>
 <p><a href="https://sourceforge.net/projects/win32diskimager/" target="_blank" class="Url_Block Url_Block0">Win32 Disk Imager</a></p>
 <div id="a"><p>應用程式下載區</p></div>
-<p><a href="https://forum.openmediavault.org/index.php?thread/28789-installing-omv5-on-raspberry-pi-s-armbian-sbc-s-i386-32-bit-platforms/" target="_blank" class="Url_Block Url_Block1">OpenMediaVault(NAS)</a></a></p>
+<p><a href="https://forum.openmediavault.org/index.php?thread/28789-installing-omv5-on-raspberry-pi-s-armbian-sbc-s-i386-32-bit-platforms/" target="_blank" class="Url_Block Url_Block1">OpenMediaVault(NAS)</a></p>
 <div id="a"><p>OS下載區</p></div> <!--DATA-->
 <p><a href="https://www.raspberrypi.org/software/operating-systems/" target="_blank" class="Url_Block Url_Block0">Raspberry Pi OS</a></p>
 <p><a href="https://www.raspberrypi.org/downloads/noobs/" target="_blank" class="Url_Block Url_Block0">NOOBS(系統安裝程序)</a></p>
@@ -111,7 +127,6 @@ function topFunction() {
 <p><a href="https://ubuntu-mate.org/download/" target="_blank" class="Url_Block Url_Block0">Ubuntu MATE</a></p>
 <p><a href="https://libreelec.tv/downloads_new/" target="_blank" class="Url_Block Url_Block0">LibreELEC(影音)</a></p>
 <p><a href="https://retropie.org.uk/download/" target="_blank" class="Url_Block Url_Block0">RetroPie(電玩)</a></p>
-</div>
 </aside>
 
 <div class="padding-desk">
@@ -145,3 +160,4 @@ function topFunction() {
 <span id="center"><p><u><i><b>E N D</b></i></u></p></span>
 </body>
 </html>
+
