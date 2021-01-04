@@ -51,9 +51,7 @@ a.Url_Block1:active {
 a:hover, a:active {
   background-color: #FF5757;
 }
-a.URL:link, a.URL:visited {
- color:#0031FE;
-}
+
 #a {
   background-color: purple;
   color: white;
@@ -84,6 +82,9 @@ body {
   background-color: black;
   color: white;
 }
+a.dark-mode-href:link , a.dark-mode-href:visited {
+  background-color: #8C8C8C;
+}
 </style>
 </head>
 
@@ -106,11 +107,11 @@ function topFunction() {
 }
 </script>
 
-<div id="center"><a href="../index.html" class="URL">回首頁</a> | <a href="#Dark" onclick="myFunction()">夜間模式</a></div>
+<div id="center"><a href="../index.html">回首頁</a> | <a href="#Dark" onclick="myFunction()">夜間模式</a></div>
 <script>
 function myFunction() {
    var element = document.body;
-   element.classList.toggle("dark-mode");
+   element.classList.toggle("dark-mode dark-mode-href");
 }
 </script>
 
