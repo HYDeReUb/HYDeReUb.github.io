@@ -51,7 +51,9 @@ a.Url_Block1:active {
 a:hover, a:active {
   background-color: #FF5757;
 }
-
+a.URL:link, a.URL:visited {
+  color:#1100B6  
+}
 #a {
   background-color: purple;
   color: white;
@@ -82,7 +84,9 @@ body {
   background-color: black;
   color: white;
 }
-
+.dark-mode-href {
+  color: #00E4FF;
+}
 </style>
 </head>
 
@@ -109,7 +113,9 @@ function topFunction() {
 <script>
 function myFunction() {
    var element = document.body;
+   var elementURL = document.URL;
    element.classList.toggle("dark-mode");
+   elementURL.classList.toggle("dark-mode-href");
 }
 </script>
 
