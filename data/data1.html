@@ -22,7 +22,7 @@
   padding: 15px;
   border-radius: 4px;
 }
-#center { /* 置中 這是HTML5用法。 <center>為HTML4用法，HTML5已不支援 */
+.center { /* 置中 這是HTML5用法。 <center>為HTML4用法，HTML5已不支援 */
   text-align: center;
 }
 a.Url_Block:link, a.Url_Block:visited {
@@ -81,6 +81,10 @@ body {
   background-color: black;
   color: white;
 }
+.hrefcolor
+{
+  color:#2471A3;
+}
 </style>
 </head>
 
@@ -103,7 +107,7 @@ function topFunction() {
 }
 </script>
 
-<div id="center" style="color:#2471A3"><a href="../index.html">回首頁</a> | <a href="#Dark" onclick="myFunction()">夜間模式</a></div>
+<div class="center hrefcolor"><a href="../index.html">回首頁</a> | <a href="#Dark" onclick="myFunction()">夜間模式</a></div>
 <script>
 function myFunction() {
    var element = document.body;
@@ -157,7 +161,7 @@ function myFunction() {
 </div>
 <br><br><br>
 
-<span id="center"><p><u><i><b>E N D</b></i></u></p></span>
+<span class="center"><p><u><i><b>E N D</b></i></u></p></span>
 </body>
 </html>
 
