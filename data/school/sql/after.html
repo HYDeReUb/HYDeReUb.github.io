@@ -60,7 +60,7 @@ function topFunction() {
 <div id="center"><a href="../index.html" class="home">回上課資料</a></div>
 <h1>期末資料_SQL</h1>
 <br>
-  <hr>
+  <hr><h2>第一斷面</h2>
 <div id="hr-padd">
 <p>CREATE:<br>
 <br>
@@ -84,10 +84,76 @@ WHERE std_sex = "F" and std_dept_no="IE"</p>
 FROM Geography A1, Store_Information A2<br>
 WHERE A1.Store_Name = A2.Store_Name<br>
 GROUP BY A1.Region_Name;</p>
-<hr>
-<p>考試:<br>
-
 </div><hr>
+<h2>第二斷面</h2>
+<div id="hr-padd">
+<h3>建立其他資料表</h3>
+<p>CREATE TABLE dept_detail<br>
+&nbsp;&nbsp;&nbsp;&nbsp;( dept_no &nbsp;&nbsp;&nbsp;&nbsp;char(2) primary key,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;depat_name varchar (20));</p>
+<p>--<br>
+INSERT INTO dept_detail<br>
+(dept_no, dept_name)<br>
+ VALUES<br>
+("IE","Information Engineering"),<br>
+("IM","Information Management")</p>
+<h3>更新結構:</h3>
+<p>ALTER TABLE student_detail ADD&nbsp;&nbsp; cell_int;<br><br>
+ALTER TABLE student_detail DROP cell;<br><br>
+ALTER TABLE student_detail CHANGE<br>
+&nbsp;&nbsp;&nbsp;&nbsp;std_sex std_gender char(2);<br><br>
+ALTER TABLE student_detail CHANGE<br>
+&nbsp;&nbsp;&nbsp;&nbsp;std_gender std_sex char(1);</p>
+<h3>未知:</h3>
+<p> INSERT INTO student_detail<br>
+(std_id, std_name, std_sex, std_dept_no, <br>
+&nbsp;std_birthdate, std_grade)<br>
+&nbsp;VALUES<br>
+("E001","John Mike","M","IE","1997-01-01" ,99)</p>
+<p>--<br>
+&nbsp;&nbsp;INSERT INTO student_detail<br>
+(std_id, std_name, std_sex, std_dept_no, <br>
+&nbsp;std_birthdate, std_grade)<br>
+&nbsp;VALUES<br>
+("E002","John Wu","F","IE","1997-02-01" ,89),<br>
+ ("E003","John Cu","M","IM","1997-03-01" ,79)</p>
+<h3>更新:</h3>
+<p>UPDATE student_detail<br>
+SET std_grade = 100<br>
+WHERE &nbsp;&nbsp;std_id ="E005";</p>
+</div><hr>
+<h2>第三斷面</h2>
+<div id="hr-padd">
+<h3>Join &nbsp; 連結 兩(以上)資料表格:<br><br>
+連結的欄位:<br>
+&nbsp;1.&nbsp;&nbsp;同類別, 同長度<br>
+&nbsp;2.&nbsp;&nbsp;同屬性</h3>
+<p>SELECT ksu_std_name, ksu_std_department, dept_name<br>
+FROM<br>
+ksu_std_table as a, dept_detail as b<br>
+WHERE<br>
+<span style ="background-color:cyan">a.ksu_std_department = b.dept_id</span></p>
+</div><hr>
+<h2>筆記區</h2>
+<div id="hr-padd">
+<p>SELECT ksu_std_department, dept_name<br>
+FROM<br>
+ksu_std_table, dept_detail as b<br>
+WHERE<br>
+a.ksu_std_department = b.ksu_std_department</p>
+<hr>
+<p>SELECT &nbsp;a.ksu_std_name,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.ksu_std_department,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.dept_name<br>
+FROM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ksu_std_table as a ,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dept_detail as b<br>
+WHERE<br>
+&nbsp;&nbsp;a.ksu_std_department = b.ksu_std_department</p>
+<hr>
+<p>ALTER TABLE dept_detail CHANGE<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dept_id<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ksu_std_department<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char(2);</p>
 
   <br><br><br>
   <span id="center"><p><u><i><b>E N D</b></i></u></p></span>
