@@ -3,7 +3,16 @@
 <style> 
 ::selection {background: #86909A;color: white;}
 ::-moz-selection { /* Code for Firefox */background: #86909A;color: white;}
-
+@media only screen and (min-width: 1050px) {
+body{
+background-repeat: no-repeat;
+background-attachment: fixed; 
+background-size: 100% 100%;
+padding-left:30%;
+padding-right:30%;
+}
+  
+}
 a.Url_Block:link, a.Url_Block:visited {
   background-color: orange;
   color: white;
@@ -52,13 +61,7 @@ a.URL:hover, a.URL:active {
 a.URL:active{
  color:red;
 }
-body{
-background-repeat: no-repeat;
-background-attachment: fixed; 
-background-size: 100% 100%;
-padding-left:30%;
-padding-right:30%;
-}
+
 #a {
   background-color: purple;
   color: white;
