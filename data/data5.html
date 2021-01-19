@@ -85,10 +85,10 @@ function myFunction() {
 
 <div class="text_LR_move"><a name="B1"><h2>1=>初始使用Raspberry Pi</h2></a>
 <h3>下載區:</h3>
-<p><b>新手可以優先考慮使用<a href="https://www.raspberrypi.org/downloads/" target="_blank">Raspberry Pi Imager</a>來燒錄系統，有多種發行版可以選擇，且操作簡單</b>
-  (<a href="https://downloads.raspberrypi.org/imager/imager_1.4.exe" download>Windows</a>)
-  (<a href="https://downloads.raspberrypi.org/imager/imager_1.4.dmg" download>macOS</a>)
-  (<a href="https://downloads.raspberrypi.org/imager/imager_1.4_amd64.deb" download>Ubuntu</a>)<br>
+<p><b>新手可以優先考慮使用<a href="https://www.raspberrypi.org/software/" target="_blank">Raspberry Pi Imager</a>來燒錄系統，有多種發行版可以選擇，且操作簡單</b>
+  (<a href="https://downloads.raspberrypi.org/imager/imager_1.5.exe" download>Windows</a>)
+  (<a href="https://downloads.raspberrypi.org/imager/imager_1.5.dmg" download>macOS</a>)
+  (<a href="https://downloads.raspberrypi.org/imager/imager_1.5_amd64.deb" download>Ubuntu</a>)<br>
 
 若不想燒錄多次但想試用多個系統，可以考慮使用<a href="https://www.raspberrypi.org/downloads/noobs/" target="_blank">NOOBS</a></p>
 
@@ -103,21 +103,21 @@ function myFunction() {
 <p><i>5-2.老實說，其實使用root權限應該是比pi還要大的，若有需要用到高權限(像GUFW)還是以pi用戶為優先，所以第6步驟可以運用鎖定跟解鎖pi的動作防止長時間暴露</p></i>
 <p><i>6.切換使用者後用<span style="color:#065E50">sudo passwd --lock pi</span>來鎖定pi(解鎖<span style="color:#065E50">sudo passwd --unlock pi</span>)，或刪除pi(詳細參見第一個網址的6~8條指令)，但我不建議對pi做刪除的動作，以防跟pi有關的問題發生</p></i>
 
-<b><a href="https://www.raspberrypi.org/documentation/configuration/security.md" target="_blank">1.https://www.raspberrypi.org/documentation/configuration/security.md</a></b>
+<b><a href="https://www.raspberrypi.org/documentation/configuration/security.md" target="_blank">1.https://www.raspberrypi.org/.../security.md</a></b>
 <br><br>
-<b><a href="https://www.taiwaniot.com.tw/%E6%8A%80%E8%A1%93%E6%96%87%E4%BB%B6/%E6%A8%B9%E8%8E%93%E6%B4%BE%E6%8A%80%E8%A1%93%E6%96%87%E4%BB%B6/%E6%A8%B9%E8%8E%93%E6%B4%BE%EF%BC%8Draspberry%EF%BC%8C%E5%85%A7%E7%BD%AE%E7%9A%84%E9%98%B2%E7%81%AB%E7%89%86ufw%E8%A8%AD%E7%BD%AE%E5%92%8C%E5%95%9F%E7%94%A8/" target="_blank">2.https://www.taiwaniot.com.tw/%E6%8A%80%E8%A1%93%...</a></b>
+<b><a href="https://www.taiwaniot.com.tw/%E6%8A%80%E8%A1%93%E6%96%87%E4%BB%B6/%E6%A8%B9%E8%8E%93%E6%B4%BE%E6%8A%80%E8%A1%93%E6%96%87%E4%BB%B6/%E6%A8%B9%E8%8E%93%E6%B4%BE%EF%BC%8Draspberry%EF%BC%8C%E5%85%A7%E7%BD%AE%E7%9A%84%E9%98%B2%E7%81%AB%E7%89%86ufw%E8%A8%AD%E7%BD%AE%E5%92%8C%E5%95%9F%E7%94%A8/" target="_blank">2.https://www.taiwaniot.com.tw/%E6%8A%......</a></b>
 <br><br>
-<b><a href="https://blog.gtwang.org/linux/howto-disable-ssh-root-login-in-linux/" target="_blank">3.https://blog.gtwang.org/linux/howto-disable-ssh-root-login-in-linux/</a></b><br>
+<b><a href="https://blog.gtwang.org/linux/howto-disable-ssh-root-login-in-linux/" target="_blank">3.https://blog.gtwang.org/...linux/</a></b><br>
 <br><br>
 <p>若在新用戶裡無法使用sudo時，可查看下面網址</p>
-<b><a href="https://www.itread01.com/content/1532680819.html" target="_blank">https://www.itread01.com/content/1532680819.html</a></b><br>
+<b><a href="https://www.itread01.com/content/1532680819.html" target="_blank">https://www.itread01.com/...80819.html</a></b><br>
 <hr>
 
 <a name="B2"><h2>2=>把USB儲存裝置當主硬碟開機<span style="color:red">(現已不用，詳細從11開始)</h2></a></span>
 <p><span style="color:#FF5900"><u>注意：這裡的操作只對Raspberry Pi OS有效而已，NOOBS跟其他OS可能無效</p></u></span>
 <p><span style="color:#FF0000"><u>警告：本操作具有一定的風險性，若稍有錯誤可能導致開不了機的情況。請謹慎操作</p></u></span>
 <h3>網址提供:</h3>
-<b><a href="https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md#usbmassstorageboot" target="_blank">1.https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md#usbmassstorageboot</a></b>
+<b><a href="https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md#usbmassstorageboot" target="_blank">1.https://www.raspberrypi.org/...bootloader_config.md#...</a></b>
 <br><br>
 <b><a href="https://www.youtube.com/watch?v=2zrwjGcyM5s" target="_blank">2.https://www.youtube.com/watch?v=2zrwjGcyM5s</a></b>
 <h3>說明:</h3>
@@ -168,14 +168,14 @@ function myFunction() {
 <p><i>watch.stdtime.gov.tw</p></i>
 <p><i>clock.stdtime.gov.tw</p></i>
 <p><i>tick.stdtime.gov.tw</p></i>
-<a href="https://p501lab.blogspot.com/2014/09/ntp_29.html" target="_blank"><span style="font-weight:bold">https://p501lab.blogspot.com/2014/09/ntp_29.html</a></span>
+<a href="https://p501lab.blogspot.com/2014/09/ntp_29.html" target="_blank"><span style="font-weight:bold">https://p501lab.blogspot.com/.../ntp_29.html</a></span>
 <hr>
 
 <a name="B5"><h2>5=>開啟video acceleration(影片解碼加速)<span style="color:red">(更新已有解決這方面的問題，可以不用做)</span></h2></a>
 <p><i>1.開啟video acceleration可有效使用Raspberry Pi的GPU性能，避免影片及圖像跑動等過度卡頓或緩慢</p></i>
 <p><i>2.以下連結為開啟影片解碼加速操作方式，不懂可以用Google翻譯功能</p></i>
 <p><span style="color:#FF5900"><i>要注意一下:這個啟用後chromium打開youtube觀看時可能會有錯誤發生，保守者勿做</i></span></p>
-<a href="https://www.dedoimedo.com/computers/rpi4-ubuntu-mate-hw-video-acceleration.html" target="_blank"><span style="font-weight:bold">https://www.dedoimedo.com/computers/rpi4-ubuntu-mate-hw-video-acceleration.html</a></span></div>
+<a href="https://www.dedoimedo.com/computers/rpi4-ubuntu-mate-hw-video-acceleration.html" target="_blank"><span style="font-weight:bold">https://www.dedoimedo.com/...acceleration.html</a></span></div>
 </div>
 <hr>
 <br><br><br>
