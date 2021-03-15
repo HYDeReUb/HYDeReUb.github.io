@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html><noscript><span style="color:red"><h2>請打開JavaScript才可正常使用</h2></span></noscript>
+ <head>
+  <!--R4-->
+  <script>function myfunction() { document.getElementById("demo3").innerHTML="Paragraph changed."; }</script>
+  <!--R5-->
+  <script>function myfunction1() { document.getElementById("demo4").innerHTML='Hello Kun Shan University!'; }</script>
+ </head
+ <body>
+<!--R1-->
+   <h2>What Can JavaScript Do?</h2>
+   <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+   <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+   <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+   <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+<hr>
+<!--R2-->
+   <p id="demo1">Javascript can change the style of an HTML element.</p>
+   <button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click!!</button>
+<hr>
+<!--R3-->
+   <h2>Script in body</h2>
+   <p id="demo2"></p>
+   <script>document.getElementById("demo2").innerHTML="My First Javascript"+"<br>"+"Kun Shan University";</script>
+<hr>
+<!--R4-->
+  <h2>JavaScript in head</h2>
+  <p id="demo3">A Paragraph.</p>
+  <button type="button" onclick="myfunction()">Try it</button>
+<hr>
+<!--R5-->
+  <h2>What Can JavaScript Do?</h2>
+  <p id="demo4">JavaScript can change HTML content.</p>
+  <button type="button" onclick="myfunction1()">Click!!</button>
+ </body>
+</html>
