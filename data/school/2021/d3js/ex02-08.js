@@ -2,11 +2,11 @@ var x=1;
 var x1=1;
      function myFunction(){
           if(x==1){
-          document.getElementById('myImage').src='pic_bulbon.gif'; 
+          document.getElementById('myImage').src='https://hydereub.github.io/data/school/2021/d3js/pic_bulbon.gif'; 
               x=2;
           }
           else{
-              document.getElementById('myImage').src='pic_bulboff.gif';
+              document.getElementById('myImage').src='https://hydereub.github.io/data/school/2021/d3js/pic_bulboff.gif';
               x=1;
           }
       };
