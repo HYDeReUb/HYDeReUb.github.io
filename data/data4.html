@@ -211,7 +211,9 @@ function myFunction() {
 <h2>給予使用Bash權限</h2>
 <p><i>(先用"cd"調整該檔資料夾的位置)<span style="color:#065E50">chmod u+x P.sh</span> ("P"是檔案名稱，".sh"是副檔名)</i></p>
 <h2>調整擁有者及群組</h2>
-<p><i><span style="color:#065E50">chown user:group /folder</span> ("user"是使用者、":group"是群組，這兩個可以則一輸入。"/folder"是指定路徑資料夾或檔案)</i></p>
+<p><i><span style="color:#065E50">chown user:group folder/file</span> ("user"是使用者、":group"是群組，這兩個可以則一輸入。"folder/file"是指定路徑資料夾或檔案)</i></p>
+<h4>資料夾內相同使用者、群組</h4>
+<p><i><span style="color:#065E50">chown -R user:group folder</span> (-R:指定路徑資料夾及資料夾內的所有資料夾與檔案更改)</i></p>
 <h2>XAMPP啟動腳本(sh腳本，限x86 64位元使用)</h2>
 <p><u>注意:sh腳本需要用"<span style="color:#065E50">sudo chmod u+x P.sh</span>("P"是檔案名稱，".sh"是副檔名)"才能執行</u></p>
 <a href="./down/Xampp.sh" download>XAMPP腳本下載</a>
