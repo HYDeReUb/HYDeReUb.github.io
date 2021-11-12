@@ -107,10 +107,10 @@ function myFunction() {
 <p><i>1.用<span style="color:#065E50">passwd</span>更改pi的密碼</p></i>
 <p><i>2.安裝ufw防火牆套件(詳細參見第二個網址)並設定</p></i>
 <p><i>3.開始新增使用者名稱(也就是之後主要的用戶)並給予權限(詳細參見第一個網址(Securing那邊開始往下數)的第3、4條指令)</p></i>
-<p><i>4.要求pi用戶使用sudo時要用戶密碼(詳細參見第一個網址(Securing那邊開始往下數)的第9、10條指令，vi的用法在倒數第二個)</p></i>
-<p><i>5-1.使用<span style="color:#065E50">sudo passwd</span>指令來設定UNIX密碼(就是超級使用者(root)的密碼，權限跟Administrator相當，之後若把Pi鎖住或刪除時剛好sudo權限突然無法使用時，這應該是唯一後路了)(之後要切入超級使用者模式時，輸入<span style="color:#065E50">su</span>指令後打UNIX密碼即可進入超級使用者(root)模式，符號會從＄變成＃，若非必要盡量別常用)(設定後可能會有鎖定目標暴力破解的問題，可以去看第三個網址來防止遠端SSH登入root的問題，雖然已經有UFW防護就是了...)</p></i>
-<p><i>5-2.老實說，其實使用root權限應該是比pi還要大的，若有需要用到高權限(像GUFW)還是以pi用戶為優先，所以第6步驟可以運用鎖定跟解鎖pi的動作防止長時間暴露</p></i>
-<p><i>6.切換使用者後用<span style="color:#065E50">sudo passwd --lock pi</span>來鎖定pi(解鎖<span style="color:#065E50">sudo passwd --unlock pi</span>)，或刪除pi(詳細參見第一個網址的6~8條指令)，但我不建議對pi做刪除的動作，以防跟pi有關的問題發生</p></i>
+<p><i>4.要求pi用戶使用sudo時要用戶密碼(詳細參見第一個網址(Securing那邊開始往下數)的第9、10條指令)</p></i>
+<p><i>5-1.輸入<span style="color:#065E50">sudo passwd</span>指令會先設定UNIX密碼(詳情請看5-2)。但這邊我們不需要使用Root，若有設置密碼的輸入<span style="color:#065E50">sudo passwd -d root</span>即可清除密碼，而不讓他人嘗試登入</p></i>
+<p><i>5-2.UNIX密碼就是超級使用者(root)的密碼，權限跟Administrator相當，之後要切入超級使用者模式時，輸入<span style="color:#065E50">su</span>指令後打UNIX密碼即可進入超級使用者(root)模式，符號會從＄變成＃，若非必要盡量別常用，另外設定後可能會有鎖定目標暴力破解的問題，可能要做好密碼加強的準備，否則建議不去用</p></i>
+<p><i>6.切換使用者後用<span style="color:#065E50">sudo passwd --lock pi</span>來鎖定pi(解鎖<span style="color:#065E50">sudo passwd --unlock pi</span>)，或刪除pi(詳細參見第一個網址的6~8條指令)，但我不建議對pi做刪除的動作，以防跟pi有關的問題發生(但需注意自啟動是否有關閉，不然還是會登入pi用戶)</p></i>
 
 <b><a href="https://www.raspberrypi.com/documentation/computers/configuration.html#securing-your-raspberry-pi" target="_blank">1.https://www.raspberrypi.org/...raspberry-pi</a></b>
 <br><br>
@@ -156,21 +156,7 @@ function myFunction() {
 <p><i>12.如果樹莓派偵測不到USB開機碟，插回sd卡打開終端機輸入<span style="color:#065E50">vcgencmd bootloader_version</span>看日期是不是<span style="color:#065E50">Sep 3 2020</span>或更後面的日期，是的話可能要檢查USB儲存的資料有無問題，不是的話參考4-1跟4-2的範例，但要注意資料夾是<span style="color:#065E50">critical</span>而非<span style="color:#065E50">stable</span>，更不是<span style="color:#065E50">beta</span>!!</p></i>
 <hr>
 
-<a name="B3"><h2><d>3=>定期備份系統資料</d><span style="color:red">(確認系統備份方面無效!!)</span></h2></a>
-<p><span style="color:#FF5900"><u>注意:這是我嘗試出來的結果，不確定是否真的有用</p></u></span>
-<p><b>(不過可以用它來備份自己的檔案到其他地方，還是很方便的一個工具)</b></p>
-<p><i>1.使用<span style="color:#065E50">sudo apt install backintime-gnome</span>進行安裝</p></i>
-<p><i>2.安裝好後，去"開始(樹莓派LOGO)">"系統工具">"Back In Time(root)"輸入root或pi的密碼</p></i>
-<p><i>3.去"snapshot">"設定"</p></i>
-<p><i>4.設好"快照存放位置"跟排程時間</p></i>
-<p><i>5.點擊"包含"後並點"Modify for Full System Backup"確認有跑出一個"/"的資料夾</p></i>
-<p><i>6.點擊"不包含"後點擊"新增資料夾"將路徑"/home"跟"/media"加入除外名單中</p></i>
-<p><i>7.點擊"自動移除"後打勾"時間超過"並設定你要它自動刪除的天數，我幾乎每天都用所以是輸入5並選擇天，也就是5天後的檔案會自動刪除，下面的"剩餘空間少於"跟"If free inodes is less than"打勾並保持默認值就好(或者這兩個可不勾?我是不太清楚)</p></i>
-<p><i>8.確認設定的資料沒問題後點擊"OK"即可完成，只要到了或超過你指定的時間就會開始備份</p></i>
-<p><i>9.若想還原的話，去"開始(樹莓派LOGO)">"系統工具">"Back In Time(root)"輸入root或pi的密碼後，點擊要還原的日期時間，按上方"還原">"還原"，跳出視窗後點擊"Yes"(勾的用途我不太確定，所以沒去勾)即可還原</p></i>
-<hr>
-
-<a name="B4"><h2>4=>手動更新時間</h2></a>
+<a name="B3"><h2>3=>手動更新時間</h2></a>
 <p><i>1.輸入<span style="color:#065E50">sudo apt install ntpdate</span>後輸入<span style="color:#065E50">sudo ntpdate -s time.stdtime.gov.tw</span>即可更新Raspberry Pi時間</p></i>
 <p><i>2.若輸入<span style="color:#065E50">sudo ntpdate -s time.stdtime.gov.tw</span>仍然無法更新時間的話，可以嘗試看看以下的時間伺服器網址或是參考連結</p></i>
 <p><i>tock.stdtime.gov.tw</p></i>
@@ -180,14 +166,14 @@ function myFunction() {
 <a href="https://p501lab.blogspot.com/2014/09/ntp_29.html" target="_blank"><span style="font-weight:bold">https://p501lab.blogspot.com/.../ntp_29.html</a></span>
 <hr>
 
-<a name="B5"><h2>5=>開啟video acceleration(影片解碼加速)<span style="color:red">(更新已有解決這方面的問題，可以不用做)</span></h2></a>
+<a name="B4"><h2>4=>開啟video acceleration(影片解碼加速)<span style="color:red">(更新已有解決這方面的問題，可以不用做)</span></h2></a>
 <p><i>1.開啟video acceleration可有效使用Raspberry Pi的GPU性能，避免影片及圖像跑動等過度卡頓或緩慢</p></i>
 <p><i>2.以下連結為開啟影片解碼加速操作方式，不懂可以用Google翻譯功能</p></i>
 <p><span style="color:#FF5900"><i>要注意一下:這個啟用後chromium打開youtube觀看時可能會有錯誤發生，保守者勿做</i></span></p>
 <a href="https://www.dedoimedo.com/computers/rpi4-ubuntu-mate-hw-video-acceleration.html" target="_blank"><span style="font-weight:bold">https://www.dedoimedo.com/...acceleration.html</a></span>
 <hr>
 
-<a name="B6"><h2>6=>Youtube影片下載</h2></a>
+<a name="B5"><h2>5=>Youtube影片下載</h2></a>
 <span style="color:orange"><h3>或是使用個人自製的下載器(查看下面的6-1)，使用上會比較輕鬆些~~</h3></span>
 <p><i>1.輸入<span style="color:#065E50">sudo apt install youtube-dl</span>安裝</p></i>
 <p><i>2.輸入<span style="color:#065E50">sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl</span>下載最新程式碼，會存放在 /usr/local/bin/youtube-dl 的位置中</p></i>
@@ -199,7 +185,7 @@ function myFunction() {
 <p><i>-2.若步驟5出現<span style="color:#B20000">ERROR:YouTube said: Invalid parameters.</span>時，請重新由步驟2開始做下去</p></i>
 <hr>
 
-<a name="B6-1"><h2>6-1=>自製Youtube影片下載器</h2></a>
+<a name="B5-1"><h2>5-1=>自製Youtube影片下載器</h2></a>
 <h3><a href="down/youtube下載器.sh">下載連結</a></h3>
 <p><i>1.下載完後找到該檔並允許執行。使用方式請查看連結(連結在1-1處)，並直接滑到下面的圖片說明</p></i>
 <p><i>1-1.<a href="https://www.cyberciti.biz/faq/run-execute-sh-shell-script/" target="_blank">https://www.cyberciti.biz/faq/run-execute-sh-shell-script/</a></p></i>
