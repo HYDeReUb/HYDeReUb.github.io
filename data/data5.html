@@ -183,10 +183,12 @@ function myFunction() {
 <p><i>以下排錯:</p></i>
 <p><i>-1.如果發現該程序長時間無動靜時，尋找該下載檔案確認是否能開啟，若可以請使用 [ctrl]+[c] 中止程序，沒有的話再等它看看</p></i>
 <p><i>-2.若步驟5出現<span style="color:#B20000">ERROR:YouTube said: Invalid parameters.</span>時，請重新由步驟2開始做下去</p></i>
+<p><i>-3.若遇到Python問題:<span style="color:#B20000">youtube-dl /usr/bin/env: ‘python’: No such file or directory</span>且確認有安裝Python3的話，請改用<span style="color:#065E50">python3 $(which youtube-dl) https://www.youtube.com/watch?v=</span>這個指令</p></i>
 <hr>
 
 <a name="B5-1"><h2>5-1=>自製Youtube影片下載器</h2></a>
 <h3><a href="down/youtube下載器.sh">下載連結</a></h3>
+<h3><a href="down/youtube下載器-python-fix.sh">下載連結(針對Python問題)</a></h3>
 <p><i>1.下載完後找到該檔並允許執行。使用方式請查看連結(連結在1-1處)，並直接滑到下面的圖片說明</p></i>
 <p><i>1-1.<a href="https://www.cyberciti.biz/faq/run-execute-sh-shell-script/" target="_blank">https://www.cyberciti.biz/faq/run-execute-sh-shell-script/</a></p></i>
 <p><i>2.以終端機執行後，先輸入[I]安裝youtube-dl，再按[U]更新程式碼(一段時間要按[U]更新一下)</p></i>
