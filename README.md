@@ -7,6 +7,7 @@
 # 紀錄:
 ## 20220226
 ```
+修改index.html
 data/README.md內容更新
 新增GPG簽名&sha256檔案驗證
 ```
