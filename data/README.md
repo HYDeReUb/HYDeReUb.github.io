@@ -6,7 +6,7 @@
 `gpg --keyserver keys.openpgp.org --recv-keys C3661042EF14C8E3`
 ### 2.先輸入下面指令
 `gpg --fingerprint C3661042EF14C8E3`<br>
-驗證公鑰指紋是否與下面的公鑰指紋吻合
+#### 驗證公鑰指紋是否與下面的公鑰指紋吻合
 ```
 pub   rsa3072 2022-02-25 [SC] [到期: 2024-02-25]
     這是公鑰指紋>>> 9620 F12F C25B 912C 7EBB  E364 C366 1042 EF14 C8E3 <<<這是公鑰指紋
