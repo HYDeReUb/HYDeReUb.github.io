@@ -5,7 +5,7 @@
 ### 1.首先，需要導入個人的GPG公鑰(ID:C3661042EF14C8E3)，命令如下
 `gpg --keyserver keys.openpgp.org --recv-keys C3661042EF14C8E3`
 ### 2.先輸入下面指令
-`gpg --fingerprint C3661042EF14C8E3`
+`gpg --fingerprint C3661042EF14C8E3`<br>
 驗證公鑰指紋是否與下面的公鑰指紋吻合
 ```
 pub   rsa3072 2022-02-25 [SC] [到期: 2024-02-25]
