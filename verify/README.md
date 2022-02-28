@@ -23,4 +23,4 @@ d8d3e4e092e5f8e39417605947a406ccd6378a6a738e29d93df844f342ffbfc8 *youtube下載�
 ```
 2.再來比對sha256驗證文件中的youtube下載器-python-fix.sh是不是跟上面的資訊相同，若相同則沒問題，反之請不要使用
 
-### END
+### ------END------
