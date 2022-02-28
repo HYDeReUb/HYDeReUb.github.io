@@ -7,14 +7,12 @@
 # 紀錄:
 ## 20220228
 ```
-data/README.md內容更新
-更換GPG簽名方式(不用解碼)
+更新"data4.html"
+更新"index.html"
 ```
 ## 20220226
 ```
-修改index.html
-data/README.md內容更新
-新增GPG簽名&sha256檔案驗證
+修改"index.html"
 ```
 ## 20220207
 ```
