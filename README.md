@@ -2,6 +2,7 @@
 [https://hydereub.github.io](https://hydereub.github.io)
 <<作者:HYDeReUb>><br>
 (Top跟時鐘這類的Javascript是從其他地方找來放的)
+
 檔案驗證請到[https://github.com/HYDeReUb/HYDeReUb.github.io/tree/verify/verify](https://github.com/HYDeReUb/HYDeReUb.github.io/tree/verify/verify)
 -----------------------------------------------------
 # 紀錄:
