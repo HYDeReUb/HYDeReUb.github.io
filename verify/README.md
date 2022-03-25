@@ -1,6 +1,6 @@
 ## 驗證sha256驗證文件是否為擁有者
 ### 0.請下載[sha256驗證文件.txt](https://github.com/HYDeReUb/HYDeReUb.github.io/blob/verify/verify/sha256%E9%A9%97%E8%AD%89%E6%96%87%E4%BB%B6.txt?raw=true) | [sha256驗證文件.txt.sig](https://github.com/HYDeReUb/HYDeReUb.github.io/blob/verify/verify/sha256%E9%A9%97%E8%AD%89%E6%96%87%E4%BB%B6.txt.sig?raw=true) (按右鍵 > 另存連結為...)
-### 1.首先，需要導入個人的GPG公鑰(ID:`C3661042EF14C8E3` KEYSERVER:`hkp://keys.openpgp.org`)，命令如下
+### 1.首先，需要導入個人的GPG公鑰(ID:`C3661042EF14C8E3` Keyserver:`hkp://keys.openpgp.org`)，命令如下
 `gpg --keyserver keys.openpgp.org --recv-keys C3661042EF14C8E3`
 ### 2.先輸入下面指令
 `gpg --fingerprint C3661042EF14C8E3`<br>
