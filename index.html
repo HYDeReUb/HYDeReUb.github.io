@@ -123,6 +123,15 @@ img {
   margin-right: auto;
 }
 
+
+#output      { font-size: 100%; white-space: pre-wrap; }
+#explanation { font-size: 90%; white-space: pre-wrap; background-color:#ddddff; }
+
+.strength1   { background-color: #FF9999; } /* red */
+.strength2   { background-color: #FFCC66; } /* orange */
+.strength3   { background-color: #FFFF99; } /* yellow */
+.strength4   { background-color: #CCFF99; } /* pale green */
+.strength5   { background-color: #99FF99; } /* green */
 /* 以上是CSS */ </style>
 
 <head>
@@ -178,7 +187,7 @@ function checkTime(i) {
 <a href="https://news.wii.tw/" target="_blank" class="URL">電筒王(手電筒及相關週邊)</a>
 </nav><br>
 
-<!--Google Custom Search修改自Linux Mint-->
+<!--Google Custom Search修改自Linux Mint
 <form action="https://www.google.com/cse" id="cse-search-box">
 
   <div class="center">
@@ -188,8 +197,106 @@ function checkTime(i) {
     <input type="submit" name="sa" value="Search"/>
   </div>
 
-<script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
- 
+<script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>-->
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="demo" src="./jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="zxcvbn" src="./zxcvbn.js"></script> 
+
+<script type="text/javascript">
+function objectDump(obj)
+{
+    this.result = '';
+    this.indent = -2;
+    this.dumpLayer = function(obj)
+    {
+        this.indent += 2;
+
+        for (var i in obj)
+        {
+            if (typeof(obj[i]) == "object")
+            {
+                this.result += "\n" +
+                "              ".substring(0, this.indent) + i +
+                ": " + "\n";
+                this.dumpLayer(obj[i]);
+            }
+            else
+            {
+                this.result +=
+                    "              ".substring(0, this.indent) + i +
+                    ": " + obj[i] + "\n";
+            }
+        }
+        this.indent -= 2;
+    }
+
+    this.dumpLayer(obj);
+    return this.result;
+}
+
+function checkPassword(pwd, toConsole)
+{
+    var output = document.getElementById('output');
+
+    if (pwd != '')
+    {
+        var ret = zxcvbn(pwd);
+        // send result to console
+        if (toConsole)
+        {
+	    // send the result object to the browser console (for those so inclined)
+            if (console.dir)
+                console.dir(ret);
+	    else if (console.log)
+                console.log(ret);
+
+            var explanation = document.getElementById('explanation');
+            explanation.innerHTML  = 'How the password "<strong>'+pwd+'</strong>" was broken into parts:\n';
+            explanation.innerHTML += objectDump(ret.sequence);; 
+        }
+
+        output.innerHTML  = 'Estimating strength of password "'+pwd+'" ... \n\n';
+	output.innerHTML += 'Average number of guesses needed to crack: '+ret.guesses+"\n";
+        output.innerHTML += 'Strength score (1-5): <>'+(ret.score+1)+"\n";
+   
+	if (ret.feedback && ret.feedback.warning)
+	    output.innerHTML += '<b>WARNING: '+ret.feedback.warning+"</b>\n";
+
+	if (ret.feedback && ret.feedback.suggestions)
+	{
+	    // print out each suggestion line by line
+	    for (var i = 0, len = ret.feedback.suggestions.length; i < len; i++)
+	    {
+		output.innerHTML += "Suggestion "+(i+1)+": "+ret.feedback.suggestions[i]+"\n";
+	    }
+	}
+
+	output.innerHTML += "\n";
+	output.innerHTML += 'Approx times to crack ... '+"\n";
+	output.innerHTML += '   <abbr title="throttled online attack">100/hour</abbr>: '+ret.crack_times_display.online_throttling_100_per_hour+"\n";
+	output.innerHTML += '  <abbr title="unthrottled online attack">10/second</abbr>: '+ret.crack_times_display.online_no_throttling_10_per_second+"\n";
+	output.innerHTML += ' <abbr title="offline attack, slow hash, many cores">10k/second</abbr>: '+ret.crack_times_display.offline_slow_hashing_1e4_per_second+"\n";
+	output.innerHTML += ' <abbr title="offline attack, fast hash, many cores">10B/second</abbr>: '+ret.crack_times_display.offline_fast_hashing_1e10_per_second+"\n";
+    output.className = 'strength'+(ret.score+1);
+    }
+    else
+    {
+        output.innerHTML  = '';
+    }
+}
+
+</script>
+<div class="center">
+    密碼檢測:<input type="password" name="password" id="password"
+        onchange="checkPassword(document.getElementById('password').value, false); return true;"
+        onkeypress="this.onchange();"
+        oninput="this.onkeypress();"
+        style="font-family:monospace; width: 250px;" />
+    <button type="button" onclick="checkPassword(document.getElementById('password').value, true);">破解分析</button>
+</div>
+    
+
+    <pre id="output" class="strength1"></pre>
+    <pre id="explanation"></pre>
 
 <aside>
 <div id="a"><p>LINUX系統相關</p></div> <!--DATA-->
