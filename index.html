@@ -256,7 +256,7 @@ function checkPassword(pwd, toConsole)
 
         output.innerHTML  = 'Estimating strength of password "'+pwd+'" ... \n\n';
 	output.innerHTML += 'Average number of guesses needed to crack: '+ret.guesses+"\n";
-        output.innerHTML += 'Strength score (1-5): <>'+(ret.score+1)+"\n";
+        output.innerHTML += 'Strength score (1-5): '+(ret.score+1)+"\n";
    
 	if (ret.feedback && ret.feedback.warning)
 	    output.innerHTML += '<b>WARNING: '+ret.feedback.warning+"</b>\n";
