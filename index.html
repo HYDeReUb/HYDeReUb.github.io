@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>歡迎！這是YuanSET的個人資料區</title>
+	<link rel="icon" href="pictures/favicon.ico" type="image/x-icon" sizes="16x16">
 	<style>  /* 以下是CSS */
 
 		@media only screen and (min-width: 1050px) {
@@ -186,7 +187,6 @@
 
 </head>
 <body  onload="startTime()">
-<link rel="icon" href="pictures/favicon.ico" type="image/x-icon" sizes="16x16">
 <div class="center"><h2><span style="color:#2997F4">歡迎！這是<span style="color:#E2DF1A" class="A">Yuan</span><span style="color:#FF0000" class="B">SET</span>的個人資料區</span> | 
 <span style="color:#3481B4" id="time">2099/12/31星期四 23:59:59</span></h2></div>
 <noscript><h2><span style="color:#FF0000;background-color:white">注意:您的瀏覽器不支援或未開啟JavaScript功能!!</span></h2></noscript>
@@ -212,8 +212,8 @@
   </div>
 
 <script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>-->
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="demo" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="zxcvbn" src="https://hydereub.github.io/data/down/zxcvbn.js"></script> 
+    <script async="" data-requirecontext="_" data-requiremodule="demo" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script async="" data-requirecontext="_" data-requiremodule="zxcvbn" src="https://hydereub.github.io/data/down/zxcvbn.js"></script> 
 <script>
 function startTime() {
   var today = new Date();
@@ -244,7 +244,7 @@ function checkTime(i) {
   return i;
 }
 </script>
-<script type="text/javascript">
+<script>
 function objectDump(obj)
 {
     this.result = '';
@@ -333,7 +333,7 @@ function checkPassword(pwd, toConsole)
         onchange="checkPassword(document.getElementById('password').value, false); return true;"
         onkeypress="this.onchange();"
         oninput="this.onkeypress();"
-        style="font-family:monospace; width: 250px;" />
+        style="font-family:monospace; width: 250px;">
     <button type="button" onclick="checkPassword(document.getElementById('password').value, true);">破解分析</button>
 </div>
     
