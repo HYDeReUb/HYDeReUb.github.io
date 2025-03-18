@@ -1,141 +1,192 @@
 <!DOCTYPE html>
 <html>
-<style>  /* 以下是CSS */
-@media only screen and (min-width: 1050px) {
- 
-aside {
-   width:36%;
-   margin-left:0%;
-   float:left;
-  }
- #photo_p{padding-left: 40%;}
-}
-  aside {
-   padding-left: 10px;
-   padding-right: 10px;
-  }
-footer {
-  text-align: center;
-  padding: 3px;
-  background-color: gray;
-  color: white;
-}
- 
-nav {text-align: center;}
- 
-/* 反白配置區 */
-::selection {background: #86909A;color: white;}
-.A::selection {color: #FF0000;}
-.B::selection {color: #E2DF1A;}
-::-moz-selection { /* Code for Firefox */background: #86909A;color: white;}
-.A::-moz-selection {color: #FF0000;}
-.B::s-moz-election {color: #E2DF1A;}
-
-/* 背景圖片放置 */
-body{
-margin: 0;
-background-image: url("pictures/Background.jpg");
-background-repeat: no-repeat;
-background-attachment: local;
-background-size: 100% 100%;
-}
-
-/* aside變磚、游標碰到變色、游標點擊變色等 */
-a.Url_Block:link, a.Url_Block:visited { /* Block */
-  font-weight: bold;
-  background-color: orange;
-  color: white;
-  padding: 15px 25px;
-  padding-right: 0px;
-  text-decoration: none;
-  display: block;
-}
-a.Url_Block0:hover, a.Url_Block0:active { /* Block0 */
-  background-color: red;
-}
-a.Url_Block0:active {
-  color: #2AD944;
-}
-a.Url_Block1:hover, a.Url_Block1:active { /* Block1 */
-  background-color: #2AD944;
-}
-a.Url_Block1:active {
-  color:#E83333;
-}
-a.Url_Block2:link, a.Url_Block2:visited { /* Block2 */
-  font-weight: bold;
-  background-color: #353230;
-  color: white;
-  padding: 15px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-}
-a.Url_Block2:hover, a.Url_Block2:active {
-  background-color: green;
-}
-a.Url_Block2:active {
-  color: #353230;
-}
-a.URL:link, a.URL:visited {
- color:#387A2A;
-}
-a.URL:hover, a.URL:active {
-  background-color: #FF5757;
-}
-a.URL:active{
- color:red;
-}
-a.verify:link, a.verify:visited { /* Block2 */
-  font-weight: bold;
-  background-color:rgba(0, 255, 255, 0.6);
-  color: white;
-}
-a.verify:hover, a.verify:active {
-  background-color:rgba(177, 177, 177, 0.5);
-  color:cyan;
-}
-a.verify:active{
- color:red;
-}
-
-
-#a {  /* aside標題變磚 */
-  background-color: purple;
-  color: white;
-  padding: 2px 10px;
-  font-weight: bold;
-}
-.center { /* 置中 這是HTML5用法。 <center>為HTML4用法，HTML5已不支援 */
-  text-align: center;
-}
-.red { /* 紅色警告字體 */
-  color:red;
-  font-weight:bold;
-}
-.cyan { /* 紅色警告字體 */
-  color:cyan;
-  font-weight:bold;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-#output      { font-size: 100%; white-space: pre-wrap; }
-#explanation { font-size: 90%; white-space: pre-wrap; background-color:#ddddff; }
-
-.strength1   { background-color: #FF9999; } /* red */
-.strength2   { background-color: #FFCC66; } /* orange */
-.strength3   { background-color: #FFFF99; } /* yellow */
-.strength4   { background-color: #CCFF99; } /* pale green */
-.strength5   { background-color: #99FF99; } /* green */
-/* 以上是CSS */ </style>
-
 <head>
-<meta charset="UTF-8">
+	<meta charset="utf-8">
+
+	<style>  /* 以下是CSS */
+
+		@media only screen and (min-width: 1050px) {
+			aside {
+				width:36%;
+				margin-left:0%;
+				float:left;
+			}
+			#photo_p{padding-left: 40%;}
+		}
+		aside {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		footer {
+			text-align: center;
+			padding: 3px;
+			background-color: gray;
+			color: white;
+		}
+
+		nav {text-align: center;}
+		
+		/* 反白配置區 */
+		::selection {background: #86909A;color: white;}
+		.A::selection {color: #FF0000;}
+		.B::selection {color: #E2DF1A;}
+		.A::-moz-selection {color: #FF0000;}
+		.B::s-moz-election {color: #E2DF1A;}
+
+
+		/* 背景圖片放置 */
+
+		body{
+			margin: 0;
+			background-image: url("pictures/Background.jpg");
+			background-repeat: no-repeat;
+			background-attachment: local;
+			background-size: 100% 100%;
+		}
+
+
+		/* aside變磚、游標碰到變色、游標點擊變色等 */
+
+		a.Url_Block:link, a.Url_Block:visited { /* Block */
+			font-weight: bold;
+			background-color: orange;
+			color: white;
+			padding: 15px 25px;
+			padding-right: 0px;
+			text-decoration: none;
+			display: block;
+		}
+		a.Url_Block0:hover, a.Url_Block0:active { /* Block0 */
+			background-color: red;
+		}
+		a.Url_Block0:active {
+			color: #2AD944;
+		}
+		a.Url_Block1:hover, a.Url_Block1:active { /* Block1 */
+			background-color: #2AD944;
+		}
+		a.Url_Block1:active {
+			color:#E83333;
+		}
+		a.Url_Block2:link, a.Url_Block2:visited { /* Block2 */
+			font-weight: bold;
+			background-color: #353230;
+			color: white;
+			padding: 15px 25px;
+			text-align: center;
+			text-decoration: none;
+			display: block;
+		}
+		a.Url_Block2:hover, a.Url_Block2:active {
+			background-color: green;
+		}
+		a.Url_Block2:active {
+			color: #353230;
+		}
+		a.URL:link, a.URL:visited {
+			color:#387A2A;
+		}
+		a.URL:hover, a.URL:active {
+			background-color: #FF5757;
+		}
+
+		a.URL:active{
+
+			color:red;
+
+		}
+
+		a.verify:link, a.verify:visited { /* Block2 */
+
+			font-weight: bold;
+
+			background-color:rgba(0, 255, 255, 0.6);
+
+			color: white;
+
+		}
+
+		a.verify:hover, a.verify:active {
+
+			background-color:rgba(177, 177, 177, 0.5);
+
+			color:cyan;
+
+		}
+
+		a.verify:active{
+
+			color:red;
+
+		}
+
+
+
+		#a {  /* aside標題變磚 */
+
+			background-color: purple;
+
+			color: white;
+
+			padding: 2px 10px;
+ 
+			font-weight: bold;
+
+		}
+
+		.center { /* 置中 這是HTML5用法。 <center>為HTML4用法，HTML5已不支援 */
+
+			text-align: center;
+
+		}
+
+		.red { /* 紅色警告字體 */
+
+			color:red;
+
+			font-weight:bold;
+
+		}
+
+		.cyan { /* 紅色警告字體 */
+
+			color:cyan;
+
+			font-weight:bold;
+
+		}
+
+		img {
+
+			display: block;
+
+			margin-left: auto;
+
+			margin-right: auto;
+
+		}
+
+
+
+		#output      { font-size: 100%; white-space: pre-wrap; }
+
+		#explanation { font-size: 90%; white-space: pre-wrap; background-color:#ddddff; }
+
+
+		.strength1   { background-color: #FF9999; } /* red */
+
+		.strength2   { background-color: #FFCC66; } /* orange */
+
+		.strength3   { background-color: #FFFF99; } /* yellow */
+
+		.strength4   { background-color: #CCFF99; } /* pale green */
+
+		.strength5   { background-color: #99FF99; } /* green */
+
+		/* 以上是CSS */ 
+	</style>
+
+
 <title>歡迎！這是YuanSET的個人資料區</title>
 
 <link rel="icon" href="pictures/favicon.ico" type="image/x-icon" sizes="16x16">
@@ -143,7 +194,8 @@ img {
   <div class="center"><h2><span style="color:#2997F4">歡迎！這是<span style="color:#E2DF1A" class="A">Yuan</span><span style="color:#FF0000" class="B">SET</span>的個人資料區</span> | 
   <span style="color:#3481B4" id="time">2099/12/31星期四 23:59:59</span></h2></div>
   <noscript><h2><span style="color:#FF0000;background-color:white">注意:您的瀏覽器不支援或未開啟JavaScript功能!!</span></h2></noscript>
-<script>
+</head>
+<script  onload="startTime()">
 function startTime() {
   var today = new Date();
 
@@ -173,10 +225,7 @@ function checkTime(i) {
   return i;
 }
 </script>
-</head>
-<body onload="startTime()">
-
-
+<body>
 <nav>
 論壇:<a href="https://www.mobile01.com/" target="_blank" class="URL">Mobile01</a> |
 <a href="https://term.ptt.cc/" target="_blank" class="URL">PTT</a> |
