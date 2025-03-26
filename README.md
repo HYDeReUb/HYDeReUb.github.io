@@ -1,6 +1,6 @@
 ## ///我的範例網頁，[點擊這裡觀看](https://hydereub.github.io)///
 
-### (Top跟時鐘這類的Javascript是從其他地方找來放的)<br>密碼檢測器來源:[https://www.bennish.net/password-strength-checker](https://www.bennish.net/password-strength-checker)<br>檔案驗證請到[https://github.com/HYDeReUb/HYDeReUb.github.io/tree/verify](https://github.com/HYDeReUb/HYDeReUb.github.io/tree/verify)
+### (Top跟時鐘這類的Javascript是從其他地方找來放的)<br>密碼檢測器來源:[https://www.bennish.net/password-strength-checker](https://www.bennish.net/password-strength-checker)<br><br>檔案驗證請到[https://github.com/HYDeReUb/HYDeReUb.github.io/tree/verify](https://github.com/HYDeReUb/HYDeReUb.github.io/tree/verify)
 -----------------------------------------------------
 # 紀錄:
 ## 20250321
